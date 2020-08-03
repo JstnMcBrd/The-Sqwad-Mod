@@ -2,48 +2,47 @@
 Welcome to The Sqwad Mod, a mod for Europa Universalis IV that aims to model "the Sqwad", a group of gamers who met in public school.
 Learn more about modding: https://eu4.paradoxwikis.com/Modding
 
-##Important Notes
+## Important Notes
 When downloading this repository, please download it to "C:\Users\[your username]\Documents\Paradox Interactive\Europa Universalis IV\mods"
 Before playing, please copy the sqwad_mod.mod file to the base "mods" folder. Otherwise EU4 will not be able to detect the mod.
 
-##Mod Folder Structure
+## Mod Folder Structure
 Learn more: https://eu4.paradoxwikis.com/Mod_structure
-###sqwad_mod
+### sqwad_mod
 This folder was created to hold all mod-related files. It contains a .mod file that defines the mod name and mod folder path.
-####sqwad_mod
+#### sqwad_mod
 This folder contains another .mod file called descriptor.mod. This file contains additional information about the mod, as well as repeating the mod name and mod folder path.
-####common
-#####bookmarks
+#### common
+##### bookmarks
 This folder is where historical bookmarks for EU4 are stored.
-#####countries
+##### countries
 This folder is where non-historical and flavor information for countries are stored.
-#####country_tags
+##### country_tags
 This folder houses files that define country tags and points the engine to where the country files are stored. (common\countries\)
-#####cultures
+##### cultures
 This folder is where cultures are defined.
-#####ideas
+##### ideas
 This folder is where country ideas are defined.
-#####scripted_triggers
+##### scripted_triggers
 This folder defines custom triggers than can be used elsewhere in the code to check for specified conditions.
-
-####gfx
-#####flags
+#### gfx
+This folder stores subfolders for graphical assets.
+##### flags
 This folder stores the country flags.
-#####loadingscreens
+##### loadingscreens
 This folder stores loading screens.
-
-####history
-#####countries
+#### history
+This folder stores subfolders for historical files.
+##### countries
 This folder is where historical information about countries are stored.
-#####diplomacy
+##### diplomacy
 This folder is where the history of different diplomatic relationships are stored.
-#####provinces
+##### provinces
 This folder stores the history of provinces, organized by province files.
-
-####localisation
+#### localisation
 This folder stores .yml files, where localisation text in different languages is defined for certain variables in code.
 
-
+## Modding Links
 To learn about modding bookmarks: https://eu4.paradoxwikis.com/Scenario_modding
 To learn about modding countries: https://eu4.paradoxwikis.com/Country_creation
 To learn about modding cultures: https://eu4.paradoxwikis.com/Culture_modding
@@ -54,7 +53,7 @@ To learn about modding loading screens: [none]
 To learn about modding history: https://eu4.paradoxwikis.com/History_modding
 To learn about modding localisation: https://eu4.paradoxwikis.com/Localisation
 
-Useful Documentation on the Clauswitz Engine:
+## Useful Documentation on the Clauswitz Engine:
 Effects: https://eu4.paradoxwikis.com/Commands
 Triggers: https://eu4.paradoxwikis.com/Conditions
 Modifiers: https://eu4.paradoxwikis.com/Modifier_list
