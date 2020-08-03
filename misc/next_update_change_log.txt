@@ -1,0 +1,7 @@
+Put all changes since the last Steam Workshop upload here
+
+[h1]Update 1.4.1[/h1]
+[list]
+[*]increased Posopotamia ideas from 5% siege ability to 10%
+[*]corrected Sqwad ideas saying "[adjective] Tradition" instead of "[adjective] Traditions"
+[/list]

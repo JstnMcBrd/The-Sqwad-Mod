@@ -1,0 +1,19 @@
+bookmark =
+{
+	name = "SQWAD_BOOKMARK_TITLE"
+	desc = "SQWAD_BOOKMARK_DESC"
+	date = 1444.11.11
+	
+	center = 112
+	default = yes
+
+	country = A0W
+	country = B0H
+	country = D0E
+	country = E0B	
+	country = G0H
+	country = J0B
+	country = J0M	
+	country = M0N
+	country = M0P
+}

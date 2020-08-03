@@ -1,0 +1,82 @@
+graphical_culture = westerngfx
+
+color = { 224  255  255 }
+
+revolutionary_colors = { 2  5  8 }
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	maritime_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quality_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Brian #0" = 1
+	"Chuck #0" = 1
+	"Michael #0" = 1
+	"Mikey #0" = 1
+	"Stanley #0" = 1
+
+	"Christy #0" = -1
+	"Michelle #0" = -1
+}
+
+leader_names = { 
+	Norris
+}
+
+ship_names = {
+	"2th Root"
+	"7 out of 10"
+	"Aluminum Fist" "American Dream"
+	"Bag of Doritos" "Bag of Swag" "Beating Time" "Black Ink" Bleach "Bleach o'Clock" Buttons "Button Hater"
+	"CIA Watchlist" "Chik Fil A" "Conflicting Yourself" Crazyville "Crippling Depression"
+	"Dating Advice" "Dead Cat" "Den of Atlases" Defication Diarrhea Disagreement "Dutch 9/11"
+	Evisceration
+	"Fidget Spinner" "freeexplosions.com"
+	"Google Button Nazi"
+	"He's Dead" "History of Science" "Holy Sacrament"
+	"I Killed Him" Invalidation
+	"KAL ORT POR" "KAL VAS XEN" "Federal Prison" Kidneys "Kilo-Murder"
+	Lamp Lol
+	"Medium Well" Memeconomy "Midnight Glass of Millk" "Mutant Nazi"
+	"Nazi Germant" "Nico's Smile" Nincompoop NOmenclature "Not Breathing" "Nut Shot Crit"
+	"One and a Half Thirds"
+	Painkiller "Political Racism" "Pumpkin Spice Bleach" Puppy
+	"Racist Wall" "Ripped Out Sternum" Robosocialist "Root Canal"
+	"Sheer Annoyance" Shifty Skeleton "Snorted Box" "Spawn of Satan" "Stoked Flame of Wrath" "Suicide Mood" "Suicide Company" "Swastika Emoji"
+	"Terrorism Simulator" "Theoretical Violence" "Tooth Root" "Turbo Knifer" "Twizzler Hater"
+	Unwidifier
+	"Virtual LSD Trip" Vulture
+	"Walmart Brand"
+}
+
+army_names = {
+	"Armee von $PROVINCE$"
+}
+
+fleet_names = {
+	"Flotte von $PROVINCE$"
+}

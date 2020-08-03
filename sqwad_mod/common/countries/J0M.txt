@@ -1,0 +1,110 @@
+graphical_culture = westerngfx
+
+color = { 230  38  0 }
+
+revolutionary_colors = { 2  0  5 }
+
+historical_idea_groups = {
+	exploration_ideas
+	quantity_ideas
+	expansion_ideas
+	influence_ideas
+	quality_ideas
+	humanist_ideas
+	diplomatic_ideas
+	naval_ideas
+	
+	#administrative_ideas
+	#defensive_ideas
+	#trade_ideas
+	#innovativeness_ideas
+	#maritime_ideas
+	#offensive_ideas
+	#economic_ideas
+	#quality_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	italian_condotta
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+#rulers
+	"Justin #0" = 1000000
+	"Justain #0" = 1000000
+	"Justinian #0" = 1000000
+	"Justainian #0" = 1000000
+	
+	"Justine #0" = -1000000
+	"Justinia #0" = -1000000
+	
+#generals
+	"Alexander #0" = 1
+	"Arturus #0" = 1
+	"Hannibal #0" = 1
+	"James #0" = 1
+	"John #0" = 1
+	"Julius #0" = 1
+	"Robert #0" = 1
+	"Napoleon #0" = 1
+	"Ulysses #0" = 1
+	
+	"Boudica #0" = -1
+	"Joan #0" = -1
+}
+
+leader_names = {
+	Argead
+	Barca Bonaparte
+	Caesar
+	"de Arc"
+	Grant
+	Iceni
+	Kirk
+	Lee
+	Mengsk
+	Rainor
+}
+
+ship_names = {
+	"30 GB"
+	"AL_INVALID_NAME" "Always Time for Memes"
+	"Banshee Scream" Binary "Big White Blur" "Black Market" Bombs "Burnt Thermite"
+	Cancer "Can Disaster" "Can Grammar" "Can Humor" "Can Idea" "CHS Issue" "Circle USB" "Commie Commity" "Completely Unconscious" Conquest "Control-Z"
+	"Daily Dose of Idiocy" "Deadly Roller Coaster" Disagreement "Don't Keep Promises" "Don't Logic Me" "Don't Mocking Me" "Drug Lord"
+	"ER Dirty Money" "[ERROR: No life to take]" Everything "European Artery"
+	"Face Stamp" "Federal Mint"
+	Gelatinous "General Public" "Give Up, Break Down, and Cry" Goldfish "Good at Killing Everyone" "Good Meme" "Grammar Nazi" "Great Noises"
+	"Hackity_Hackity" "Hardcore Intellectual Roast" "Hardcore Underwater Gamer" "Heater Laptop" "Humor Confirmed"
+	"InCoNsIsTeNt CaPiTaLiZaTiOn"
+	Laaaaawwwwwwllllll "Litter or Loot" "Long in the Up Direction"
+	"Magical Glasses" Memedex "Metal Basing Case" "Meth Lab" "Meth Lab 2" "Mob Tyranny"
+	"Neck > Legs" "No Refunds Policy" "Nutella Sweat"
+	"Orange Fanta"
+	"PC Discord Time" "People = Death" "Perfect Quote" "Power-Up"
+	Realworldilized "Residential Drag Race" "Root Beer" "Ruined Dreams"
+	"Sensible" "Spike Hands" "String Feet"
+	"Toast Osama" Tornado
+	"What is This?" Whisper "Weird Face"
+}
+
+fleet_names = {
+	"Imperial Navy" "$PROVINCE$ Navy"
+}
+
+army_names = {
+	#"1st Legion" "2nd Legion" "3rd Legion" "4th Legion" "5th Legion" "6th Legion" "7th Legion" "8th Legion" "9th Legion" "10th Legion"
+	"$PROVINCE$ Cohort"
+}

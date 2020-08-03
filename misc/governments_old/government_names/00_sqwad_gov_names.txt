@@ -1,0 +1,27 @@
+pos_republic = {
+	rank = {
+		1 = POS_GOV_RANK_1
+		2 = POS_GOV_RANK_2
+		3 = POS_GOV_RANK_3
+	}
+
+	ruler_male = {
+		1 = POS_LEADER_RANK_1
+		2 = POS_LEADER_RANK_2
+		3 = POS_LEADER_RANK_3
+	}
+
+	ruler_female = {
+		1 = POS_LEADER_RANK_1
+		2 = POS_LEADER_RANK_2
+		3 = POS_LEADER_RANK_3
+	}
+
+	trigger = {
+		government = republic
+		tag = M0P
+#		primary_culture = dutch
+		NOT = { government = revolutionary_republic }
+		NOT = { government = republican_dictatorship }
+	}
+}

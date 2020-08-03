@@ -1,0 +1,8 @@
+#SQWAD MOD SECTION BEGIN
+1444.11.11 = {
+	add_core = J0M
+}
+1444.11.12 = {
+	remove_core = J0M
+}
+#SQWAD MOD SECTION END

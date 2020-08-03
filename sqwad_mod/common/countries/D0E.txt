@@ -1,0 +1,137 @@
+#Country name: please see filename
+
+graphical_culture = westerngfx	 
+
+color = { 155  70  255 }
+
+revolutionary_colors = { 2  0  1 }
+
+historical_idea_groups = {
+	administrative_ideas
+	offensive_ideas
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+	defensive_ideas
+	expansion_ideas
+	trade_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	french_caracolle
+	swedish_gallop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+#ruler and general names (no separation)
+	"Adam #0" = 1
+	"Alexander #0" = 1
+	"Alfred #0" = 1
+	"Andrew #0" = 1
+	"David #0" = 10
+	"Davis #0" = 1
+	"Erik #0" = 1
+	"Felix #0" = 1
+	"Gustav #0" = 1
+	"Henrik #0" = 1
+	"Jacob #0" = 1
+	"Kevin #0" = 1
+	"Lars #0" = 1
+	"Leif #0" = 1
+	"Leo #0" = 1
+	"Liam #0" = 1
+	"Lucas #0" = 1
+	"Nils #0" = 1
+	"Oscar #0" = 1
+	"Peter #0" = 1
+	"Samuel #0" = 1
+	"Simon #0" = 1
+	"Stefan #0" = 1
+	"Theodor #0" = 1
+	"William #0" = 1
+	
+	"Alice #0" = -1
+	"Alicia #0" = -1
+	"Anna #0" = -1
+	"Brigitte #0" = -1
+	"Delaney #0" = -1
+	"Elsa #0" = -1
+	"Emma #0" = -1
+	"Freja #0" = -1
+	"Hanna #0" = -1
+	"Isabella #0" = -1
+	"Julia #0" = -1
+	"Juni #0" = -1
+	"Klara #0" = -1
+	"Leah #0" = -1
+	"Lilly #0" = -1
+	"Lisa #0" = -1
+	"Maya #0" = -1
+	"Megan #0" = -1
+	"Mira #0" = -1
+	"Nova #0" = -1
+	"Olivia #0" = -1
+	"Sage #0" = -1
+	"Sara #0" = -1
+	"Sofia #0" = -1
+	"Svea #0" = -1	
+}
+
+leader_names = {
+	Berg Brown
+	Collins
+	Fischer
+	Harris Hoffman Hughes
+	Lindgren Lloyd Lund
+	Mattsson
+	Neumann
+	Robinson
+	Schmidt
+	Thomas
+	Wright
+}
+
+ship_names = {
+	Aethex "Accidental Suicide" Achiever "Already Dead"
+	"Better as in More Successful" "Butter Passer"
+	"Californian Laugh"
+	Dolphin
+	"The End Justifies the Memes" EVANSQUEST 
+	Intuition Invisible
+	"Killing Everyone"
+	"Morally Wrong"
+	"Poppin' Axe" Programming
+	"Really Fresh" "Reasonably Fatal" Refrigerator Rollover
+	"Scrying Dish" "Silent Game" Swarthmore
+	"Underground Bunny"
+	"Very Not Quiet" "Very Quiet"
+	"Winning Strategy" Wizard "Worse as a Person" "Wriggling Fish"
+	Yes
+}
+
+army_names = {
+	"Army of Finland"
+	"Army of the Sapmi"
+	"Army of Peace"
+	"Army of Justice"
+	"Army of Moose"
+	"Army of Punishment"
+	"$PROVINCE$ Army"
+}
+
+fleet_names = {
+	"Fleet of the Baltic"
+	"$PROVINCE$ Fleet"
+}

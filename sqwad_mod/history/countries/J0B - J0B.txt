@@ -1,0 +1,20 @@
+#government = constitutional_republic
+government = republic
+government_rank = 3
+technology_group = western
+religion = orthodox
+primary_culture = J0B_culture
+add_accepted_culture = russian
+add_accepted_culture = novgorodian
+add_accepted_culture = ryazanian
+capital = 295	# Moskva
+
+1444.11.11 = {
+	monarch = {
+		name = "Justin"
+		dynasty = "Trudeau"
+		adm = 4
+		dip = 4
+		mil = 1
+	}
+}

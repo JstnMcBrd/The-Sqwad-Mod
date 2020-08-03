@@ -1,0 +1,46 @@
+J0M_ideas = {
+	#traditions
+	start = {
+		range = 0.5
+		infantry_cost = -0.1
+	}
+	
+	#ambitions
+	bonus = {
+		land_morale = 0.15
+	}
+
+	trigger = {
+		tag = J0M
+	}
+	free = yes		#will be added at load.
+	
+	accidental_discovery = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+	}
+	people_means_death = {
+		manpower_recovery_speed = 0.1
+		reinforce_speed = 0.1
+	}
+	flowery_language = {
+		diplomatic_reputation = 0.50
+		ae_impact = -0.10
+	}
+	arteries = {
+		province_warscore_cost = -0.10
+		core_creation = -0.10
+	}
+	simple_memeconomics = {
+		global_trade_power = 0.10
+		trade_efficiency = 0.10
+	}
+	conquest = {
+		siege_ability = 0.10
+		discipline = 0.05
+	}
+	general_public = {
+		global_unrest = -1.00
+	}
+
+}

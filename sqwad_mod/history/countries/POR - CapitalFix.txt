@@ -1,0 +1,7 @@
+1444.11.11 = {
+	capital = 367 #The Azores
+}
+
+1444.11.12 = {
+	capital = 227 #Lisboa
+}

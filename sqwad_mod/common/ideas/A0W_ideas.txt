@@ -1,0 +1,45 @@
+A0W_ideas = {
+	#traditions
+	start = {
+		core_creation = -0.20
+		global_unrest = -1.00
+	}
+	
+	#ambitions
+	bonus = {
+		army_tradition = 0.10
+	}
+
+	trigger = {
+		tag = A0W
+	}
+	free = yes		#will be added at load.
+	
+	crack = {
+		land_morale = 0.15
+		land_forcelimit_modifier = 0.15
+	}
+	stop_you_imbisils = {
+		global_missionary_strength = 0.03
+	}
+	goofed = {
+		hostile_attrition = 2
+	}
+	knolage = {
+		technology_cost = -0.1
+		idea_cost = -0.1
+	}
+	speeling = {
+		ae_impact = -0.1
+		diplomatic_reputation = 1.00
+	}
+	back_room = {
+		mercenary_manpower = 0.1
+		merc_maintenance_modifier = -0.1
+		mercenary_manpower = 0.25
+	}
+	actor_slavery = {
+		num_accepted_cultures = 1
+		production_efficiency = 0.05
+	}
+}

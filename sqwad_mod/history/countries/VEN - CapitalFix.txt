@@ -1,0 +1,8 @@
+1444.11.11 = {
+	capital = 136 #Dalmatia
+}
+
+1444.11.12 = {
+	capital = 112 #Venezia
+	fixed_capital = 112
+}

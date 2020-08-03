@@ -1,0 +1,43 @@
+G0H_ideas = {
+	#traditions
+	start = {
+		ship_durability = 0.05
+		global_trade_power = 0.10
+		sea_repair = yes
+	}
+	
+	#ambitions
+	bonus = {
+		naval_forcelimit_modifier = 0.25
+	}
+
+	trigger = {
+		tag = G0H
+	}
+	free = yes		#will be added at load.
+	
+	mistakes_accidents = {
+		discipline = 0.05
+		production_efficiency = 0.10
+	}
+	aggressive_anti_satanism = {
+		global_missionary_strength = 0.03
+		missionaries = 1
+	}
+	magic = {
+		cavalry_power = 0.15
+	}
+	no_goodbyes = {
+		colonists = 1
+	}
+	aggressive_combat = {
+		artillery_power = 0.10
+	}
+	together = {
+		global_colonial_growth = 20
+	}
+	spam_hate = {
+		light_ship_power = 0.10
+	}
+
+}

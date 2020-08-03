@@ -1,0 +1,177 @@
+sqwadite_culture_group = {
+	graphical_culture = westerngfx
+
+	male_names = {}
+	female_names = {}
+	dynasty_names = {}
+	
+	A0W_culture = {
+		primary = A0W
+		male_names = {
+			Aidan ReRamp
+		}
+		female_names = {
+			Aideena
+		}
+		dynasty_names = {
+			Crack
+			"done Goofed" "the Divisor"
+			Frick Frig
+			Pencilwarrior
+			Wilson 
+		}
+	}
+	B0H_culture = {
+		primary = B0H
+		male_names = {
+			Bryce Byrce 
+			Chubby 
+			Durp
+			Flurp
+			Tubby
+		}
+		female_names = {
+			Brycina
+			Chubba
+			Flurpette
+			Tubba
+		}
+		dynasty_names = {
+			Hobbs Wubb Wump Kinz
+		}
+	}
+	D0E_culture = {
+		primary = D0E
+		male_names = {
+			Adam Alexander Alfred Andrew
+			David Davis
+			Erik
+			Felix
+			Gustav
+			Henrik
+			Jacob
+			Kevin
+			Lars Leif Leo Liam Lucas
+			Nils
+			Oscar
+			Peter
+			Samuel Simon Stefan
+			Theodor
+			William
+		}
+		female_names = {
+			Alice Alicia Anna
+			Brigitte
+			Delaney
+			Elsa Emma
+			Freja
+			Hanna
+			Isabella
+			Julia Juni
+			Klara
+			Leah Lilly Lisa
+			Maya Megan Mira
+			Nova
+			Olivia
+			Sage Sara Sofia Svea
+		}
+		dynasty_names = {
+			Davidson Davies Drake
+			Ek Erikson Evans  
+			Henrikson Holm 
+			Green Griffiths
+			Jones
+			Kaiser
+			Lindberg
+			Moss
+			Owen
+			Roth
+			Stilson 
+			Smith
+			Williams Wolff
+		}
+	}
+	E0B_culture = {
+		primary = E0B
+		male_names = {
+			Colin
+		}
+		female_names = {
+			Emily Lucidarya Lucy Viomelia
+		}
+		dynasty_names = {
+			Bell
+		}
+	}
+	G0H_culture = {
+		primary = G0H
+		male_names = {
+			Bob
+		}
+		female_names = {
+			Bobbie
+		}
+		dynasty_names = {
+			Ross
+		}
+	}
+	J0B_culture = {
+		primary = J0B
+		male_names = {
+			Jackson
+		}
+		female_names = {
+			Jackette
+		}
+		dynasty_names = {
+			Beard
+		}
+	}
+	J0M_culture = {
+		primary = J0M
+		male_names = {
+			Alexander Arturus
+			Hannibal
+			James John Julius Justin Justain Justinian Justainian
+			Robert
+			Napoleon
+			Ulysses
+		}
+		female_names = {
+			Boudica
+			Joan Justine Justinia
+		}
+		dynasty_names = {
+			McBrid McBride McBrididite McBrittle McThuggin
+		}
+	}
+	M0N_culture = {
+		primary = M0N
+		male_names = {
+			Brian
+			Chuck
+			Michael Mikey
+			Stanley
+		}
+		female_names = {
+			Christy
+			Michelle
+		}
+		dynasty_names = {
+			Norris
+		}
+	}
+	M0P_culture = {
+		primary = M0P
+		male_names = {
+			Michael Miguel
+		}
+		female_names = {
+			Michelle
+		}
+		dynasty_names = {
+			Pos Pose
+		}
+	}
+	
+}

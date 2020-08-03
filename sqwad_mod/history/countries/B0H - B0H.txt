@@ -1,0 +1,23 @@
+#government = feudal_monarchy
+government = monarchy
+government_rank = 3
+primary_culture = B0H_culture
+add_accepted_culture = norwegian
+add_accepted_culture = danish
+add_accepted_culture = swedish
+religion = catholic
+technology_group = western
+historical_friend = E0B
+historical_friend = D0E
+historical_rival = M0N
+capital = 12 #Sjaelland
+
+1444.11.11 = {
+	monarch = {
+		name = "Flurp"
+		dynasty = "Kinz"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}

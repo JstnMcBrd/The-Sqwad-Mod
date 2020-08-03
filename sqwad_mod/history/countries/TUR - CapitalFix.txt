@@ -1,0 +1,7 @@
+1444.11.11 = {
+	capital = 159 #Silistre
+}
+
+1444.11.12 = {
+	capital = 149 #Edirne
+}

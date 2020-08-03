@@ -1,0 +1,41 @@
+D0E_ideas = {
+	#traditions
+	start = {
+		global_manpower_modifier = 0.10
+		num_accepted_cultures = 1
+	}
+	
+	#ambitions
+	bonus = {
+		inflation_reduction = 0.1
+	}
+
+	trigger = {
+		tag = D0E
+	}
+	free = yes		#will be added at load.
+	
+	dealing_with_dolphins = {
+		trade_efficiency = 0.15
+	}
+	cutthroat_policies = {
+		advisor_cost = -0.10
+		yearly_absolutism = 0.20
+	}
+	sage_advice = {
+		diplomatic_reputation = 1.00
+	}
+	adaptable = {
+		land_attrition = -0.10
+	}
+	away_to_dinner = {
+		global_unrest = -1.00
+	}
+	predicting_trends = {
+		prestige = 1.00
+	}
+	reasonably_fatal = {
+		artillery_power = 0.20
+	}
+
+} 

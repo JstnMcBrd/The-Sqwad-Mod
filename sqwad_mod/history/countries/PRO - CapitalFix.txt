@@ -1,0 +1,9 @@
+1444.11.11 = {
+	capital = 187
+	#Barrois
+}
+
+1444.11.12 = {
+	capital = 201
+	#Anjou
+}

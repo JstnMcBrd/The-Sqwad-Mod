@@ -1,0 +1,76 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+color = { 220  138  57 }
+
+revolutionary_colors = { 2  0  2 }
+
+historical_idea_groups = {
+	administrative_ideas
+	exploration_ideas
+	defensive_ideas
+	maritime_ideas
+	innovativeness_ideas
+	quality_ideas
+	trade_ideas
+	economic_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	french_caracolle
+	swedish_gallop
+	austrian_tercio
+	austrian_grenzer
+	french_bluecoat
+	french_dragoon
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Michael #0" = 1
+	"Miguel #0" = 1
+	
+	"Michelle #0" = -1
+}
+
+leader_names = {
+	Pos Pose
+}
+
+ship_names = {
+	"Alcohol and Glass"
+	"Baby Eater" "Baby In a Gas Can" "Bad Dictator" "Banana Stand" "Bird Gang" "Boring America" Brundi
+	Cement
+	Darkness "Dead Meme" Dictator Duckumentry "Dutch Supremacist"
+	"Efficient Terrible Person" "European Cannibalism"
+	Fingernail
+	"Girl Scout Cookie"
+	"HNLMS Prostitution"
+	"I AMsterdam" Indead "Isle 3"
+	"Jew Hater" "Jingal Bells"
+	"Kid Shooter" "Kink Shamer"
+	"Mass Murder" "Mien Kampf" "Moderator-Mederator" "mpossible"
+	"Pope Van" "Prank Master"
+	"REALLY Good"
+	"School Train" Sensorship "Sovern State" "Spray Butter" "STAT" "Suicide Bomber"
+	"Tax Dollars" "Terrible Person" Terrorist They "Thigh Pincher"
+	Virtue
+}
+
+
+army_names = {
+	"Leger van $PROVINCE$" 
+}
+
+fleet_names = {
+	"Vloot van $PROVINCE$" 
+}

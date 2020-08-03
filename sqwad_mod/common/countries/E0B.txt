@@ -1,0 +1,78 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 97  12  12 }
+
+revolutionary_colors = { 9  6  5 }
+
+historical_idea_groups = {
+	naval_ideas
+	trade_ideas
+	religious_ideas
+	exploration_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	french_caracolle
+	anglofrench_line
+	french_dragoon
+	french_bluecoat
+	french_cuirassier
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Colin #0" = 1
+	
+	"Emily #0" = -1
+	"Lucidarya #0" = -1
+	"Lucy #0" = -1
+	"Viomelia #0" = -1
+}
+
+leader_names = {
+	Bell
+}
+
+ship_names = {
+	"4:55am"
+	"50 Copies of Shrek"
+	"Above Irrelevant" "Anthrapamorphian"
+	"Beer Cans" Boner Bopit Burrie
+	Colandaria "Cow Mail"
+	Dab Diamonds
+	"Efficient Waddle" "Extream Sprots"
+	"Finger Painter" "Frantic Clap"
+	"Gucci Dinner"
+	Leftist
+	"Mach 10"
+	"Organized Crime"
+	Pistol
+	Roomba
+	"Snapping Turtle" "Spiked Knee Cap" Spontaneous Suffering "Sync Vudei"
+	Thursday Triangle Tuesday
+	"Underwater Kiteing"
+	"Weeb Lyfe" Whale "Wooly Mamoth"
+}
+
+army_names = {
+	"Armée de $PROVINCE$" 
+}
+
+fleet_names = {
+	"Flotte de $PROVINCE$" 
+}
