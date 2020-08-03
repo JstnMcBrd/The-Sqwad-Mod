@@ -2,6 +2,10 @@
 Welcome to The Sqwad Mod, a mod for Europa Universalis IV that aims to model "the Sqwad", a group of gamers who met in public school.
 Learn more about modding: https://eu4.paradoxwikis.com/Modding
 
+##Important Notes
+When downloading this repository, please download it to "C:\Users\[your username]\Documents\Paradox Interactive\Europa Universalis IV\mods"
+Before playing, please copy the sqwad_mod.mod file to the base "mods" folder. Otherwise EU4 will not be able to detect the mod.
+
 ##Mod Folder Structure
 Learn more: https://eu4.paradoxwikis.com/Mod_structure
 ###sqwad_mod
