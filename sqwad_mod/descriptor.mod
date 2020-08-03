@@ -9,5 +9,5 @@ tags={
 }
 picture="icon.png"
 supported_version="1.30.*.*"
-path="mod/sqwad_mod/sqwad_mod"
+path="mod/The-Sqwad-Mod/sqwad_mod"
 remote_file_id="1294735825"
