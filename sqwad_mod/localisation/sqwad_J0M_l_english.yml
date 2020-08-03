@@ -19,3 +19,7 @@
  conquest_desc: "Conquest is the only motive we should have."
  general_public: "General Public"
  general_public_desc: "The general public is a myth."
+ 
+ J0M_federal_mint_title: "Federal Mint"
+ J0M_federal_mint_desc: "We're pretty much the federal mint."
+ J0M_federal_mint_modifier: "Federal Mint Achieved"
