@@ -10,6 +10,13 @@
 - Sqwad Events
 - Sqwad Mission Trees
 
+===KNOW ISSUES===
+- Bugs
+- Balancing
+	- Frick gets eatan consistantly
+	- Wumpland strong
+	- Armorica's traditions are bad?
+
 ===MUSIC===
 - perhaps let each person add a song?
 - problem: not all songs would match very well with EU4
