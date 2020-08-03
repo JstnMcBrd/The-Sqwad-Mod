@@ -12,6 +12,7 @@
 
 ===KNOW ISSUES===
 - Bugs
+	- Sqwad Nations can still form other tags (end game tags didn't work)
 - Balancing
 	- Frick gets eatan consistantly
 	- Wumpland strong

@@ -1,3 +1,8 @@
 J0M_federal_mint_modifier = {
 	global_tax_income = 120
 }
+
+J0M_broke_promises_modifier = {
+	prestige = 1
+	all_power_cost = -0.15
+}

@@ -2,6 +2,7 @@ J0M_federal_mint_tree = {
 	slot = 1 #?
 	generic = no
 	ai = yes
+	has_country_shield = yes
 	
 	potential = {
 		tag = J0M
@@ -18,4 +19,44 @@ J0M_federal_mint_tree = {
 			}
 		}
 	}
+}
+
+J0M_breaking_promises_tree = {
+	slot = 1 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = J0M
+	}
+	
+	J0M_breaking_promises = { #requires J0M to break an alliance
+		icon = mission_alliances
+		required_missions = { building_alliances } #from the generic tree, requires 2+ allies
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+		trigger = {
+			AND = {
+				num_of_allies = 1			#at least 1 ally
+				NOT = { num_of_allies = 2 }	#no more than 1 ally
+			}
+		}
+		effect = {
+			reverse_add_opinion = {
+				who = G0H
+				modifier = J0M_broke_promise_G0H
+				years = 10
+			}
+			add_country_modifier = {
+				name = "J0M_broke_promises_modifier"
+				duration = 3650
+			}
+		}
+	}
+		
 }
