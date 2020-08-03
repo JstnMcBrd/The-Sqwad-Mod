@@ -20,6 +20,17 @@
  general_public: "General Public"
  general_public_desc: "The general public is a myth."
  
+ J0M_mighty_army_title: "Build a Mighty Army"
+ J0M_mighty_army_desc: "The [Root.GetAdjective] people are destined to expand, but we cannot do so without an army."
+ J0M_conquer_corsica_sardinia_title: "Conquer the Western Mediterranean Islands"
+ J0M_conquer_corsica_sardinia_desc: "The center of the Mediterranean is a powerful place to control. We should prioritize claiming these islands."
+ J0M_conquer_central_italy_title: "Conquer Central Italy"
+ J0M_conquer_central_italy_desc: "We must continue to press southward and solidify our grip on Italy."
+ J0M_conquer_southern_italy_title: "Conquer Southern Italy"
+ J0M_conquer_southern_italy_desc: "It is time to complete our conquest of Italy and unite the region under the [Root.GetAdjective] flag!"
+ J0M_conquer_southeast_france_title: "Conquer Southeast France"
+ J0M_conquer_southeast_france_desc: "Weakened by aggression from the north, southeast France is ripe for the taking."
+ 
  J0M_federal_mint_title: "Federal Mint"
  J0M_federal_mint_desc: "We're pretty much the federal mint."
  J0M_federal_mint_modifier: "Federal Mint Achieved"

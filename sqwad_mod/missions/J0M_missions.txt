@@ -1,5 +1,284 @@
-J0M_federal_mint_tree = {
+#problem: Trustworthy Allies mission goes missing
+#problem: Conquer West Med Islands gets in way of rest of tree
+
+J0M_conquest = {
 	slot = 1 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = J0M
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	J0M_mighty_army = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		position = 1
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		trigger = {
+			army_size_percentage = 1
+			manpower_percentage = 0.6
+			num_of_generals = 1
+		}
+		
+		effect = {
+			lazio_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			savoy_dauphine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			languedoc_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					exists = FRA
+					FRA = {
+						OR = {
+							any_owned_province = {
+								OR = { 
+									area = savoy_dauphine_area
+									area = languedoc_area
+								}
+							}
+							any_subject_country = {
+								any_owned_province = {
+									OR = { 
+										area = savoy_dauphine_area
+										area = languedoc_area
+									}
+								}
+							}
+						}
+					}
+				}
+				add_casus_belli = {
+					target = FRA
+					type = cb_vassalize_mission
+				}
+			}			
+		}
+	}
+}
+
+
+J0M_conquest_italy = {
+	slot = 1 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = J0M
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	J0M_conquer_corsica_sardinia = {
+		icon = mission_unite_home_region
+		required_missions = { }
+		position = 1
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = corsica_sardinia_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			corsica_sardinia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			#give claims on north africa
+		}
+	}
+	
+	J0M_conquer_central_italy = {
+		icon = mission_unite_home_region
+		required_missions = { J0M_mighty_army }
+		position = 2
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lazio_area
+				area = central_italy_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			lazio_area = {
+				type = all
+				owned_by = ROOT
+			}
+			central_italy_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			naples_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			apulia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			calabria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	J0M_conquer_southern_italy = {
+		icon = mission_unite_home_region
+		required_missions = { J0M_conquer_central_italy }
+		position = 3
+		ai_weight = { factor = 5 }
+		ai_priority = {	factor = 5 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = naples_area
+				area = apulia_area
+				area = calabria_area
+				area = sicily_area
+				area = western_sicily_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			naples_area = {
+				type = all
+				owned_by = ROOT
+			}
+			apulia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			calabria_area = {
+				type = all
+				owned_by = ROOT
+			}
+			sicily_area = {
+				type = all
+				owned_by = ROOT
+			}
+			western_sicily_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			#completed conquest of italy
+			#give claims on greece
+		}
+	}
+}
+
+J0M_conquest_westward = {
+	slot = 2 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = J0M
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	J0M_conquer_southeast_france = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0M_mighty_army }
+		position = 2
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = languedoc_area
+				area = savoy_dauphine_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			languedoc_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			savoy_dauphine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			#give claims on catalonia and baleares
+		}
+	}
+}
+
+J0M_federal_mint_tree = {
+	slot = 3 #?
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -11,6 +290,7 @@ J0M_federal_mint_tree = {
 	J0M_federal_mint = {
 		icon = mission_high_income
 		required_missions = {  } #None
+		position = 1
 		trigger = { current_income_balance = 100 }
 		effect = {
 			add_country_modifier = {
@@ -22,7 +302,7 @@ J0M_federal_mint_tree = {
 }
 
 J0M_breaking_promises_tree = {
-	slot = 1 #?
+	slot = 3 #?
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -34,18 +314,17 @@ J0M_breaking_promises_tree = {
 	J0M_breaking_promises = { #requires J0M to break an alliance
 		icon = mission_alliances
 		required_missions = { building_alliances } #from the generic tree, requires 2+ allies
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+		position = 2
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
 		trigger = {
 			AND = {
 				num_of_allies = 1			#at least 1 ally
 				NOT = { num_of_allies = 2 }	#no more than 1 ally
 			}
 		}
+		
 		effect = {
 			reverse_add_opinion = {
 				who = G0H
@@ -57,6 +336,6 @@ J0M_breaking_promises_tree = {
 				duration = 3650
 			}
 		}
-	}
 		
+	}
 }
