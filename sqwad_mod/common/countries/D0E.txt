@@ -7,14 +7,14 @@ color = { 155  70  255 }
 revolutionary_colors = { 2  0  1 }
 
 historical_idea_groups = {
-	administrative_ideas
-	offensive_ideas
-	maritime_ideas
-	quality_ideas
 	innovativeness_ideas
-	defensive_ideas
-	expansion_ideas
+	quantity_ideas
+	humanist_ideas
+	diplomatic_ideas
+	economic_ideas
+	plutocracy_ideas
 	trade_ideas
+	offensive_ideas
 }
 
 historical_units = {
