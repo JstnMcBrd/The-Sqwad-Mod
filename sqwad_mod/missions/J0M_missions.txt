@@ -512,6 +512,7 @@ J0M_conquest_france = {
 				area = picardy_area
 				area = lorraine_area
 			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
