@@ -2,19 +2,9 @@ was_never_end_game_tag_trigger = {	#Country Scope
 	OR = {
 		NOT = { end_game_tags_blocked = yes }
 		AND = {
-			NOT = {
-				OR = {
-					was_tag = A0W tag = A0W
-					was_tag = B0H tag = B0H
-					was_tag = D0E tag = D0E
-					was_tag = E0B tag = E0B
-					was_tag = G0H tag = G0H
-					was_tag = J0B tag = J0B
-					was_tag = J0M tag = J0M
-					was_tag = M0N tag = M0N
-					was_tag = M0P tag = M0P
-				}
-			}			
+		
+			NOT = { is_sqwad_nation = yes }
+			
 			NOT = { was_tag = MUG }
 			NOT = { was_tag = TUR }
 			NOT = { was_tag = BYZ }
@@ -65,4 +55,18 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { tag = LOT }
 		}
 	}
+}
+
+is_sqwad_nation = {
+				OR = {
+					was_tag = A0W tag = A0W
+					was_tag = B0H tag = B0H
+					was_tag = D0E tag = D0E
+					was_tag = E0B tag = E0B
+					was_tag = G0H tag = G0H
+					was_tag = J0B tag = J0B
+					was_tag = J0M tag = J0M
+					was_tag = M0N tag = M0N
+					was_tag = M0P tag = M0P
+				}
 }

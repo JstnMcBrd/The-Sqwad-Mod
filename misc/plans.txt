@@ -8,15 +8,18 @@
 - Religion
 - Sqwad Decisions
 - Sqwad Events
+- Custom Subject Type and Server Modeling
 - Sqwad Mission Trees
 
 ===KNOW ISSUES===
 - Bugs
 	- Sqwad Nations can still form other tags (end game tags didn't work)
+		^ I've attempted another fix of this
 - Balancing
-	- Frick gets eatan consistantly
+	- Frick gets eaten consistantly
 	- Wumpland strong
 	- Armorica's traditions are bad?
+	- Rossopotamia gets eaten by Armorica consistantly
 	- Canananada has consistant long term stability issues
 
 ===MUSIC===
@@ -45,6 +48,22 @@
 - change gov't to Robosocialism
 		- requires certain tech level
 		- problem: don't know if this would work with new gov't update?
+- Create a New Server
+	- this decision would have to be created after the Desmond nation is added and all Sqwad nations are added as custom tributaries
+	- available when development and prestige is higher than current server admin
+	- removes custom tributary stasis and gives CB to old server admin
+	- sends event to all other Sqwad nations to decide whether to
+		- join the new server and stay in their old one
+			- get added as a custom tributary for the new server admin as stays as a custom tributary for the other
+			- small + relations for both server admins
+		- join the new server and leave their old one
+			- get added as a custom tributary for the new server admin and removed as a custom tributary for the old server admin
+			- big + relations for new server admin
+			- big - relations for old server admin and gives a CB
+		- don't join the new server
+			- big - relations for new server admin
+			- big + relations for old server admin
+	- Posopotamia should be given some kind of extra incentive to use this decision
 		
 ===SQWAD EVENTS===
 - 'Sqwad Diplomacy' Event
@@ -63,6 +82,16 @@
 	- "Finally to you Desmond Weaver of webs you have truly weaved an intricate web of alliances and enemies, but due to this political excellence you have surrounded yourself with the victors and have therefore become one yourself.  Please consider making me an admin of your glorious server we all call home, it would truly be an honor."
 	- "For MrThuggin you are infallible Im sorry I could have questioned you in the last comment, for that I am truly sorry; I question if you will ever be able to forgive me for this grave mistake. This question keeps me up all day and all night, please if it is not too much to ask for put my mind at ease."
 	- perhaps gain some sort of favor from E0B/J0M/desmond?
+
+===CUSTOM SUBJECT TYPE===
+- create a new subject type called "server member" that copies from tributary
+- overlord called "server admin"
+- "server members" can have multiple overlords
+- forceable by war
+- gives tribute and prestige to overlord
+- have all Sqwad nations start as "server member"s of Desmond, if he exists
+- make is so only Sqwad nations can participate in this subject type (is_sqwad_nation = yes)
+- add diplomatic actions to request to "join server"
 
 ===SQWAD MISSION TREES===
 Idea dump:
