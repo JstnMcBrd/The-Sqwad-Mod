@@ -1,3 +1,30 @@
+J0M_territorial_gains_modifier = { #only lasts 5 years
+	#+10 prestige
+	
+	prestige = 0.5
+	administrative_efficiency = 0.05
+	global_autonomy = -0.05
+	global_unrest = -1
+	land_morale = 0.1
+	naval_morale = 0.1
+}
+
+J0M_united_italy_modifier = { #infinite duration
+	#+50 prestige
+	prestige = 0.5
+	administrative_efficiency = 0.05
+}
+J0M_united_france_modifier = { #infinite duration
+	#+50 prestige
+	prestige_decay = -0.5
+	administrative_efficiency = 0.05
+}
+J0M_united_iberia_modifier = { #infinite duration
+	#+50 prestige
+	prestige_decay = -0.5
+	administrative_efficiency = 0.05
+}
+
 J0M_federal_mint_modifier = {
 	global_tax_income = 120
 }
