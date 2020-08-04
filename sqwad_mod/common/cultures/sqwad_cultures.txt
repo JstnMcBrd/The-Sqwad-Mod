@@ -142,7 +142,7 @@ sqwadite_culture_group = {
 			Joan Justine Justinia
 		}
 		dynasty_names = {
-			McBrid McBride McBrididite McBrittle McThuggin
+			McBrid McBride McBrididite McBrittle McThuggin Mac'Bridhe MacBride
 		}
 	}
 	M0N_culture = {
