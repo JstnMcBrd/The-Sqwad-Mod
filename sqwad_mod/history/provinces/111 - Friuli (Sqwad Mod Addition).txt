@@ -6,7 +6,7 @@
 }
 1444.11.12 = {
 	remove_core = J0M
-	owner = LAN
-	controller = LAN
+	owner = VEN
+	controller = VEN
 }
 #SQWAD MOD SECTION END

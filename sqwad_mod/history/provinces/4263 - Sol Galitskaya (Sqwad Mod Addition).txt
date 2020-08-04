@@ -6,7 +6,7 @@
 }
 1444.11.12 = {
 	remove_core = J0B
-	owner = LIT
-	controller = LIT
+	owner = MOS
+	controller = MOS
 }
 #SQWAD MOD SECTION END

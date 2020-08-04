@@ -6,7 +6,7 @@
 }
 1444.11.12 = {
 	remove_core = M0N
-	owner = CLI
-	controller = CLI
+	owner = PAL
+	controller = PAL
 }
 #SQWAD MOD SECTION END

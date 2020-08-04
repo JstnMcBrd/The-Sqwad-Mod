@@ -6,7 +6,7 @@
 }
 1444.11.12 = {
 	remove_core = B0H
-	owner = LAU
-	controller = LAU
+	owner = NOR
+	controller = NOR
 }
 #SQWAD MOD SECTION END
