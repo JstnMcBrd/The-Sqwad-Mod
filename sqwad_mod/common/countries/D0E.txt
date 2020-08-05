@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx	 
 
-color = { 155  70  255 }
+color = { 133  32  255 }
 
 revolutionary_colors = { 2  0  1 }
 
@@ -12,9 +12,9 @@ historical_idea_groups = {
 	humanist_ideas
 	diplomatic_ideas
 	economic_ideas
-	plutocracy_ideas
-	trade_ideas
 	offensive_ideas
+	trade_ideas
+	quality_ideas
 }
 
 historical_units = {
@@ -128,10 +128,17 @@ army_names = {
 	"Army of Justice"
 	"Army of Moose"
 	"Army of Punishment"
+	"Army of Killing Everyone"
+	"Army of the Californian Laugh"
+	"Morally Wrong Army"
+	"Very Not Quiet Army" "Very Quiet Army"
 	"$PROVINCE$ Army"
 }
 
 fleet_names = {
 	"Fleet of the Baltic"
+	"Fleet of Winning Strategy"
+	"Really Fresh Fleet" "Reasonably Fatal Fleet"
+	"Wriggling Fish Fleet"
 	"$PROVINCE$ Fleet"
 }
