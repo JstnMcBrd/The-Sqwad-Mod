@@ -1,0 +1,20 @@
+J0M_federal_mint_modifier = {
+	global_tax_income = 120
+}
+
+J0M_broke_promises_modifier = {
+	prestige = 1
+	all_power_cost = -0.15
+}
+
+#Default Territorial Gains Modifiers
+sqwad_territorial_gains_modifier = { #10 years
+	prestige = 1.0
+	land_morale = 0.1
+	naval_morale = 0.1
+}
+sqwad_united_region_modifier = { #50 years
+	prestige = 1.5
+	land_morale = 0.2
+	naval_morale = 0.2
+}

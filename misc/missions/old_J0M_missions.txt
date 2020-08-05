@@ -1,0 +1,910 @@
+#problem: Trustworthy Allies mission goes missing
+#problem: Conquer West Med Islands gets in way of rest of tree
+
+#===Localisation===
+ #J0M_mighty_army_title: "Build a Mighty Army"
+ #J0M_mighty_army_desc: "The [Root.GetAdjective] people are destined to expand, but we cannot do so without an army."
+ #J0M_territorial_gains_modifier: "Territorial Gains"
+ #J0M_conquer_corsica_sardinia_title: "Conquer the Western Mediterranean Islands"
+ #J0M_conquer_corsica_sardinia_desc: "The center of the Mediterranean is a powerful place to control. We should prioritize claiming these islands."
+ #J0M_conquer_central_italy_title: "Conquer Central Italy"
+ #J0M_conquer_central_italy_desc: "We must continue to press southward and solidify our grip on Italy."
+ #J0M_conquer_southern_italy_title: "Conquer Southern Italy"
+ #J0M_conquer_southern_italy_desc: "It is time to complete our conquest of Italy and unite the region under the [Root.GetAdjective] flag!"
+ #J0M_united_italy_modifier: "United Italy"
+ #J0M_conquer_southeast_france_title: "Conquer Southeast France"
+ #J0M_conquer_southeast_france_desc: "Weakened by aggression from the north, southeast France is ripe for the taking."
+ #J0M_conquer_central_france_title: "Conquer Central France"
+ #J0M_conquer_central_france_desc: "With the south of France in our grip, it is time to expand our influence over the region."
+ #J0M_conquer_northern_france_title: "Conquer Northern France"
+ #J0M_conquer_northern_france_desc: "We should complete our conquest of France and unite the region under the [Root.GetAdjective] Empire."
+ #J0M_united_france_modifier: "United France"
+ #J0M_conquer_western_iberia_title: "Conquer Western Iberia"
+ #J0M_conquer_western_iberia_desc: "He must protect our influence over the Mediterranean by integrating the western Iberia into our empire."
+ #J0M_conquer_central_iberia_title: "Conquer Central Iberia"
+ #J0M_conquer_central_iberia_desc: "Our Iberian borders should be expanded eastward to strengthen our control over the region."
+ #J0M_conquer_eastern_iberia_title: "Conquer Eastern Iberia"
+ #J0M_conquer_eastern_iberia_desc: "The Atlantic coast offer opportunity if we can claim these lands for ourselves."
+ #J0M_united_iberia_modifier: "United Iberia"
+
+#===Modifiers===
+#J0M_territorial_gains_modifier = { #only lasts 5 years
+#	#+10 prestige
+#	
+#	prestige = 0.5
+#	administrative_efficiency = 0.05
+#	global_autonomy = -0.05
+#	global_unrest = -1
+#	land_morale = 0.1
+#	naval_morale = 0.1
+#}
+#
+#J0M_united_italy_modifier = { #infinite duration
+#	#+50 prestige
+#	prestige = 0.5
+#	administrative_efficiency = 0.05
+#}
+#J0M_united_france_modifier = { #infinite duration
+#	#+50 prestige
+#	prestige_decay = -0.5
+#	administrative_efficiency = 0.05
+#}
+#J0M_united_iberia_modifier = { #infinite duration
+#	#+50 prestige
+#	prestige_decay = -0.5
+#	administrative_efficiency = 0.05
+#}
+
+#===Missions===
+
+J0M_conquest = {
+	slot = 1 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		#tag = J0M
+		tag = ---
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	J0M_mighty_army = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		position = 1
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		trigger = {
+			army_size_percentage = 1
+			manpower_percentage = 0.6
+			num_of_generals = 1
+		}
+		
+		effect = {
+			add_prestige = 10
+			#Sardinia Claims
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#Central Italy claims
+			lazio_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#Southeast France Coast claims
+			savoy_dauphine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			languedoc_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					exists = FRA
+					FRA = {
+						OR = {
+							any_owned_province = {
+								OR = { 
+									area = savoy_dauphine_area
+									area = languedoc_area
+								}
+							}
+							any_subject_country = {
+								any_owned_province = {
+									OR = { 
+										area = savoy_dauphine_area
+										area = languedoc_area
+									}
+								}
+							}
+						}
+					}
+				}
+				add_casus_belli = {
+					target = FRA
+					type = cb_vassalize_mission
+				}
+			}			
+		}
+	}
+}
+
+
+J0M_conquest_italy = {
+	slot = 1 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		#tag = J0M
+		tag = ---
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	J0M_conquer_corsica_sardinia = {
+		icon = mission_unite_home_region
+		required_missions = { J0M_mighty_army }
+		position = 1
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = corsica_sardinia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "J0M_territorial_gains_modifier"
+				duration = 1825 #5 years
+			}
+			#give claims on north africa
+		}
+	}
+	
+	J0M_conquer_central_italy = {
+		icon = mission_unite_home_region
+		required_missions = { J0M_mighty_army }
+		position = 2
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lazio_area
+				area = central_italy_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			lazio_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_italy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "J0M_territorial_gains_modifier"
+				duration = 1825 #5 years
+			}
+			naples_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			apulia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			calabria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	J0M_conquer_southern_italy = {
+		icon = mission_unite_home_region
+		required_missions = { J0M_conquer_central_italy }
+		position = 3
+		ai_weight = { factor = 5 }
+		ai_priority = {	factor = 5 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = naples_area
+				area = apulia_area
+				area = calabria_area
+				area = sicily_area
+				area = western_sicily_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			naples_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			apulia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			calabria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "J0M_territorial_gains_modifier"
+				duration = 1825 #5 years
+			}
+			add_country_modifier = {
+				name = "J0M_united_italy_modifier"
+				duration = -1 #forever
+			}
+			#completed conquest of italy
+			#give claims on greece
+		}
+	}
+}
+
+J0M_conquest_france = {
+	slot = 2 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		#tag = J0M
+		tag = ---
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	J0M_conquer_southeast_france = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0M_mighty_army }
+		position = 2
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = languedoc_area
+				area = savoy_dauphine_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			languedoc_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			savoy_dauphine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "J0M_territorial_gains_modifier"
+				duration = 1825 #5 years
+			}
+			#eastern Iberia claims
+			baleares_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			catalonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			valencia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			aragon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#Inner France Claims
+			guyenne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pyrenees_area = { #Gascony
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			massif_central_area = { #Auvergne
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			poitou_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_burgundy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bourgogne_area = { #East Burgundy
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	J0M_conquer_central_france = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0M_conquer_southeast_france }
+		position = 3
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = guyenne_area
+				area = pyrenees_area
+				area = massif_central_area
+				area = poitou_area
+				area = west_burgundy_area
+				area = bourgogne_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			guyenne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pyrenees_area = { #Gascony
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			massif_central_area = { #Auvergne
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			poitou_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_burgundy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bourgogne_area = { #East Burgundy
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "J0M_territorial_gains_modifier"
+				duration = 1825 #5 years
+			}
+			#North France
+			loire_area = { #Loire Valley
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			orleans_area = { #Orleanis
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ile_de_france_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			champagne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			brittany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			normandy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			picardy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lorraine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	J0M_conquer_northern_france = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0M_conquer_central_france }
+		position = 4
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = loire_area
+				area = orleans_area
+				area = ile_de_france_area
+				area = champagne_area
+				area = brittany_area
+				area = normandy_area
+				area = picardy_area
+				area = lorraine_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			loire_area = { #Loire Valley
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			orleans_area = { #Orleanis
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ile_de_france_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			champagne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			brittany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			normandy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			picardy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lorraine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "J0M_territorial_gains_modifier"
+				duration = 1825 #5 years
+			}
+			add_country_modifier = {
+				name = "J0M_united_france_modifier"
+				duration = -1 #forever
+			}
+			#Southern English Coast, but no mission for it
+			wessex_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			home_counties_area = { #London
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+J0M_conquest_iberia = {
+	slot = 3 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		#tag = J0M
+		tag = ---
+		NOT = { map_setup = map_setup_random }
+	}
+
+	J0M_conquer_western_iberia = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0M_conquer_southeast_france }
+		position = 3
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = baleares_area
+				area = catalonia_area
+				area = valencia_area
+				area = aragon_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			baleares_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			catalonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			valencia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			aragon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "J0M_territorial_gains_modifier"
+				duration = 1825 #5 years
+			}
+			#Central Iberia claims
+			basque_country = { #vasconia
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			castille_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			toledo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_andalucia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_andalucia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			extremadura_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			asturias_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			leon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	J0M_conquer_central_iberia = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0M_conquer_western_iberia }
+		position = 4
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = basque_country #vasconia
+				area = castille_area
+				area = toledo_area
+				area = upper_andalucia_area
+				area = lower_andalucia_area
+				area = extremadura_area
+				area = asturias_area
+				area = leon_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			basque_country = { #vasconia
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			castille_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			toledo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_andalucia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_andalucia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			extremadura_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			asturias_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			leon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "J0M_territorial_gains_modifier"
+				duration = 1825 #5 years
+			}
+			galicia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			beieras_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			alentejo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			macaronesia_area = { #not required for the next mission
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	J0M_conquer_eastern_iberia = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0M_conquer_central_iberia }
+		position = 5
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = galicia_area
+				area = beieras_area
+				area = alentejo_area
+				area = macaronesia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = --- } #not uncolonized
+		}
+		
+		trigger = {
+			galicia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			beieras_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			alentejo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			macaronesia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "J0M_territorial_gains_modifier"
+				duration = 1825 #5 years
+			}
+			add_country_modifier = {
+				name = "J0M_united_iberia_modifier"
+				duration = -1 #forever
+			}
+			#i dunno
+		}
+	}
+}
+
+#J0M_colonial_tree = {
+#	slot = 4 #?
+#	generic = no
+#	ai = yes
+#	has_country_shield = yes
+#
+#	potential = {
+#		tag = J0M
+#		NOT = { map_setup = map_setup_random }
+#	}
+#}

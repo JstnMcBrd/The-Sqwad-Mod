@@ -4,6 +4,7 @@ tags={
 	"Alternative History"
 	"Cultures"
 	"Loading Screen"
+	"Missions And Decisions"
 	"National Ideas"
 	"New Nations"
 }

@@ -1,6 +1,10 @@
 sqwadite_culture_group = {
 	graphical_culture = westerngfx
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> master
 	A0W_culture = {
 		primary = A0W
 		male_names = {
@@ -138,7 +142,7 @@ sqwadite_culture_group = {
 			Joan Justine Justinia
 		}
 		dynasty_names = {
-			McBrid McBride McBrididite McBrittle McThuggin
+			McBrid McBride McBrididite McBrittle McThuggin Mac'Bridhe MacBride
 		}
 	}
 	M0N_culture = {
