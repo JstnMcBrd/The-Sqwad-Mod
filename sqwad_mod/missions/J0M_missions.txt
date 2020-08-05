@@ -12,7 +12,7 @@ J0M_federal_mint_tree = {
 		icon = mission_high_income
 		required_missions = {  } #None
 		position = 1
-		trigger = { current_income_balance = 100 }
+		trigger = { monthly_income = 100 }
 		effect = {
 			add_country_modifier = {
 				name = "J0M_federal_mint_modifier"
@@ -122,13 +122,15 @@ J0M_conquest = {
 			if = { #if map is set on random, add claims on bordering areas
 				limit = { map_setup = map_setup_random }
 				
-				every_neighbor_province = {
-					area = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
+				every_owned_province = {
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+							}
+							add_permanent_claim = ROOT
 						}
-						add_permanent_claim = ROOT
 					}
 				}
 			}		
@@ -206,7 +208,7 @@ J0M_conquest_italy = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 			
 			#Claims on Tunisian coast, but no mission
@@ -320,7 +322,7 @@ J0M_conquest_france = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 			
 			#Claims on Britain and Lowlands, but no mission
@@ -412,7 +414,7 @@ J0M_conquest_iberia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 
 			#Claims on Moroccan coast, but no mission
@@ -525,7 +527,7 @@ J0M_conquest_balkan = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 			
 			#Claims on Carpathia and Anatolia, but no mission
@@ -617,7 +619,7 @@ J0M_conquest_south_germany = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}	
 			
 			#Claims on North Germany, but no mission
