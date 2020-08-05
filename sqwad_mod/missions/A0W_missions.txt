@@ -1,80 +1,17 @@
-J0M_federal_mint_tree = {
+A0W_conquest = {
 	slot = 1 #?
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	
 	potential = {
-		tag = J0M
+		tag = A0W
 	}
 	
-	J0M_federal_mint = {
-		icon = mission_high_income
-		required_missions = {  } #None
-		position = 1
-		trigger = { current_income_balance = 100 }
-		effect = {
-			add_country_modifier = {
-				name = "J0M_federal_mint_modifier"
-				duration = -1
-			}
-		}
-	}
-}
-
-J0M_breaking_promises_tree = {
-	slot = 1 #?
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	
-	potential = {
-		tag = J0M
-	}
-	
-	J0M_breaking_promises = { #requires J0M to break an alliance
-		icon = mission_alliances
-		required_missions = { building_alliances } #from the generic tree, requires 2+ allies
-		position = 2
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		trigger = {
-			AND = {
-				num_of_allies = 1			#at least 1 ally
-				NOT = { num_of_allies = 2 }	#no more than 1 ally
-			}
-		}
-		
-		effect = {
-			reverse_add_opinion = {
-				who = G0H
-				modifier = J0M_broke_promise_G0H
-				years = 10
-			}
-			add_country_modifier = {
-				name = "J0M_broke_promises_modifier"
-				duration = 3650
-			}
-		}
-		
-	}
-}
-
-J0M_conquest = {
-	slot = 1 #?
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	
-	potential = {
-		tag = J0M
-	}
-	
-	J0M_mighty_army = {
+	A0W_mighty_army = {
 		icon = mission_assemble_an_army
 		required_missions = { }
-		position = 3
+		position = 1
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
@@ -85,33 +22,32 @@ J0M_conquest = {
 		}
 		
 		effect = {
-			add_prestige = 10
-			
+			add_prestige = 10		
 			#Territorial Claims
 			if = {
 				limit = { NOT = { map_setup = map_setup_random } }
-				tuscany_area = {
+				karaman_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				east_adriatic_coast_area = {
+				morea_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				provence_area = {
+				samtskhe_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				carinthia_area = {
+				aleppo_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -136,31 +72,31 @@ J0M_conquest = {
 	}
 }
 
-J0M_conquest_italy = {
+A0W_conquest_anatolia = {
 	slot = 1 #?
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	
 	potential = {
-		tag = J0M
+		tag = A0W
 		NOT = { map_setup = map_setup_random }
 	}
 
-	J0M_conquest_tuscany = {
+	A0W_conquest_karaman = {
 		icon = mission_unite_home_region
-		required_missions = { J0M_mighty_army }
+		required_missions = { A0W_mighty_army }
 		position = 6
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			area = tuscany_area
+			area = karaman_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			tuscany_area = {
+			karaman_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -172,8 +108,8 @@ J0M_conquest_italy = {
 				name = "sqwad_territorial_gains_modifier"
 				duration = 3650 #10 years
 			}
-			#Claims on All Italy
-			italy_region = {
+			#Claims on All Anatolia
+			anatolia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -183,20 +119,20 @@ J0M_conquest_italy = {
 		}
 	}
 	
-	J0M_unite_italy = {
+	A0W_unite_anatolia = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { J0M_conquest_tuscany }
+		required_missions = { A0W_conquest_karaman }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			region = italy_region
+			region = anatolia_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			italy_region = {
+			anatolia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -207,279 +143,36 @@ J0M_conquest_italy = {
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
 				duration = 18250 #50 years
-			}
-			
-			#Claims on Tunisian coast, but no mission
-			tunisia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			djerba_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			tripolitania_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			kabylia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			}	
 		}
 	}
 }
 
-J0M_conquest_france = {
+A0W_conquest_balkan = {
 	slot = 2 #?
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	
 	potential = {
-		tag = J0M
+		tag = A0W
 		NOT = { map_setup = map_setup_random }
 	}
 
-	J0M_conquest_provence = {
+	A0W_conquest_morea = {
 		icon = mission_unite_home_region
-		required_missions = { J0M_mighty_army }
+		required_missions = { A0W_mighty_army }
 		position = 6
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			area = provence_area
+			area = morea_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			provence_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 10
-			add_country_modifier = {
-				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
-			}
-			#Claims on All France
-			france_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			#Beginning of Iberia Mission Tree
-			catalonia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	J0M_unite_france = {
-		icon = mission_build_up_to_force_limit
-		required_missions = { J0M_conquest_provence }
-		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			region = france_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			france_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 50
-			add_country_modifier = {
-				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
-			}
-			
-			#Claims on Britain and Lowlands, but no mission
-			british_isles_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			low_countries_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-}
-
-J0M_conquest_iberia = {
-	slot = 3 #?
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	
-	potential = {
-		tag = J0M
-		NOT = { map_setup = map_setup_random }
-	}
-
-	J0M_conquer_catalonia = {
-		icon = mission_unite_home_region
-		required_missions = { J0M_conquest_provence }
-		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			area = catalonia_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			catalonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 10
-			add_country_modifier = {
-				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
-			}
-			#Claims on All Iberia
-			iberia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	J0M_unite_iberia = {
-		icon = mission_build_up_to_force_limit
-		required_missions = { J0M_conquer_catalonia }
-		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			region = iberia_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			iberia_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 50
-			add_country_modifier = {
-				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
-			}
-
-			#Claims on Moroccan coast, but no mission
-			barbary_coast_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			algiers_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			northern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			western_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			southern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-}
-
-J0M_conquest_balkan = {
-	slot = 4 #?
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	
-	potential = {
-		tag = J0M
-		NOT = { map_setup = map_setup_random }
-	}
-
-	J0M_conquest_dalmatia = {
-		icon = mission_unite_home_region
-		required_missions = { J0M_mighty_army }
-		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			area = east_adriatic_coast_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			east_adriatic_coast_area = {
+			morea_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -502,9 +195,9 @@ J0M_conquest_balkan = {
 		}
 	}
 	
-	J0M_unite_balkan = {
+	A0W_unite_balkan = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { J0M_conquest_dalmatia }
+		required_missions = { A0W_conquest_morea }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
@@ -528,7 +221,7 @@ J0M_conquest_balkan = {
 				duration = 18250 #50 years
 			}
 			
-			#Claims on Carpathia and Anatolia, but no mission
+			#Claims on Carpathia and Italy, but no missions
 			carpathia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -536,7 +229,7 @@ J0M_conquest_balkan = {
 				}
 				add_permanent_claim = ROOT
 			}
-			anatolia_region = {
+			italy_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -547,31 +240,31 @@ J0M_conquest_balkan = {
 	}
 }
 
-J0M_conquest_south_germany = {
-	slot = 5 #?
+A0W_conquest_caucasia = {
+	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	
 	potential = {
-		tag = J0M
+		tag = A0W
 		NOT = { map_setup = map_setup_random }
 	}
 
-	J0M_conquest_carinthia = {
+	A0W_conquest_samtskhe = {
 		icon = mission_unite_home_region
-		required_missions = { J0M_mighty_army }
+		required_missions = { A0W_mighty_army }
 		position = 6
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			area = carinthia_area
+			area = samtskhe_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			carinthia_area = {
+			samtskhe_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -583,8 +276,8 @@ J0M_conquest_south_germany = {
 				name = "sqwad_territorial_gains_modifier"
 				duration = 3650 #10 years
 			}
-			#Claims on All South Germany
-			south_german_region = {
+			#Claims on All Caucasia
+			caucasia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -594,20 +287,20 @@ J0M_conquest_south_germany = {
 		}
 	}
 	
-	J0M_unite_south_germany = {
+	A0W_unite_caucasia = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { J0M_conquest_carinthia }
+		required_missions = { A0W_conquest_samtskhe }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			region = south_german_region
+			region = caucasia_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			south_german_region = {
+			caucasia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -618,10 +311,109 @@ J0M_conquest_south_germany = {
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
 				duration = 18250 #50 years
-			}	
+			}
+					
+			#Claims on Pontic Steppe but no mission
+			crimea_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+A0W_conquest_mashriq = {
+	slot = 4 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = A0W
+		NOT = { map_setup = map_setup_random }
+	}
+
+	A0W_conquer_aleppo = {
+		icon = mission_unite_home_region
+		required_missions = { A0W_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = aleppo_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			aleppo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All Mashriq
+			mashriq_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	A0W_unite_mashriq = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { A0W_conquer_aleppo }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = mashriq_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			mashriq_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 18250 #50 years
+			}
 			
-			#Claims on North Germany, but no mission
-			north_german_region = {
+			#Claims on Egypt, Persia, and Arabia, but no missions
+			egypt_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			persia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			arabia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
