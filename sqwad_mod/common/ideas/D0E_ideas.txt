@@ -18,12 +18,12 @@
 	dealing_with_dolphins = {
 		trade_efficiency = 0.15
 	}
-	wizardry = {
-		idea_cost = -0.1
-	}
 	sage_advice = {
 		diplomatic_reputation = 1.00
 		diplomatic_upkeep = 1
+	}
+	wizardry = {
+		idea_cost = -0.1
 	}
 	adaptable = {
 		land_attrition = -0.10
@@ -32,7 +32,7 @@
 		global_unrest = -1.00
 	}
 	seize_the_means = {
-		global_missionary_strength = 2
+		religious_unity = 0.25
 	}
 	reasonably_fatal = {
 		artillery_power = 0.20
