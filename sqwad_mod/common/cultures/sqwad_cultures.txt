@@ -1,10 +1,6 @@
 sqwadite_culture_group = {
 	graphical_culture = westerngfx
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> master
 	A0W_culture = {
 		primary = A0W
 		male_names = {
