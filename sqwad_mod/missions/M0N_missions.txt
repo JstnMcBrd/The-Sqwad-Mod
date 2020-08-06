@@ -58,13 +58,15 @@ M0N_conquest = {
 			if = { #if map is set on random, add claims on bordering areas
 				limit = { map_setup = map_setup_random }
 				
-				every_neighbor_province = {
-					area = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
+				every_owned_province = {
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+							}
+							add_permanent_claim = ROOT
 						}
-						add_permanent_claim = ROOT
 					}
 				}
 			}		
@@ -150,7 +152,7 @@ M0N_conquest_south_germany = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 		}
 	}
@@ -226,7 +228,7 @@ M0N_conquest_italy = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 					
 			#Claims on Tunisia
@@ -311,7 +313,7 @@ M0N_conquest_carpathia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 
 			#Claims on Balkans and Poland but no missions
@@ -403,7 +405,7 @@ M0N_conquest_north_germany = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 			
 			#Claims on Scandinavia and Low Countries but no missions
@@ -495,7 +497,7 @@ M0N_conquest_france = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 			
 			#Claims on Britain and Iberia but no missions
