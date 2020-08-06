@@ -1,8 +1,8 @@
-D0E_ideas = {
+ D0E_ideas = {
 	#traditions
 	start = {
-		global_manpower_modifier = 0.10
-		num_accepted_cultures = 1
+		mercenary_manpower = 0.5
+		num_accepted_cultures = 2
 	}
 	
 	#ambitions
@@ -18,12 +18,12 @@ D0E_ideas = {
 	dealing_with_dolphins = {
 		trade_efficiency = 0.15
 	}
-	cutthroat_policies = {
-		advisor_cost = -0.10
-		yearly_absolutism = 0.20
-	}
 	sage_advice = {
 		diplomatic_reputation = 1.00
+		diplomatic_upkeep = 1
+	}
+	wizardry = {
+		idea_cost = -0.1
 	}
 	adaptable = {
 		land_attrition = -0.10
@@ -31,8 +31,8 @@ D0E_ideas = {
 	away_to_dinner = {
 		global_unrest = -1.00
 	}
-	predicting_trends = {
-		prestige = 1.00
+	seize_the_means = {
+		religious_unity = 0.25
 	}
 	reasonably_fatal = {
 		artillery_power = 0.20

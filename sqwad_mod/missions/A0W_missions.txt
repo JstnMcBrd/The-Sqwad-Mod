@@ -58,16 +58,18 @@ A0W_conquest = {
 			if = { #if map is set on random, add claims on bordering areas
 				limit = { map_setup = map_setup_random }
 				
-				every_neighbor_province = {
-					area = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
+				every_owned_province = {
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+							}
+							add_permanent_claim = ROOT
 						}
-						add_permanent_claim = ROOT
 					}
-				}
-			}		
+				}		
+			}
 		}
 	}
 }
@@ -142,7 +144,7 @@ A0W_conquest_anatolia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}	
 		}
 	}
@@ -218,7 +220,7 @@ A0W_conquest_balkan = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 			
 			#Claims on Carpathia and Italy, but no missions
@@ -310,7 +312,7 @@ A0W_conquest_caucasia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 					
 			#Claims on Pontic Steppe but no mission
@@ -395,7 +397,7 @@ A0W_conquest_mashriq = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 18250 #50 years
+				duration = 9125 #25 years
 			}
 			
 			#Claims on Egypt, Persia, and Arabia, but no missions
