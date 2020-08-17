@@ -1,0 +1,234 @@
+#Put these in localisation
+000_mighty_army_title:
+000_mighty_army_desc:
+000_conquest_[area in home region]_title:
+000_conquest_[area in home region]_desc:
+000_unite_[home_region]_title:
+000_unite_[home_region]_desc:
+000_conquest_[nearby_area]_title:
+000_conquest_[nearby_area]_desc: 
+000_unite_[nearby_region]_title:
+000_unite_[nearby_region]_desc:
+
+000_conquest = {
+	slot = 1 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = 000
+	}
+	
+	000_mighty_army = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		position = 1
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		trigger = {
+			army_size_percentage = 0.8
+			manpower_percentage = 0.5
+			num_of_generals = 1
+		}
+		
+		effect = {
+			add_prestige = 10		
+			#Territorial Claims
+			if = {
+				limit = { NOT = { map_setup = map_setup_random } }
+				[area_in_home_region]_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				[nearby_area]_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			if = { #if map is set on random, add claims on bordering areas
+				limit = { map_setup = map_setup_random }
+				
+				every_owned_province = {
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+			}		
+		}
+	}
+}
+
+000_conquest_[home region] = {
+	slot = 1 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = 000
+		NOT = { map_setup = map_setup_random }
+	}
+
+	000_conquest_[area in home region] = {
+		icon = mission_unite_home_region
+		required_missions = { 000_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = [area in home region]_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			[area in home region]_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All [Home Region]
+			[home_region]_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	000_unite_[home_region] = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { 000_conquest_[area in home region] }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = [home_region]_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			[home_region]_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+		}
+	}
+}
+
+000_conquest_[nearby_region] = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = 000
+		NOT = { map_setup = map_setup_random }
+	}
+
+	000_conquest_[nearby_area] = {
+		icon = mission_unite_home_region
+		required_missions = { 000_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = [nearby_area]_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			[nearby_area]_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All [Nearby Region]
+			[nearby_region]_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	000_unite_[nearby_region] = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { 000_conquest_[nearby_area] }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = [neraby_region]_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			[nearby_region]_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+					
+			#Claims on [Next Region]
+			[next_region]_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

@@ -1,5 +1,6 @@
 ===PLANS FOR NEXT UPDATE===
 - bug fixes
+- missions for all nations
 - balances
 
 ===FUTURE PLANS===
@@ -11,7 +12,9 @@
 - Custom Subject Type and Server Modeling
 - Sqwad Mission Trees
 
-===KNOW ISSUES===
+- Perhaps more Sqwad nations?
+
+===KNOWN ISSUES===
 - Bugs
 	- Sqwad Nations can still form other tags (end game tags didn't work)
 		^ I've attempted another fix of this
