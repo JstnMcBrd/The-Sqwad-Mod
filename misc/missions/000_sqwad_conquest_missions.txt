@@ -1,14 +1,14 @@
 #Put these in localisation
-000_mighty_army_title:
-000_mighty_army_desc:
-000_conquest_[area in home region]_title:
-000_conquest_[area in home region]_desc:
-000_unite_[home_region]_title:
-000_unite_[home_region]_desc:
-000_conquest_[nearby_area]_title:
-000_conquest_[nearby_area]_desc: 
-000_unite_[nearby_region]_title:
-000_unite_[nearby_region]_desc:
+000_mighty_army_title: "Build a Mighty Army"
+000_mighty_army_desc: "The [Root.GetAdjective] people are destined to expand, but we cannot do so without an army."
+000_conquest_[area in home region]_title: "Conquer "
+000_conquest_[area in home region]_desc: ""
+000_unite_[home_region]_title: "Unite "
+000_unite_[home_region]_desc: ""
+000_conquest_[nearby_area]_title: "Conquer "
+000_conquest_[nearby_area]_desc:  ""
+000_unite_[nearby_region]_title: "Unite "
+000_unite_[nearby_region]_desc: ""
 
 000_conquest = {
 	slot = 1 #?
