@@ -1,10 +1,11 @@
 Put all changes since the last Steam Workshop upload here
 
-[h1]Update 1.4.1[/h1]
+[h1]Update 1.5[/h1]
 [list]
 [*]increased Posopotamia ideas from 5% siege ability to 10%
 [*]corrected Sqwad ideas saying "[adjective] Tradition" instead of "[adjective] Traditions"
 [*]removed MacThuggo cores on Sardinia and added it to missions instead
 [*]Gave Lesbos to Frick
-{*]Basic conquest missions for Frick, Wumpland, Xymiden, Armorica, Rossopotamia, Canananada, MacThuggo, and Tersia
+{*]Basic conquest missions for Frick, Wumpland, Xymiden, Armorica, Rossopotamia, Canananada, MacThuggo, Tersia, and Posopotamia
+//[*]Redid borders for Sqwad nations to reduce total development of each country
 [/list]
