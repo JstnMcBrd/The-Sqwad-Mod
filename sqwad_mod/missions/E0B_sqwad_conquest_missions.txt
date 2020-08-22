@@ -1,0 +1,339 @@
+E0B_conquest = {
+	slot = 1 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = E0B
+	}
+	
+	E0B_mighty_army = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		position = 1
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		trigger = {
+			army_size_percentage = 0.8
+			manpower_percentage = 0.5
+			num_of_generals = 1
+		}
+		
+		effect = {
+			add_prestige = 10		
+			#Territorial Claims
+			if = {
+				limit = { NOT = { map_setup = map_setup_random } }
+				picardy_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				home_counties_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			if = { #if map is set on random, add claims on bordering areas
+				limit = { map_setup = map_setup_random }
+				
+				every_owned_province = {
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+			}		
+		}
+	}
+}
+
+E0B_conquest_france = {
+	slot = 1 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = E0B
+		NOT = { map_setup = map_setup_random }
+	}
+
+	E0B_conquest_picardy = {
+		icon = mission_unite_home_region
+		required_missions = { E0B_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = picardy_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			picardy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All France
+			france_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#Start Low Countries tree
+			flanders_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	E0B_unite_france = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { E0B_conquest_picardy }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = france_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			france_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+			
+			#Claims on Iberia
+			iberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#Claims on Italy
+			italy_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+E0B_conquest_british_isles = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = E0B
+		NOT = { map_setup = map_setup_random }
+	}
+
+	E0B_conquest_home_counties = {
+		icon = mission_unite_home_region
+		required_missions = { E0B_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = home_counties_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			home_counties_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All British Isles
+			british_isles_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	E0B_unite_british_isles = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { E0B_conquest_home_counties }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = british_isles_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			british_isles_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+					
+			#Claims on Scandinavia
+			scandinavia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+E0B_conquest_low_countries = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = E0B
+		NOT = { map_setup = map_setup_random }
+	}
+
+	E0B_conquest_flanders = {
+		icon = mission_unite_home_region
+		required_missions = { E0B_conquest_picardy }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = flanders_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			flanders_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All Low Countries
+			low_countries_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	E0B_unite_low_countries = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { E0B_conquest_flanders }
+		position = 8
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = low_countries_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			low_countries_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+					
+			#Claims on Germany
+			north_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
