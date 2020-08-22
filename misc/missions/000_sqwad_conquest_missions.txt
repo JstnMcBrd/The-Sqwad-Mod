@@ -11,7 +11,7 @@
 000_unite_[nearby_region]_desc: ""
 
 000_conquest = {
-	slot = 1 #?
+	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -73,7 +73,7 @@
 }
 
 000_conquest_[home region] = {
-	slot = 1 #?
+	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
