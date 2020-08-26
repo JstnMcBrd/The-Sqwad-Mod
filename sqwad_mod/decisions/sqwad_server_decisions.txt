@@ -1,0 +1,87 @@
+country_decisions = {
+	create_new_server = {
+		major = yes
+		potential = {
+			is_sqwad_nation_trigger = yes
+			is_subject_of_type = server_member
+		}
+		allow = {
+			ROOT = { is_at_war = no }
+			overlord = { is_at_war = no }
+			
+			overlord = { ROOT = { #More development than overlord
+				total_development = PREV
+			} }
+			overlord = { ROOT = { #More prestige than overlord
+				prestige = PREV
+			} }
+			
+			custom_trigger_tooltip = {
+				tooltip = SQWAD_NOT_RECENTLY_FORCED_TO_BE_SERVER_MEMBER
+				was_recently_forced_to_become_server_member_trigger = no
+			}
+		}
+		effect = {
+		
+			overlord = {
+				save_event_target_as = old_overlord
+				set_country_flag = old_overlord_flag
+			}
+			
+			grant_independence = yes
+			
+			event_target:old_overlord = {
+				add_opinion = {
+					who = ROOT
+					modifier = tributary_state_broke_free 
+				}
+				
+				add_casus_belli = {
+					target = ROOT
+					type = cb_made_new_server
+					months = 120
+				}
+			}
+
+			every_country = { #gives option to all sqwad nations (besides self, old overlord, and anyone who was recently forced to become a server member) of whether to join
+				limit = {
+					is_sqwad_nation_trigger = yes
+					NOT = { tag = ROOT }
+					NOT = { has_country_flag = old_overlord_flag }
+					was_recently_forced_to_become_server_member_trigger = no
+				}
+				country_event = { id = sqwad_server_events.3 }
+			}
+			
+			event_target:old_overlord = {
+				clr_country_flag = old_overlord_flag
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = { #Won't do it if the server member has positive opinion of server admin
+				factor = 0
+				opinion_of_overlord_higher_than_0_trigger = yes
+			}
+			modifier = { #Won't do it if it is the only subject country with negative opinion of overlord and positive opinion of self
+				factor = 0
+				NOT = {
+					overlord = {
+						any_subject_country = {
+							is_subject_of_type = server_member
+							NOT = { tag = ROOT }
+							has_opinion = {
+								who = ROOT
+								value = 0
+							}
+							opinion_of_overlord_higher_than_0_trigger = no
+						}
+					}
+				}
+			}
+		}
+		
+		ai_importance = 1000 #Extremely high priority
+	}
+}

@@ -3,7 +3,7 @@ was_never_end_game_tag_trigger = {	#Country Scope
 		NOT = { end_game_tags_blocked = yes }
 		AND = {
 		
-			NOT = { is_sqwad_nation = yes }
+			NOT = { is_sqwad_nation_trigger = yes }
 			
 			NOT = { was_tag = MUG }
 			NOT = { was_tag = TUR }
@@ -57,16 +57,50 @@ was_never_end_game_tag_trigger = {	#Country Scope
 	}
 }
 
-is_sqwad_nation = {
-				OR = {
-					was_tag = A0W tag = A0W
-					was_tag = B0H tag = B0H
-					was_tag = D0E tag = D0E
-					was_tag = E0B tag = E0B
-					was_tag = G0H tag = G0H
-					was_tag = J0B tag = J0B
-					was_tag = J0M tag = J0M
-					was_tag = M0N tag = M0N
-					was_tag = M0P tag = M0P
-				}
+is_sqwad_nation_trigger = { #Country Scope
+	OR = {
+		was_tag = A0W
+		tag = A0W
+		was_tag = B0H
+		tag = B0H
+		was_tag = D0E
+		tag = D0E
+		was_tag = E0B
+		tag = E0B
+		was_tag = G0H
+		tag = G0H
+		was_tag = J0B
+		tag = J0B
+		was_tag = J0M
+		tag = J0M
+		was_tag = M0N
+		tag = M0N
+		was_tag = M0P
+		tag = M0P
+	}
+}
+
+was_recently_forced_to_become_server_member_trigger = {
+	overlord = {
+		reverse_has_opinion_modifier = {
+			who = PREV
+			modifier = they_forced_tributary
+		}
+	}
+}
+
+is_a_server_admin_trigger = {
+	num_of_subjects = 1
+	any_subject_country = {
+		is_subject_of_type = server_member
+	}
+}
+
+opinion_of_overlord_higher_than_0_trigger = {
+	overlord = {
+		reverse_has_opinion = {
+			who = PREV
+			value = 0
+		}
+	}
 }

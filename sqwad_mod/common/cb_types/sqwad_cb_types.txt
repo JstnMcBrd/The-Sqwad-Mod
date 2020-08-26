@@ -1,0 +1,25 @@
+cb_made_new_server = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 120
+	
+	prerequisites = {
+		is_sqwad_nation_trigger = yes
+	}
+
+	war_goal = take_capital_new_server
+}
+
+cb_left_server = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 120
+	
+	prerequisites = {
+		is_sqwad_nation_trigger = yes
+	}
+
+	war_goal = take_capital_disloyal_server_member
+}

@@ -1,0 +1,48 @@
+dependency = {
+	subject_type = "server_member"
+	first = M0P
+	second = A0W
+	start_date = 1444.11.11
+}
+dependency = {
+	subject_type = "server_member"
+	first = M0P
+	second = B0H
+	start_date = 1444.11.11
+}
+dependency = {
+	subject_type = "server_member"
+	first = M0P
+	second = D0E
+	start_date = 1444.11.11
+}
+dependency = {
+	subject_type = "server_member"
+	first = M0P
+	second = E0B
+	start_date = 1444.11.11
+}
+dependency = {
+	subject_type = "server_member"
+	first = M0P
+	second = G0H
+	start_date = 1444.11.11
+}
+dependency = {
+	subject_type = "server_member"
+	first = M0P
+	second = J0B
+	start_date = 1444.11.11
+}
+dependency = {
+	subject_type = "server_member"
+	first = M0P
+	second = J0M
+	start_date = 1444.11.11
+}
+dependency = {
+	subject_type = "server_member"
+	first = M0P
+	second = M0N
+	start_date = 1444.11.11
+}

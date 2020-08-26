@@ -1,0 +1,67 @@
+﻿l_english:
+ #Subject Type
+ server_member_title: "Server Member"
+ server_member_title_plural: "Server Members"
+ server_member_overlord_title: "Server Admin"
+ server_member_long_desc: ""
+ server_member_is_our: "§Y$NAME$§! is a member of our server."
+ server_member_is_our_overlord: "§Y$NAME$§! is our server admin."
+ 
+ #Peace Treaty
+ force_server_member_desc: "[From.GetName] becomes a Server Member of [Root.GetName]."
+ CB_ALLOWED_force_server_member: "Enforce Server Membership"
+ PEACE_force_server_member: "Become a Server Member of $TAKERS$"
+ 
+ #Diplomatic Action
+ DIPLOMACYACTION_CATEGORY_sqwad: "Sqwad actions"
+ join_server: "Join Server"
+ join_server_title: "Request to Join Server"
+ join_server_desc: "This will request permission from [From.GetName] to join their server. They will provide us protection in exchange for our support.[Root.LeaveOldServer]"
+ string_LeaveOldServer: "\nIf they accept, we will leave our current server. This will make our Server Admin unhappy and give them a Casus Belli against us."
+ string_NotLeaveOldServer: ""
+ join_server_tooltip: "Request to join the [From.GetName] server."
+ join_server_dialog: "[This.GetName] requests to join the [From.GetName] server."
+ join_server_alert_tooltip: "A request to join our server"
+ 
+ kick_from_server: "Kick from Server"
+ kick_from_server_title: "Kick from Server"
+ kick_from_server_desc: "This will kick [From.GetName] from our server, publicly disgracing them and hurting our relations."
+ kick_from_server_tooltip: "Kick [From.GetName] from the [Root.GetName] server."
+ 
+ #Tooltips
+ SQWAD_NOT_RECENTLY_FORCED_TO_BE_SERVER_MEMBER: "Was not recently forced to become a Server Member"
+ SQWAD_IS_NOT_SUBJECT_OF_NON_SERVER_MEMBER_TYPE: "Is not a non-Server-Member subject"
+ SQWAD_IS_A_SERVER_ADMIN: "Is a Server Admin"
+ 
+ OPINION_ABOUT: "Their opinion of us"
+ 
+ #Events
+ sqwad_server_events_server_membership_approved_title: "Server Membership Approved"
+ sqwad_server_events_server_membership_approved_desc: "[server_admin.GetName] has approved our request to join their server."
+ sqwad_server_events_server_membership_approved_option: "Great!"
+ sqwad_server_events_server_membership_rejected_title: "Server Membership Rejected"
+ sqwad_server_events_server_membership_rejected_desc: "[server_admin.GetName] has rejected our request to join their server."
+ sqwad_server_events_server_membership_rejected_option: "How disappointing."
+ sqwad_server_events_join_new_server_title: "The New [From.GetName] Server"
+ sqwad_server_events_join_new_server_desc: "[From.GetName] has created a new server and invites all Sqwad members to join it. Should we leave our current server and join the new one, or just stick with our current one?"
+ sqwad_server_events_join_new_server_yes: "Join the new server!"
+ sqwad_server_events_join_new_server_no: "Let's stay where we are."
+ sqwad_server_events_kicked_from_server_title: "Kicked From the [From.GetName] Server"
+ sqwad_server_events_kicked_from_server_desc: "[From.GetName] has kicked us from their server! We are subjected to public disgrace."
+ sqwad_server_events_kicked_from_server_option: "How embarassing."
+ 
+ #Decisions
+ create_new_server_title: "Create a New Server"
+ create_new_server_desc: "Leave the $OVERLORD$ server and create one of our own. This will give our fellow Sqwad nations a chance to join us, and greatly upset $OVERLORD$."
+ 
+ #CBs and War Goals
+ cb_made_new_server: "Made a New Server"
+ cb_made_new_server_desc: "They had the audacity to leave our server and start their own. We will not stand for this!"
+ cb_left_server: "Left Our Server"
+ cb_left_server_desc: "They betrayed us by leaving our server and joining another. We will not stand for this!"
+ take_capital_new_server: "Take capital $CAPITAL$"
+ take_capital_new_server_desc: "War goal is to take the capital province of $COUNTRY$."
+ MADE_NEW_SERVER_WAR_NAME: "$ORDER$$FIRST$ Conquest of the New $SECOND$ Server"
+ take_capital_disloyal_server_member: "Take capital $CAPITAL$"
+ take_capital_disloyal_server_member_desc: "War goal is to take the capital province of $COUNTRY$."
+ LEFT_SERVER_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Server Membership War"

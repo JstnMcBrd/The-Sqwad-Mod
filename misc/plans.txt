@@ -2,6 +2,7 @@
 - bug fixes
 - missions for all nations
 - balances
+- Sqwad Servers!
 
 ===FUTURE PLANS===
 - Custom Music
@@ -9,7 +10,6 @@
 - Religion
 - Sqwad Decisions
 - Sqwad Events
-- Custom Subject Type and Server Modeling
 - Sqwad Mission Trees
 
 - Perhaps more Sqwad nations?
@@ -17,13 +17,13 @@
 ===KNOWN ISSUES===
 - Bugs
 	- Sqwad Nations can still form other tags (end game tags didn't work)
-		^ I've attempted another fix of this
-- Balancing
-	- Frick gets eaten consistantly
-	- Wumpland strong
-	- Armorica's traditions are bad?
-	- Rossopotamia gets eaten by Armorica consistantly
-	- Canananada has consistant long term stability issues
+	- new Sqwad category for diplomatic actions won't get localized correctly
+//- Balancing		#all of this is no longer applicable with Sqwad Server update
+//	- Frick gets eaten consistantly
+//	- Wumpland strong
+//	- Armorica's traditions are bad?
+//	- Rossopotamia gets eaten by Armorica consistantly
+//	- Canananada has consistant long term stability issues
 
 ===MUSIC===
 - perhaps let each person add a song?
@@ -51,21 +51,22 @@
 - change gov't to Robosocialism
 		- requires certain tech level
 		- problem: don't know if this would work with new gov't update?
-- Create a New Server
+//- Create a New Server
 	- this decision would have to be created after the Desmond nation is added and all Sqwad nations are added as custom tributaries
-	- available when development and prestige is higher than current server admin
-	- removes custom tributary stasis and gives CB to old server admin
-	- sends event to all other Sqwad nations to decide whether to
-		- join the new server and stay in their old one
-			- get added as a custom tributary for the new server admin as stays as a custom tributary for the other
-			- small + relations for both server admins
-		- join the new server and leave their old one
-			- get added as a custom tributary for the new server admin and removed as a custom tributary for the old server admin
-			- big + relations for new server admin
-			- big - relations for old server admin and gives a CB
-		- don't join the new server
-			- big - relations for new server admin
-			- big + relations for old server admin
+	//- available when development and prestige is higher than current server admin
+	//- removes custom tributary statis
+	//- gives CB to old server admin
+	//- sends event to all other Sqwad nations to decide whether to
+		#- join the new server and stay in their old one	#impossible
+		#	- get added as a custom tributary for the new server admin as stays as a custom tributary for the other
+		#	- small + relations for both server admins
+	//	- join the new server and leave their old one
+	//		- get added as a custom tributary for the new server admin and removed as a custom tributary for the old server admin
+	//		- big + relations for new server admin
+	//		- big - relations for old server admin and gives a CB
+	//	- don't join the new server
+	//		- big - relations for new server admin
+	//		- big + relations for old server admin
 	- Posopotamia should be given some kind of extra incentive to use this decision
 		
 ===SQWAD EVENTS===
@@ -87,14 +88,14 @@
 	- perhaps gain some sort of favor from E0B/J0M/desmond?
 
 ===CUSTOM SUBJECT TYPE===
-- create a new subject type called "server member" that copies from tributary
-- overlord called "server admin"
-- "server members" can have multiple overlords
-- forceable by war
-- gives tribute and prestige to overlord
+//- create a new subject type called "server member" that copies from tributary
+//- overlord called "server admin"
+#- "server members" can have multiple overlords	#impossible
+//- forceable by war
+//- gives tribute and #prestige# to overlord	#prestige impossible
 - have all Sqwad nations start as "server member"s of Desmond, if he exists
-- make is so only Sqwad nations can participate in this subject type (is_sqwad_nation = yes)
-- add diplomatic actions to request to "join server"
+//- make is so only Sqwad nations can participate in this subject type (is_sqwad_nation_trigger = yes)
+//- add diplomatic actions to request to "join server"
 
 ===SQWAD MISSION TREES===
 Idea dump:

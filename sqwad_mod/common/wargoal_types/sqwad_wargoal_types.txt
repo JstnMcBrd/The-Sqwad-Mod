@@ -1,0 +1,27 @@
+take_capital_new_server = {
+	type = take_capital
+	
+	badboy_factor = 1
+	prestige_factor = 2
+	peace_cost_factor = 0.5
+	
+	peace_options = {
+		force_server_member
+	}
+	
+	war_name = MADE_NEW_SERVER_WAR_NAME
+}
+
+take_capital_disloyal_server_member = {
+	type = take_capital
+	
+	badboy_factor = 1
+	prestige_factor = 2
+	peace_cost_factor = 0.5
+	
+	peace_options = {
+		force_server_member
+	}
+	
+	war_name = LEFT_SERVER_WAR_NAME
+}

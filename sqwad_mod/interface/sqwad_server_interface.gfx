@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_diplomacy_server_admin"
+		texturefile = "gfx//interface//icon_diplomacy_server_admin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_diplomacy_server_member"
+		texturefile = "gfx//interface//icon_diplomacy_server_member.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_subject_server_member"
+		texturefile = "gfx/interface/subject_server_member_icon.dds"
+	}
+}

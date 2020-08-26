@@ -8,4 +8,17 @@ Put all changes since the last Steam Workshop upload here
 [*]Gave Lesbos to Frick
 {*]Basic conquest missions for Frick, Wumpland, Xymiden, Armorica, Rossopotamia, Canananada, MacThuggo, Tersia, and Posopotamia
 //[*]Redid borders for Sqwad nations to reduce total development of each country
+[*]Added JustCorp logo to PDX Logo in loading screen
+[*]Added "The Sqwad Mod" to EU4 logo on main menu
+[*]New system to model Discord servers
+	[list]
+		[*]Made a new subject type of "Server Member"
+		[*]Made custom icons for subject and overlord
+		[*]Made all Sqwad nations start as server members of Posopotamia (temporarily until Desmond's nation is added)
+		[*]Made diplomatic action to join another Sqwad nation's server (and leave current one, if applicable)
+		[*]Made diplomatic action to kick a nation out of your server, disgracing them
+		[*]Made server membership enforcable by peace deals (only for Sqwad nations)
+		[*]Made decision to create new server, if development and prestige are higher than Server Admin
+		[*]Made event chain that allows all Server Members to choose whether to join a new server when it is created
+	[/list]
 [/list]

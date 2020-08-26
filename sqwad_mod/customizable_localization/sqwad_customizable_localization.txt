@@ -1,0 +1,17 @@
+defined_text = {
+    name = LeaveOldServer
+	random = no
+
+    text = {
+        localisation_key = string_LeaveOldServer
+        trigger = {
+            is_subject_of_type = server_member
+        }
+    }
+    text = {
+        localisation_key = string_NotLeaveOldServer
+        trigger = {
+            always = yes
+        }
+    }
+}
