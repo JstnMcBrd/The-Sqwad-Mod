@@ -46,8 +46,8 @@
 	- perhaps add Tersia- and MacThuggo-only decision to convert all to Protestant?
 	
 ===SQWAD DECISIONS==
-- MacThuggo
-	- move capital to Rome (I like Rome)
+//- MacThuggo
+//	- move capital to Rome (I like Rome)
 - change gov't to Robosocialism
 		- requires certain tech level
 		- problem: don't know if this would work with new gov't update?

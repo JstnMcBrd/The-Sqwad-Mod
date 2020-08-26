@@ -10,6 +10,8 @@ Put all changes since the last Steam Workshop upload here
 //[*]Redid borders for Sqwad nations to reduce total development of each country
 [*]Added JustCorp logo to PDX Logo in loading screen
 [*]Added "The Sqwad Mod" to EU4 logo on main menu
+[*]Updated Posopotamia's flag
+[*]Added decision for MacThuggo to move their capital to Rome
 [*]New system to model Discord servers
 	[list]
 		[*]Made a new subject type of "Server Member"

@@ -122,11 +122,11 @@ server_member = {
 	
 	max_government_rank = 0								# 0 means no limit
 	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
-	#trust_on_start = 35									# Overlord and subject will each get this much extra trust with each other at game start
+	#trust_on_start = 35								# Overlord and subject will each get this much extra trust with each other at game start
 
 	#base_liberty_desire = -5.0
-	liberty_desire_negative_prestige = 50.0
-	liberty_desire_development_ratio = 50.0
+	liberty_desire_negative_prestige = 1.0
+	liberty_desire_development_ratio = 0.05
 	liberty_desire_same_dynasty = 0.0
 	liberty_desire_revolution = 0.0						# Liberty desire at 100% revolution spread in country
 	pays_overlord = 0.4									# 1.0 represents the amount payed by vassals
