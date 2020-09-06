@@ -1,13 +1,11 @@
 #SQWAD MOD SECTION BEGIN
 1444.11.11 = {
 	add_core = B0H
-	add_core = D0E
 	owner = B0H
 	controller = B0H
 }
 1444.11.12 = {
 	remove_core = B0H
-	remove_core = D0E
 	owner = HSA
 	controller = HSA
 }

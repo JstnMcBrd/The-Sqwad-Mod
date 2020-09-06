@@ -13,7 +13,7 @@ sqwad_territorial_gains_modifier = { #10 years
 	land_morale = 0.1
 	naval_morale = 0.1
 }
-sqwad_united_region_modifier = { #50 years
+sqwad_united_region_modifier = { #25 years
 	prestige = 1.5
 	land_morale = 0.2
 	naval_morale = 0.2
