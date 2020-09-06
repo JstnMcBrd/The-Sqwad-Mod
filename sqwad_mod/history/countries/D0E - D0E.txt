@@ -1,6 +1,6 @@
 #government = feudal_monarchy
 government = monarchy
-government_rank = 2
+government_rank = 3
 technology_group = western
 unit_type = western
 primary_culture = D0E_culture

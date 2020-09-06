@@ -1,0 +1,11 @@
+# Order here is the priority for taking them, if trigger is true.
+
+A0W = { always = yes }
+B0H = { always = yes }
+D0E = { always = yes }
+E0B = { always = yes }
+G0H = { always = yes }
+J0B = { always = yes }
+J0M = { always = yes }
+M0N = { always = yes }
+M0P = { always = yes }

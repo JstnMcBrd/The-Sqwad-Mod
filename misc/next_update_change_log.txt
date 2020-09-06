@@ -2,16 +2,10 @@ Put all changes since the last Steam Workshop upload here
 
 [h1]Update 1.5[/h1]
 [list]
-[*]increased Posopotamia ideas from 5% siege ability to 10%
-[*]corrected Sqwad ideas saying "[adjective] Tradition" instead of "[adjective] Traditions"
-[*]removed MacThuggo cores on Sardinia and added it to missions instead
-[*]Gave Lesbos to Frick
-{*]Basic conquest missions for Frick, Wumpland, Xymiden, Armorica, Rossopotamia, Canananada, MacThuggo, Tersia, and Posopotamia
-//[*]Redid borders for Sqwad nations to reduce total development of each country
-[*]Added JustCorp logo to PDX Logo in loading screen
-[*]Added "The Sqwad Mod" to EU4 logo on main menu
-[*]Updated Posopotamia's flag
-[*]Added decision for MacThuggo to move their capital to Rome
+//[*]Gave Lesbos to Frick
+//[*]removed MacThuggo cores on Sardinia and added it to missions instead
+[*]Redid borders for Sqwad nations to reduce total development of each country
+{*]Created basic conquest missions for all Sqwad nations
 [*]New system to model Discord servers
 	[list]
 		[*]Made a new subject type of "Server Member"
@@ -23,4 +17,10 @@ Put all changes since the last Steam Workshop upload here
 		[*]Made decision to create new server, if development and prestige are higher than Server Admin
 		[*]Made event chain that allows all Server Members to choose whether to join a new server when it is created
 	[/list]
+[*]Added JustCorp logo to PDX Logo in loading screen
+[*]Added "The Sqwad Mod" to EU4 logo on main menu
+[*]Added decision for MacThuggo to move their capital to Rome
+[*]corrected Sqwad ideas saying "[adjective] Tradition" instead of "[adjective] Traditions"
+[*]Updated Posopotamia's flag
+[*]increased Posopotamia ideas from 5% siege ability to 10%
 [/list]

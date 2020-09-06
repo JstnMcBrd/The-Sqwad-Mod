@@ -7,6 +7,10 @@
  server_member_is_our: "§Y$NAME$§! is a member of our server."
  server_member_is_our_overlord: "§Y$NAME$§! is our server admin."
  
+ #Opinion Modifiers
+ is_server_member: "Server Member"
+ is_server_admin: "Server Admin"
+ 
  #Peace Treaty
  force_server_member_desc: "[From.GetName] becomes a Server Member of [Root.GetName]."
  CB_ALLOWED_force_server_member: "Enforce Server Membership"

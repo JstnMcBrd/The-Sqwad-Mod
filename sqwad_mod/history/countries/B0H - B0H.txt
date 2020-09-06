@@ -1,6 +1,6 @@
 #government = feudal_monarchy
 government = monarchy
-government_rank = 2
+government_rank = 3
 primary_culture = B0H_culture
 add_accepted_culture = norwegian
 add_accepted_culture = danish

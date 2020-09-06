@@ -1,3 +1,10 @@
 J0M_broke_promise_G0H = {
 	opinion = -100
 }
+
+is_server_member = {
+	opinion = 15
+}
+is_server_admin = {
+	opinion = 15
+}

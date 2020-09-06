@@ -18,6 +18,10 @@
 - Bugs
 	- Sqwad Nations can still form other tags (end game tags didn't work)
 	- new Sqwad category for diplomatic actions won't get localized correctly
+- Balancing
+	- Server Members are very hesitant to go to war, very lazy
+	- A lot of countries never pass the requirements for the "Assemble an Army" mission
+	
 //- Balancing		#all of this is no longer applicable with Sqwad Server update
 //	- Frick gets eaten consistantly
 //	- Wumpland strong

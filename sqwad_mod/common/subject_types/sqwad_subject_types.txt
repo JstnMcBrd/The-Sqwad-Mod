@@ -25,7 +25,7 @@ server_member = {
 	overlord_can_attack = yes
 	takes_diplo_slot = no
 	base_liberty_desire = -5
-	relative_power_class = 1
+	relative_power_class = 0
 	can_send_tribute = yes
 	can_have_subjects_of_other_types = yes
 	uses_military_focus = no
@@ -41,8 +41,8 @@ server_member = {
 	liberty_desire_development_ratio = 0.175
 	trust_on_start = 35
 	
-	overlord_opinion_modifier = is_tributary
-	subject_opinion_modifier = is_tributary
+	overlord_opinion_modifier = is_server_admin
+	subject_opinion_modifier = is_server_member
 	
 	restoration_cb = cb_left_server
 	
@@ -134,7 +134,7 @@ server_member = {
 	forcelimit_to_overlord = 0.2						# Percent of subject FL to use as base for modifiers
 	#military_focus = 1.0								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
 
-	relative_power_class = 0 							# See description above
+	#relative_power_class = 0 							# See description above
 	diplomacy_view_class = 1							# See description above
 
 	#can_fight = {
