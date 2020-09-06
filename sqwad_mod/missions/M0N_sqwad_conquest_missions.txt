@@ -26,7 +26,14 @@ M0N_conquest = {
 			#Territorial Claims
 			if = {
 				limit = { NOT = { map_setup = map_setup_random } }
-				carinthia_area = {
+				lower_swabia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				venetia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -44,13 +51,6 @@ M0N_conquest = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				lorraine_area = {
-					limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -85,7 +85,7 @@ M0N_conquest_south_germany = {
 		NOT = { map_setup = map_setup_random }
 	}
 
-	M0N_conquest_carinthia = {
+	M0N_conquest_lower_swabia = {
 		icon = mission_unite_home_region
 		required_missions = { M0N_mighty_army }
 		position = 6
@@ -93,12 +93,12 @@ M0N_conquest_south_germany = {
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			area = carinthia_area
+			area = lower_swabia_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			carinthia_area = {
+			lower_swabia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -118,8 +118,8 @@ M0N_conquest_south_germany = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#Claims on Venetia to start Italian conquest tree
-			venetia_area = {
+			#Start of France tree
+			alsace_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -131,7 +131,7 @@ M0N_conquest_south_germany = {
 	
 	M0N_unite_south_germany = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { M0N_conquest_carinthia }
+		required_missions = { M0N_conquest_lower_swabia }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
@@ -158,8 +158,135 @@ M0N_conquest_south_germany = {
 	}
 }
 
-M0N_conquest_italy = {
+M0N_conquest_france = {
 	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = M0N
+		NOT = { map_setup = map_setup_random }
+	}
+
+	M0N_conquest_alsace = {
+		icon = mission_unite_home_region
+		required_missions = { M0N_conquest_lower_swabia }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = alsace_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			alsace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			lorraine_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	M0N_conquest_lorraine = {
+		icon = mission_unite_home_region
+		required_missions = { M0N_conquest_alsace }
+		position = 8
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = lorraine_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			lorraine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All France
+			france_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	M0N_unite_france = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { M0N_conquest_lorraine }
+		position = 9
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = france_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			france_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+			
+			#Claims on Britain and Iberia but no missions
+			british_isles_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			iberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+M0N_conquest_italy = {
+	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -171,8 +298,8 @@ M0N_conquest_italy = {
 
 	M0N_conquest_venetia = {
 		icon = mission_unite_home_region
-		required_missions = { M0N_conquest_carinthia }
-		position = 7
+		required_missions = { M0N_mighty_army }
+		position = 6
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
@@ -208,7 +335,7 @@ M0N_conquest_italy = {
 	M0N_unite_italy = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { M0N_conquest_venetia }
-		position = 8
+		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
@@ -244,7 +371,7 @@ M0N_conquest_italy = {
 }
 
 M0N_conquest_carpathia = {
-	slot = 3 #?
+	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -336,7 +463,7 @@ M0N_conquest_carpathia = {
 }
 
 M0N_conquest_north_germany = {
-	slot = 4 #?
+	slot = 5
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -417,98 +544,6 @@ M0N_conquest_north_germany = {
 				add_permanent_claim = ROOT
 			}
 			low_countries_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-}
-
-M0N_conquest_france = {
-	slot = 5 #?
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	
-	potential = {
-		tag = M0N
-		NOT = { map_setup = map_setup_random }
-	}
-
-	M0N_conquer_lorraine = {
-		icon = mission_unite_home_region
-		required_missions = { M0N_mighty_army }
-		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			area = lorraine_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			lorraine_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 10
-			add_country_modifier = {
-				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
-			}
-			#Claims on All France
-			france_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	M0N_unite_france = {
-		icon = mission_build_up_to_force_limit
-		required_missions = { M0N_conquer_lorraine }
-		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			region = france_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			france_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 50
-			add_country_modifier = {
-				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
-			}
-			
-			#Claims on Britain and Iberia but no missions
-			british_isles_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			iberia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

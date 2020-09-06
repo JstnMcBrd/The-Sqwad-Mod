@@ -40,7 +40,7 @@ M0P_conquest = {
 					}
 					add_permanent_claim = ROOT
 				}
-				weser_area = {
+				north_rhine_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -324,7 +324,7 @@ M0P_conquest_north_germany = {
 		NOT = { map_setup = map_setup_random }
 	}
 
-	M0P_conquest_weser = {
+	M0P_conquest_north_rhine = {
 		icon = mission_unite_home_region
 		required_missions = { M0P_mighty_army }
 		position = 6
@@ -332,12 +332,12 @@ M0P_conquest_north_germany = {
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			area = weser_area
+			area = north_rhine_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			weser_area = {
+			north_rhine_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -362,7 +362,7 @@ M0P_conquest_north_germany = {
 	
 	M0P_unite_north_germany = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { M0P_conquest_weser }
+		required_missions = { M0P_conquest_north_rhine }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }

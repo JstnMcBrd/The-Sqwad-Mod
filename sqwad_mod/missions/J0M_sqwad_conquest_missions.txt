@@ -295,7 +295,7 @@ J0M_conquest_iberia = {
 	J0M_conquer_catalonia = {
 		icon = mission_unite_home_region
 		required_missions = { J0M_conquest_provence }
-		position = 6
+		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
@@ -331,7 +331,7 @@ J0M_conquest_iberia = {
 	J0M_unite_iberia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0M_conquer_catalonia }
-		position = 7
+		position = 8
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		

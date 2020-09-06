@@ -79,7 +79,14 @@
 - Big War
 	- maybe just an event that triggers a war between all the Sqwad nations
 	- problem: how to divide up the Sqwad nations?
-	
+- LOL War
+	- Event goes to M0N of whether to press claims on Lolland (1983), owned by B0H
+		- if yes, gains a core and sends an event to B0H
+		- if no, people are unhappy
+	- Event goes to B0H of whether to cede Lolland to M0N
+		- if yes, province is ceded and relations improve
+		- if no, 50 rebels rise up in Lolland (hopefully for M0N), and B0H declares war on M0N with anti-LOL cb
+		- (kinda like the surrender of maine)
 - An event between M0P and E0B/J0M/desmond that uses these quotes?
 	- "All mighty Lucy, I speak upon you to bestow upon me the wonders and glories of being admin... with your infinite wisdom this should be no problem convincing the other wise gods on your council in favor of me elevating to your stature. Over the years I have learned many lessons of how to properly and effectively guide a discord server to the ultimate glory, and with your guidance my lord I will be able to complete my training and become a admin on the most prestiges of servers."
 	- "And to you the all Mighty McThuggin I have learned greatly from the many years which I have been honored to be in your presence. I am truly blessed to even be considered one of your acquaintances, let alone a friend. Please with your mighty powers I wish for you to cast your vote in favor of me being an admin on this fine server which you lead."

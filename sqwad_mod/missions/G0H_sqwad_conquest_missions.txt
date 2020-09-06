@@ -40,7 +40,7 @@ G0H_conquest = {
 					}
 					add_permanent_claim = ROOT
 				}
-				baleares_area = {
+				corsica_sardinia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -348,47 +348,11 @@ G0H_conquest_italy = {
 		tag = G0H
 		NOT = { map_setup = map_setup_random }
 	}
-
-	G0H_conquest_baleares = {
-		icon = mission_unite_home_region
-		required_missions = { G0H_mighty_army }
-		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			area = baleares_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			baleares_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 10
-			add_country_modifier = {
-				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
-			}
-			#Claims on Corsica-Sardinia
-			corsica_sardinia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
 	
 	G0H_conquest_corsica_sardinia = {
 		icon = mission_unite_home_region
-		required_missions = { G0H_conquest_baleares }
-		position = 7
+		required_missions = { G0H_mighty_army }
+		position = 6
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
@@ -424,7 +388,7 @@ G0H_conquest_italy = {
 	G0H_unite_italy = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { G0H_conquest_corsica_sardinia }
-		position = 8
+		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
