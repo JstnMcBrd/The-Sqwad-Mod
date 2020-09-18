@@ -1,8 +1,5 @@
 ===PLANS FOR NEXT UPDATE===
-- bug fixes
-- missions for all nations
-- balances
-- Sqwad Servers!
+
 
 ===FUTURE PLANS===
 - Custom Music
