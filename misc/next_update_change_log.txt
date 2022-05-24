@@ -5,4 +5,6 @@ Put all changes since the last Steam Workshop upload here
 [*]Updated loading tip quotes to May 23rd, 2022
 [*]Made the start date November 10, 1444 to increase province history compatibility
 [*]Fixed a bug where province 4700 removed a core for D0E when the owner was A0W
+[*]Fixed server_member subject type errors
+[*]Removed is_sqwad_nation_trigger and replaced it with sqwad_nation_flag to fix weird errors
 [/list]

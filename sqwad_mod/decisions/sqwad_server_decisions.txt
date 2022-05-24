@@ -2,7 +2,7 @@ country_decisions = {
 	create_new_server = {
 		major = yes
 		potential = {
-			is_sqwad_nation_trigger = yes
+			has_country_flag = sqwad_nation_flag
 			is_subject_of_type = server_member
 		}
 		allow = {
@@ -45,7 +45,7 @@ country_decisions = {
 
 			every_country = { #gives option to all sqwad nations (besides self, old overlord, and anyone who was recently forced to become a server member) of whether to join
 				limit = {
-					is_sqwad_nation_trigger = yes
+					has_country_flag = sqwad_nation_flag
 					NOT = { tag = ROOT }
 					NOT = { has_country_flag = old_overlord_flag }
 					was_recently_forced_to_become_server_member_trigger = no

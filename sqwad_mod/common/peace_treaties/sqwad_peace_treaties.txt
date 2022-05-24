@@ -26,10 +26,10 @@ force_server_member = {
 	
 	is_visible = {					# Defaults to equivalent of "always = yes"
 		ROOT = { 
-			is_sqwad_nation_trigger = yes
+			has_country_flag = sqwad_nation_flag
 			NOT = { is_subject_of_type = server_member }
 		}
-		FROM = { is_sqwad_nation_trigger = yes }
+		FROM = { has_country_flag = sqwad_nation_flag }
 	}
 	is_allowed = {					# Defaults to equivalent of "always = yes"
 		#always = yes

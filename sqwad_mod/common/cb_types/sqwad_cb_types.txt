@@ -5,7 +5,7 @@ cb_made_new_server = {
 	months = 120
 	
 	prerequisites = {
-		is_sqwad_nation_trigger = yes
+		has_country_flag = sqwad_nation_flag
 	}
 
 	war_goal = take_capital_new_server
@@ -18,7 +18,7 @@ cb_left_server = {
 	months = 120
 	
 	prerequisites = {
-		is_sqwad_nation_trigger = yes
+		has_country_flag = sqwad_nation_flag
 	}
 
 	war_goal = take_capital_disloyal_server_member

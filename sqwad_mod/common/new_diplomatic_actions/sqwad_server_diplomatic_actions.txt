@@ -11,8 +11,8 @@ join_server = {
 	require_acceptance = yes
 	
 	is_visible = {
-		ROOT = { is_sqwad_nation_trigger = yes }
-		FROM = { is_sqwad_nation_trigger = yes }
+		ROOT = { has_country_flag = sqwad_nation_flag }
+		FROM = { has_country_flag = sqwad_nation_flag }
 		
 		FROM = { is_subject = no }
 	}
@@ -145,8 +145,8 @@ kick_from_server = {
 	require_acceptance = no
 	
 	is_visible = {
-		ROOT = { is_sqwad_nation_trigger = yes }
-		FROM = { is_sqwad_nation_trigger = yes }
+		ROOT = { has_country_flag = sqwad_nation_flag }
+		FROM = { has_country_flag = sqwad_nation_flag }
 		
 		FROM = {
 			overlord = { tag = ROOT }

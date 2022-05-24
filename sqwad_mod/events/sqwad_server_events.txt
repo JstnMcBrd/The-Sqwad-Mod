@@ -8,7 +8,7 @@ country_event = {
 	picture = CONQUEST_eventPicture
 	
 	trigger = {
-		is_sqwad_nation_trigger = yes
+		has_country_flag = sqwad_nation_flag
 	}
 	is_triggered_only = yes
 	
@@ -26,7 +26,7 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
-		is_sqwad_nation_trigger = yes
+		has_country_flag = sqwad_nation_flag
 	}
 	is_triggered_only = yes
 	
@@ -43,7 +43,7 @@ country_event = { #New Server - option to join
 	picture = WAR_OF_THE_ROSES_eventPicture
 	
 	trigger = {
-		is_sqwad_nation_trigger = yes
+		has_country_flag = sqwad_nation_flag
 	}
 	is_triggered_only = yes
 	
@@ -150,7 +150,7 @@ country_event = {
 	picture = BAD_WITH_MONARCH_eventPicture
 	
 	trigger = {
-		is_sqwad_nation_trigger = yes
+		has_country_flag = sqwad_nation_flag
 	}
 	is_triggered_only = yes
 	
