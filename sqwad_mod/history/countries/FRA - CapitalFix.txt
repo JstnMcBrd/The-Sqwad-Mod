@@ -1,5 +1,5 @@
 1444.11.10 = {
-	capital = 179 #Berry
+	capital = 200 #Montpellier
 }
 
 1444.11.11 = {
