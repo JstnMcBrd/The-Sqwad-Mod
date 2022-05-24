@@ -23,22 +23,6 @@
 #	}
 #}
 
-was_recently_forced_to_become_server_member_trigger = {
-	overlord = {
-		reverse_has_opinion_modifier = {
-			who = PREV
-			modifier = they_forced_tributary
-		}
-	}
-}
-
-is_a_server_admin_trigger = {
-	num_of_subjects = 1
-	any_subject_country = {
-		is_subject_of_type = server_member
-	}
-}
-
 opinion_of_overlord_higher_than_0_trigger = {
 	overlord = {
 		reverse_has_opinion = {

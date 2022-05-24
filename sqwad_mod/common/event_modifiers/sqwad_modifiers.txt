@@ -18,10 +18,3 @@ sqwad_united_region_modifier = { #25 years
 	land_morale = 0.2
 	naval_morale = 0.2
 }
-
-
-#Sqwad Server Modifiers
-kicked_from_server = {
-	prestige = -1
-	diplomatic_reputation = -3
-}
