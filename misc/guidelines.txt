@@ -1,6 +1,0 @@
-===Requirements for the Sqwad nations===
-- every Sqwad nation is large enough that they are the major powers and lead the politics of the area (influential)
-- the Sqwad nations are bunched close enough together to interact regularly
-- each Sqwad nation centers around a major region, like inner Spain, Cisalpine Gaul, Denmark, south England, Austria, north Germany, Sweden, etc
-- Sqwad nations aren't so large that there's no room for initial expansion to gain advances over other nations
-- Sqwad nations are all reasonably balanced with each other 
