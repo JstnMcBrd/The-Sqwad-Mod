@@ -9,7 +9,7 @@ add_accepted_culture = bulgarian
 religion = sunni
 capital = 151 # Constantinople
 
-1444.11.11 = {
+1444.11.10 = {
 	monarch = {
 		name = "Aidan"
 		dynasty = "Wilson"

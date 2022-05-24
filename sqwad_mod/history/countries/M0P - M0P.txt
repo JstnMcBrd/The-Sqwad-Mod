@@ -13,7 +13,7 @@ capital = 97 # Holland
 
 historical_friend = J0M
 
-1444.11.11 = {
+1444.11.10 = {
 	monarch = {
 		name = "Michael"
 		dynasty = "Pos"

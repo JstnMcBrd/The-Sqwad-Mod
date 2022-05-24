@@ -12,7 +12,7 @@ historical_friend = D0E
 historical_rival = M0N
 capital = 12 #Sjaelland
 
-1444.11.11 = {
+1444.11.10 = {
 	monarch = {
 		name = "Flurp"
 		dynasty = "Kinz"

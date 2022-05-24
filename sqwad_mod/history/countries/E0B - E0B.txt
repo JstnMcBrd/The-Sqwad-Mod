@@ -12,7 +12,7 @@ technology_group = western
 historical_friend = B0H
 capital = 169	# Armor
 
-1444.11.11 = {
+1444.11.10 = {
 	monarch = {
 		name = "Emily"
 		dynasty = "de Breizh"

@@ -14,7 +14,7 @@ religion = catholic
 technology_group = western
 capital = 219 # Toledo
 
-1444.11.11 = {
+1444.11.10 = {
 	monarch = {
 		name = "Boss I"
 		dynasty = "Ross"

@@ -13,7 +13,7 @@ historical_friend = J0M
 historical_rival = B0H
 capital = 134	# Wein
 
-1444.11.11 = {
+1444.11.10 = {
 	monarch = {
 		name = "Michael"
 		dynasty = "Norris"

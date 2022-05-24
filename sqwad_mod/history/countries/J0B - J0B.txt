@@ -9,7 +9,7 @@ add_accepted_culture = novgorodian
 add_accepted_culture = ryazanian
 capital = 295	# Moskva
 
-1444.11.11 = {
+1444.11.10 = {
 	monarch = {
 		name = "Justin"
 		dynasty = "Trudeau"

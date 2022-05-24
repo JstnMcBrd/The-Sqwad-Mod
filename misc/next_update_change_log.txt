@@ -2,4 +2,7 @@ Put all changes since the last Steam Workshop upload here
 
 [list]
 [*]Gave province 1983 (Lolland) a dynamic province name if Tersia owns it: "LOL-land"
+[*]Updated loading tip quotes to May 23rd, 2022
+[*]Made the start date November 10, 1444 to increase province history compatibility
+[*]Fixed a bug where province 4700 removed a core for D0E when the owner was A0W
 [/list]

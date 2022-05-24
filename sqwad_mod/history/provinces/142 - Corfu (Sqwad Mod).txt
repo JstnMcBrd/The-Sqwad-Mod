@@ -1,0 +1,12 @@
+#SQWAD MOD SECTION BEGIN
+1444.11.10 = {
+	add_core = A0W
+	owner = A0W
+	controller = A0W
+}
+1444.11.11 = {
+	remove_core = A0W
+	owner = CEP
+	controller = CEP
+}
+#SQWAD MOD SECTION END

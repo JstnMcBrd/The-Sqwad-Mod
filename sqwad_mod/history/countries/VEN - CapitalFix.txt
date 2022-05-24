@@ -1,8 +1,8 @@
-1444.11.11 = {
+1444.11.10 = {
 	capital = 136 #Dalmatia
 }
 
-1444.11.12 = {
+1444.11.11 = {
 	capital = 112 #Venezia
 	fixed_capital = 112
 }

@@ -13,7 +13,7 @@ capital = 1	#Stockholm
 
 historical_friend = B0H
 
-1444.11.11 = {
+1444.11.10 = {
 	monarch = {
 		name = "David"
 		dynasty = "Evans"

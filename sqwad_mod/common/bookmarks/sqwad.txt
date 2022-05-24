@@ -2,7 +2,7 @@ bookmark =
 {
 	name = "SQWAD_BOOKMARK_TITLE"
 	desc = "SQWAD_BOOKMARK_DESC"
-	date = 1444.11.11
+	date = 1444.11.10
 	
 	center = 112
 	default = yes

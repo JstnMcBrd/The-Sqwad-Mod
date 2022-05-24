@@ -1,2 +1,2 @@
-1444.11.11 = { emperor = BRA }
-1444.11.12 = { emperor = HAB }
+1444.11.10 = { emperor = BRA }
+1444.11.11 = { emperor = HAB }
