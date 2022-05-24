@@ -20,6 +20,8 @@ national_focus = MIL
 capital = 104		# Milan
 
 1444.11.10 = {
+	set_country_flag = sqwad_nation_flag
+
 	monarch = {
 		name = "Justin"
 		dynasty = "Mac'Bridhe"

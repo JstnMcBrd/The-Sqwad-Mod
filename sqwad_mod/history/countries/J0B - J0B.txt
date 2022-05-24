@@ -10,6 +10,8 @@ add_accepted_culture = ryazanian
 capital = 295	# Moskva
 
 1444.11.10 = {
+	set_country_flag = sqwad_nation_flag
+
 	monarch = {
 		name = "Justin"
 		dynasty = "Trudeau"

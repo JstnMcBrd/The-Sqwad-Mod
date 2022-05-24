@@ -14,6 +14,8 @@ historical_rival = B0H
 capital = 134	# Wein
 
 1444.11.10 = {
+	set_country_flag = sqwad_nation_flag
+
 	monarch = {
 		name = "Michael"
 		dynasty = "Norris"

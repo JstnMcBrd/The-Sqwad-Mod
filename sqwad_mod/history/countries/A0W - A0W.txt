@@ -10,6 +10,8 @@ religion = sunni
 capital = 151 # Constantinople
 
 1444.11.10 = {
+	set_country_flag = sqwad_nation_flag
+
 	monarch = {
 		name = "Aidan"
 		dynasty = "Wilson"

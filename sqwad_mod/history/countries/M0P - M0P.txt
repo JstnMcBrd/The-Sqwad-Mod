@@ -14,6 +14,8 @@ capital = 97 # Holland
 historical_friend = J0M
 
 1444.11.10 = {
+	set_country_flag = sqwad_nation_flag
+
 	monarch = {
 		name = "Michael"
 		dynasty = "Pos"

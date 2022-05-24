@@ -13,6 +13,8 @@ historical_friend = B0H
 capital = 169	# Armor
 
 1444.11.10 = {
+	set_country_flag = sqwad_nation_flag
+
 	monarch = {
 		name = "Emily"
 		dynasty = "de Breizh"
