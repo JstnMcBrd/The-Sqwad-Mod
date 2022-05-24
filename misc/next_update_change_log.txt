@@ -10,4 +10,6 @@ Put all changes since the last Steam Workshop upload here
 [*]Fixed history bugs with France's and Orleans' capitals
 [*]Fixed errors with wargoals from new updates
 [*]Fixed warnings from lack of leader names for several countries
+[*]Fixed bug where Sqwad nations weren't counted as end tags
+[*]Changed up MacThuggo's national ideas
 [/list]

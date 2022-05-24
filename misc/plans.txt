@@ -1,5 +1,9 @@
 ===PLANS FOR NEXT UPDATE===
+- make MacThuggo a republic of sorts?
 
+- maybe remove server features
+
+- remove the "at least 1 general" requirement from "Build a Mighty Army" missions
 
 ===FUTURE PLANS===
 - Custom Music
@@ -13,7 +17,6 @@
 
 ===KNOWN ISSUES===
 - Bugs
-	- Sqwad Nations can still form other tags (end game tags didn't work)
 	- new Sqwad category for diplomatic actions won't get localized correctly
 - Balancing
 	- Server Members are very hesitant to go to war, very lazy

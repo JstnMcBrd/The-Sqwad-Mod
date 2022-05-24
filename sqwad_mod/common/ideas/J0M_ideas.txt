@@ -2,12 +2,12 @@ J0M_ideas = {
 	#traditions
 	start = {
 		range = 0.5
-		infantry_cost = -0.1
+		development_cost = -0.1
 	}
 	
 	#ambitions
 	bonus = {
-		land_morale = 0.15
+		artillery_power = 0.10
 	}
 
 	trigger = {
@@ -36,7 +36,7 @@ J0M_ideas = {
 		trade_efficiency = 0.10
 	}
 	conquest = {
-		siege_ability = 0.10
+		land_morale = 0.10
 		discipline = 0.05
 	}
 	general_public = {

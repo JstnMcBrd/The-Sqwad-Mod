@@ -24,12 +24,12 @@ country_decisions = {
 			118 = {
 				add_base_tax = 4
 				add_base_production = 4
-				add_base_manpower = 3
+				add_base_manpower = 4
 			}
 		}
 		ai_will_do = {
 			factor = 1
 		}
-		do_not_core = 118 # Constantinople
+		do_not_core = 118 # Rome
 	}
 }
