@@ -52,7 +52,8 @@ monarch_names = {
 leader_names = {
 	Bub
 	Chub
-	Grub
+	Dub
+	Gub Grub
 	Lub
 	Nub
 	Rub

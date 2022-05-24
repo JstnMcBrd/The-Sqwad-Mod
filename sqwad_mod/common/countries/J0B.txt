@@ -41,17 +41,20 @@ monarch_names = {
 }
 
 leader_names = { 
-	Beard
+	Beard Beard Beard Beard Beard Beard Beard Beard Beard Beard #repeated to get rid of warning about less than 10 leader names
+	Beard Brawl
+	Trudeau
 }
 
 ship_names = {
 	"All of Math" "Add Things"
 	"Brawl HD"
-	"Canadian Master Race"
+	"Canadian Master Race" "Canadian Space Hitler"
 	"Eye of Newt"
 	First
 	No
-	"SCUM OF THE EARTH"
+	Postitute
+	"Salami Guy" "SCUM OF THE EARTH"
 	"Wing of Flea"
 }
 

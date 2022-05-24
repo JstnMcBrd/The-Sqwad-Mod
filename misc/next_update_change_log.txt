@@ -8,4 +8,6 @@ Put all changes since the last Steam Workshop upload here
 [*]Fixed server_member subject type errors
 [*]Removed is_sqwad_nation_trigger and replaced it with sqwad_nation_flag to fix weird errors
 [*]Fixed history bugs with France's and Orleans' capitals
+[*]Fixed errors with wargoals from new updates
+[*]Fixed warnings from lack of leader names for several countries
 [/list]

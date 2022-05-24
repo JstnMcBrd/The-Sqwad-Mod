@@ -104,21 +104,21 @@ leader_names = {
 }
 
 ship_names = {
-	Aethex "Accidental Suicide" Achiever "Already Dead"
+	Aethex "Accidental Suicide" Achiever "Aggressively Not-Irish" "Already Dead"
 	"Better as in More Successful" "Butter Passer"
 	"Californian Laugh"
 	Dolphin
 	"The End Justifies the Memes" EVANSQUEST 
 	Intuition Invisible
 	"Killing Everyone"
-	"Morally Wrong"
+	"The Means of Religion" "Morally Wrong"
 	"Poppin' Axe" Programming
 	"Really Fresh" "Reasonably Fatal" Refrigerator Rollover
 	"Scrying Dish" "Silent Game" Swarthmore
 	"Underground Bunny"
 	"Very Not Quiet" "Very Quiet"
 	"Winning Strategy" Wizard "Worse as a Person" "Wriggling Fish"
-	Yes
+	"Ye Olde Fork Cage" Yes
 }
 
 army_names = {

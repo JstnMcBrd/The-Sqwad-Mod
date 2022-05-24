@@ -45,7 +45,7 @@ monarch_names = {
 }
 
 leader_names = {
-	Bell
+	Bell Bell Bell Bell Bell Bell Bell Bell Bell Bell #repeated to get rid of warning about less than 10 leader names
 }
 
 ship_names = {
@@ -53,18 +53,18 @@ ship_names = {
 	"50 Copies of Shrek"
 	"Above Irrelevant" "Anthrapamorphian"
 	"Beer Cans" Boner Bopit Burrie
-	Colandaria "Cow Mail"
+	"Child Skeletons" Colandaria "Console Peasant" "Cow Mail"
 	Dab Diamonds
 	"Efficient Waddle" "Extream Sprots"
 	"Finger Painter" "Frantic Clap"
 	"Gucci Dinner"
 	Leftist
-	"Mach 10"
+	"Mach 10" "Misogynistic Log"
 	"Organized Crime"
 	Pistol
-	Roomba
-	"Snapping Turtle" "Spiked Knee Cap" Spontaneous Suffering "Sync Vudei"
-	Thursday Triangle Tuesday
+	Roomba rtue
+	"Snapping Turtle" "Spaghetti Code" "Spiked Knee Cap" Spontaneous Suffering "Sync Vudei"
+	Thursday Triangle Tuesday trye
 	"Underwater Kiteing"
 	"Weeb Lyfe" Whale "Wooly Mamoth"
 }

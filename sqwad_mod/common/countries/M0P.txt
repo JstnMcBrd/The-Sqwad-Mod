@@ -43,27 +43,33 @@ monarch_names = {
 }
 
 leader_names = {
+	Boss
+	Melee
 	Pos Pose
+	Pos Pos Pos Pos Pos Pos Pos Pos Pos Pos #repeated to get rid of warning about less than 10 leader names
 }
 
 ship_names = {
-	"Alcohol and Glass"
-	"Baby Eater" "Baby In a Gas Can" "Bad Dictator" "Banana Stand" "Bird Gang" "Boring America" Brundi
+	"A Commentary" "Alcohol and Glass" "Ankle Preference" "Apestos of Us" "A PIRATE WITH ELEPHANTS"
+	"Baby Eater" "Baby In a Gas Can" "Bad Dictator" "Banana Stand" "Big Boat Do Magic" "Big Donut" "Bird Gang" "Boring America" Brundi
 	Cement
-	Darkness "Dead Meme" Dictator Duckumentry "Dutch Supremacist"
-	"Efficient Terrible Person" "European Cannibalism"
+	"D| Sl s; l mlw na e yl ank" Darkness "Dead Meme" Dictator Duckumentry "Dutch Supremacist"
+	"Efficient Terrible Person" "Elbow Geese" "EU4 Shennangins" "European Cannibalism"
 	Fingernail
 	"Girl Scout Cookie"
 	"HNLMS Prostitution"
-	"I AMsterdam" Indead "Isle 3"
-	"Jew Hater" "Jingal Bells"
-	"Kid Shooter" "Kink Shamer"
-	"Mass Murder" "Mien Kampf" "Moderator-Mederator" "mpossible"
-	"Pope Van" "Prank Master"
+	"I AMsterdam" Idoit Indead "Isle 3" "It Though"
+	"Jew Hater" "Jingal Bells" "Justin's Mom"
+	"Kid Shooter" "Kink Shamer" "kyj y; ;.sj BT RK4 djppy"
+	"Lady Bug Themed Butchery" "Literal Simian"
+	Manatee "Mass Murder" "Melee HD" "Mien Kampf" "Mikey Likey" "Moderator-Mederator" "mpossible"
+	"Pope Van" "POS BOSS" "Prank Master"
 	"REALLY Good"
-	"School Train" Sensorship "Sovern State" "Spray Butter" "STAT" "Suicide Bomber"
-	"Tax Dollars" "Terrible Person" Terrorist They "Thigh Pincher"
-	Virtue
+	"School Train" "Schrodinger's Pokemon" Sensorship "Sovern State" "Space and Air" "Spray Butter" "STAT" "Suicide Bomber" "Sweat Collector"
+	"Tax Dollars" "Terrible Person" Terrorist "Thank          you" That They "Thigh Pincher"
+	Virtue VooDoo
+	"WOODEN BOAT MADE OF METAL"
+	"Yuckle Up Boi'sss"
 }
 
 

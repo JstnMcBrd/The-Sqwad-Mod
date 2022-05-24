@@ -35,27 +35,34 @@ historical_units = {
 
 monarch_names = {
 	"Bob #0" = 1
+	"Gage #0" = 1
 	
 	"Bobby #0" = -1
 }
 
 leader_names = {
-	Ross
+	Hawkins
+	Ross Ross Ross Ross Ross Ross Ross Ross Ross Ross #repeated to get rid of warning about less than 10 leader names
 }
 
 ship_names = {
-	Bombs
+	Bombs "Bread Cube"
+	"Corrosive Wince"
 	"Daily Basis" "Doing Mormons" Drugs
 	"Freaking Nazi"
 	"Google Fiber"
 	"I Doesn't Work" Insides
 	"Kitty Cat"
+	"Limiting Factor"
 	Magic
 	"No Goodbyes"
-	"Paint Marker" Plunger
-	"Ratchet Screwdriver" "Run Away Together"
-	"Sharpened Paper" "STOP IT"
-	"STUPID CONVERSATION" "trashbin_and_nomansky_and_switch" Trip
+	"Paint Marker" "Part-Time God" Plunger
+	"Quantum Donut Buyer"
+	"Ratchet Screwdriver" "River Nazi" "Run Away Together"
+	"Shake-age" "Sharpened Paper" "STOP IT"
+	"STUPID CONVERSATION" "trashbin_and_nomansky_and_switch"
+	"The Bad Michael" Trip
+	"Why Sun Hot"
 }
 
 

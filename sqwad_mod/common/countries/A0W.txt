@@ -46,28 +46,37 @@ monarch_names = {
 }
 
 leader_names = {
+	"^Expert"
 	Flip Frick Frig
+	Goof
+	Hanus
+	Imbisil
+	Qwerty
 	Wilson
+	Yeat
 }
 
 ship_names = {
-	"Back Room" "Beep Beep" "Bloody Doritos"
-	Crack "The Crime" 
-	"Dead Mouse" "DIRECT PLAY" "Done Goofed"
-	"^expert"
-	"Flip and Dip" Frick "Frick Storm" Frig
-	"Garlic Bread Hater"
-	HACDKEDED Hairacy "HERATIC SCUM" "Holocaust Denier" "Hoimr Tetrhetr"
-	Illiterate IMBISIL
+	"Back Room" "Bean Stank" "Beep Beep" "Big Rig" "Bloody Doritos" "Bloody Towel"
+	"Cheese Curd Attitude" Cuarantine Crack "Creamy Criminal" "The Crime"
+	"Dead Mouse" "DespaGREEDO SHOT FIRST" "DIRECT PLAY" DISENTARY "Done Goofed" "Duh Kinky"
+	EEEUUUGHH "^expert"
+	"Flip and Dip" Frick "Fried Chicken Purple" "Frick Storm" Frig
+	"Garlic Bread Hater" "globalwarminginc.net"
+	HACDKEDED HANUS Hairacy "Heeee...lllck" Headcrab "HERATIC SCUM" "Holocaust Denier" "Hoimr Tetrhetr"
+	"I AM A WAFFLE" Illiterate IMBISIL
 	Knolage Krill
-	"Meth adict"
+	"Live, Laugh, Run"
+	"Meth Adict"
+	no2
 	"Old News"
-	Peanut Printscreen
+	Peanut Printscreen Prostisuit
 	Qwerty
 	"Racist Senses" Runinging
-	"Slave-Actor Boat" Snickers Sphelling "Squeek"
+	"SAFTY PIN" sahdb4hsbdday Saurerday sauterday "Slave-Actor Boat" Slaveiator Snickers Sphelling "Squeek" "Sweaty Cheese"
 	"Tank Top Pants"
 	VFX
+	"Weird Girl Seizure"
 	Yeat
 }
 

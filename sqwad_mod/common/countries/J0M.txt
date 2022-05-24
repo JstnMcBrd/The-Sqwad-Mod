@@ -79,24 +79,27 @@ leader_names = {
 }
 
 ship_names = {
-	"30 GB"
-	"AL_INVALID_NAME" "Always Time for Memes"
-	"Banshee Scream" Binary "Big White Blur" "Black Market" Bombs "Burnt Thermite"
-	Cancer "Can Disaster" "Can Grammar" "Can Humor" "Can Idea" "CHS Issue" "Circle USB" "Commie Commity" "Completely Unconscious" Conquest "Control-Z"
+	"~1/22rd"
+	"30 GB" "80s Screeching"
+	"AL_INVALID_NAME" "Always Time for Memes" "An Indignity"
+	"Banshee Scream" "Ban Hammer" Binary "Big White Blur" "Black Market" Bombs "Bullets in a Bowl of Bleach" "Burnt Thermite"
+	Cancer "Can Disaster" "Can Grammar" "Can Humor" "Can Idea" "CHS Issue" "Circle USB" "Commie Commity" "Completely Unconscious" Conquest "Control-Z" "Coo Coo" "Cucumber God"
 	"Daily Dose of Idiocy" "Deadly Roller Coaster" Disagreement "Don't Keep Promises" "Don't Logic Me" "Don't Mocking Me" "Drug Lord"
-	"ER Dirty Money" "[ERROR: No life to take]" Everything "European Artery"
-	"Face Stamp" "Federal Mint"
-	Gelatinous "General Public" "Give Up, Break Down, and Cry" Goldfish "Good at Killing Everyone" "Good Meme" "Grammar Nazi" "Great Noises"
-	"Hackity_Hackity" "Hardcore Intellectual Roast" "Hardcore Underwater Gamer" "Heater Laptop" "Humor Confirmed"
-	"InCoNsIsTeNt CaPiTaLiZaTiOn"
-	Laaaaawwwwwwllllll "Litter or Loot" "Long in the Up Direction"
-	"Magical Glasses" Memedex "Metal Basing Case" "Meth Lab" "Meth Lab 2" "Mob Tyranny"
+	"Email Spider" "ER Dirty Money" "[ERROR: No life to take]" Everything "European Artery" "Eye Lossage"
+	"Face Stamp" "Fastest Quoter" "Federal Mint"
+	"Gamma-rave" Gelatinous "General Public" "Give Up, Break Down, and Cry" Goldfish "Good at Killing Everyone" "Good Meme" "Google Hangouts Spider" "Grammar Nazi" "Grammar Terrorism" "Great Noises"
+	"Hackity_Hackity" "Hardcore Intellectual Roast" "Hardcore Underwater Gamer" "Heater Laptop" "Human Catnip" "Humor Confirmed"
+	"InCoNsIsTeNt CaPiTaLiZaTiOn" "Indy Speedway" "Instagram Spider"
+	Laaaaawwwwwwllllll "Leg Stonks" "Litter or Loot" "Liquidated Car" "Long in the Up Direction"
+	"Magical Glasses" Magimusician Maplesauce "Mass Genocide" Memeconomics Memedex "Meme Dreme" "Me Stomey No Likey" "Metal Basing Case" "Meth Lab" "Meth Lab 2" "Mob Tyranny"
 	"Neck > Legs" "No Refunds Policy" "Nutella Sweat"
 	"Orange Fanta"
 	"PC Discord Time" "People = Death" "Perfect Quote" "Power-Up"
 	Realworldilized "Residential Drag Race" "Root Beer" "Ruined Dreams"
-	"Sensible" "Spike Hands" "String Feet"
-	"Toast Osama" Tornado
+	"Sensible" "Skype Spider" "Snapchat Spider" "SOCIAL FREAK" "Sparkle Fluid" "Spike Hands" "String Feet"
+	"Taco Hitler" "Toast Osama" "Too Much Elbows" Tornado
+	Utsunomiya
+	"Viva la Archives"
 	"What is This?" Whisper "Weird Face"
 }
 

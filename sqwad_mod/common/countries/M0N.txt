@@ -44,7 +44,7 @@ monarch_names = {
 }
 
 leader_names = { 
-	Norris
+	Norris Norris Norris Norris Norris Norris Norris Norris Norris Norris #repeated to get rid of warning about less than 10 leader names
 }
 
 ship_names = {
@@ -52,21 +52,21 @@ ship_names = {
 	"7 out of 10"
 	"Aluminum Fist" "American Dream"
 	"Bag of Doritos" "Bag of Swag" "Beating Time" "Black Ink" Bleach "Bleach o'Clock" Buttons "Button Hater"
-	"CIA Watchlist" "Chik Fil A" "Conflicting Yourself" Crazyville "Crippling Depression"
-	"Dating Advice" "Dead Cat" "Den of Atlases" Defication Diarrhea Disagreement "Dutch 9/11"
-	Evisceration
+	"CIA Watchlist" "Chik Fil A" "Conflicting Yourself" Crazyville "Crippling Depression" "Crusades 2"
+	"Dating Advice" "Dead Cat" "Den of Atlases" Defication Diarrhea Disagreement "Dutch 9/11" "Dutch Slander"
+	"Equal Opportunity Gulag" "Equal Opportunity Milk Drinker" "Equal-Opportunity Slavemaster" Evisceration
 	"Fidget Spinner" "freeexplosions.com"
-	"Google Button Nazi"
+	"Gandhi's Nuclear Paradise" "GERMAN SUPER CANON" "Google Button Nazi"
 	"He's Dead" "History of Science" "Holy Sacrament"
 	"I Killed Him" Invalidation
 	"KAL ORT POR" "KAL VAS XEN" "Federal Prison" Kidneys "Kilo-Murder"
-	Lamp Lol
-	"Medium Well" Memeconomy "Midnight Glass of Millk" "Mutant Nazi"
-	"Nazi Germant" "Nico's Smile" Nincompoop NOmenclature "Not Breathing" "Nut Shot Crit"
+	Lamp "Little Turd Nugget" Lol
+	"Medium Well" Memeconomy "Meme Juice" "Midnight Glass of Milk" "Milk Racist" "Mouch Werse" "Mutant Nazi"
+	"NAMIST CANNIBAL" "Nazi Germant" "Nico's Smile" Nincompoop NOmenclature "Not Breathing" "Nth Rome" "Nut Shot Crit"
 	"One and a Half Thirds"
 	Painkiller "Political Racism" "Pumpkin Spice Bleach" Puppy
 	"Racist Wall" "Ripped Out Sternum" Robosocialist "Root Canal"
-	"Sheer Annoyance" Shifty Skeleton "Snorted Box" "Spawn of Satan" "Stoked Flame of Wrath" "Suicide Mood" "Suicide Company" "Swastika Emoji"
+	"Segregated Sheep Farm" "Sheer Annoyance" Shifty Skeleton "Snorted Box" "Spawn of Satan" "SPEEDMOON™" "Spleen Turbopunch" "Stoked Flame of Wrath" "Suicide Mood" "Suicide Company" "Swastika Emoji" "Swooshy Swoosh"
 	"Terrorism Simulator" "Theoretical Violence" "Tooth Root" "Turbo Knifer" "Twizzler Hater"
 	Unwidifier
 	"Virtual LSD Trip" Vulture
