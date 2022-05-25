@@ -10,5 +10,5 @@ tags={
 }
 picture="icon.png"
 supported_version="1.31.*.*"
-path="C:/Users/jstnm/Documents/Paradox Interactive/Europa Universalis IV/mod/The-Sqwad-Mod/sqwad_mod"
+path="the-sqwad-mod\\sqwad_mod"
 remote_file_id="1294735825"
