@@ -200,7 +200,7 @@ D0E_conquest_russia = {
 	
 	D0E_unite_russia = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { D0E_conquest_arkhangelsk }
+		required_missions = { D0E_conquest_pomor }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
