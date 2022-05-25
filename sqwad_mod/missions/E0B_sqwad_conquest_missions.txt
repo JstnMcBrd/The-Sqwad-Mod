@@ -26,7 +26,7 @@ E0B_conquest = {
 			#Territorial Claims
 			if = {
 				limit = { NOT = { map_setup = map_setup_random } }
-				picardy_area = {
+				poitou_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -71,7 +71,7 @@ E0B_conquest_france = {
 		NOT = { map_setup = map_setup_random }
 	}
 
-	E0B_conquest_picardy = {
+	E0B_conquest_poitou = {
 		icon = mission_unite_home_region
 		required_missions = { E0B_mighty_army }
 		position = 6
@@ -79,12 +79,12 @@ E0B_conquest_france = {
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			area = picardy_area
+			area = poitou_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			picardy_area = {
+			poitou_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -117,7 +117,7 @@ E0B_conquest_france = {
 	
 	E0B_unite_france = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { E0B_conquest_picardy }
+		required_missions = { E0B_conquest_poitou }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
@@ -259,7 +259,7 @@ E0B_conquest_low_countries = {
 
 	E0B_conquest_flanders = {
 		icon = mission_unite_home_region
-		required_missions = { E0B_conquest_picardy }
+		required_missions = { E0B_conquest_poitou }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
