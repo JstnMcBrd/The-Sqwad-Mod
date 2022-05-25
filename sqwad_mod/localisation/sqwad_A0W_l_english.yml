@@ -22,18 +22,26 @@
  
  A0W_mighty_army_title: "Build a Mighty Army"
  A0W_mighty_army_desc: "The [Root.GetAdjective] people are destined to expand, but we cannot do so without an army."
+ 
  A0W_conquest_karaman_title: "Conquer Karaman"
  A0W_conquest_karaman_desc: ""
  A0W_unite_anatolia_title: "Unite Anatolia"
  A0W_unite_anatolia_desc: ""
+ 
  A0W_conquest_morea_title: "Conquer Morea"
  A0W_conquest_morea_desc: ""
  A0W_unite_balkan_title: "Unite the Balkans"
  A0W_unite_balkan_desc: ""
+ 
+ A0W_conquest_erzurum_title: "Conquer Erzurum"
+ A0W_conquest_erzurum_desc: ""
  A0W_conquest_samtskhe_title: "Conquer Samtskhe"
+ A0W_conquest_samtskhe_desc: ""
  A0W_unite_caucasia_title: "Unite Caucasia"
  A0W_unite_caucasia_desc: ""
- A0W_conquest_samtskhe_desc: ""
+ 
+ A0W_conquer_cukurova_title: "Conquer Cukurova"
+ A0W_conquer_cukurova_desc: ""
  A0W_conquer_aleppo_title: "Conquer Aleppo"
  A0W_conquer_aleppo_desc: ""
  A0W_unite_mashriq_title: "Unite Mashriq"

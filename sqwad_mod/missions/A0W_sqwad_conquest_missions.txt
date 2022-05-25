@@ -40,14 +40,14 @@ A0W_conquest = {
 					}
 					add_permanent_claim = ROOT
 				}
-				samtskhe_area = {
+				erzurum_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				aleppo_area = {
+				cukurova_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -253,10 +253,46 @@ A0W_conquest_caucasia = {
 		NOT = { map_setup = map_setup_random }
 	}
 
-	A0W_conquest_samtskhe = {
+	A0W_conquest_erzurum = {
 		icon = mission_unite_home_region
 		required_missions = { A0W_mighty_army }
 		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = erzurum_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			erzurum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on Samtskhe
+			samtskhe_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	A0W_conquest_samtskhe = {
+		icon = mission_unite_home_region
+		required_missions = { A0W_conquest_erzurum }
+		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
@@ -292,7 +328,7 @@ A0W_conquest_caucasia = {
 	A0W_unite_caucasia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { A0W_conquest_samtskhe }
-		position = 7
+		position = 8
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
@@ -338,10 +374,46 @@ A0W_conquest_mashriq = {
 		NOT = { map_setup = map_setup_random }
 	}
 
-	A0W_conquer_aleppo = {
+	A0W_conquer_cukurova = {
 		icon = mission_unite_home_region
 		required_missions = { A0W_mighty_army }
 		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = cukurova_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			cukurova_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on Aleppo
+			aleppo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	A0W_conquer_aleppo = {
+		icon = mission_unite_home_region
+		required_missions = { A0W_conquer_cukurova }
+		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
@@ -377,7 +449,7 @@ A0W_conquest_mashriq = {
 	A0W_unite_mashriq = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { A0W_conquer_aleppo }
-		position = 7
+		position = 8
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
