@@ -26,7 +26,7 @@ G0H_conquest = {
 			#Territorial Claims
 			if = {
 				limit = { NOT = { map_setup = map_setup_random } }
-				upper_andalucia_area = {
+				leon_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -78,7 +78,7 @@ G0H_conquest_iberia = {
 		NOT = { map_setup = map_setup_random }
 	}
 
-	G0H_conquest_upper_andalucia = {
+	G0H_conquest_leon = {
 		icon = mission_unite_home_region
 		required_missions = { G0H_mighty_army }
 		position = 6
@@ -86,12 +86,12 @@ G0H_conquest_iberia = {
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			area = upper_andalucia_area
+			area = leon_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			upper_andalucia_area = {
+			leon_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -125,7 +125,7 @@ G0H_conquest_iberia = {
 	
 	G0H_unite_iberia = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { G0H_conquest_upper_andalucia }
+		required_missions = { G0H_conquest_leon }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
