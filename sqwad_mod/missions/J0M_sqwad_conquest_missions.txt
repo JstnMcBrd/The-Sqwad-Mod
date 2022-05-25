@@ -34,6 +34,13 @@ J0M_conquest = {
 					}
 					add_permanent_claim = ROOT
 				}
+				piedmont_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 				east_adriatic_coast_area = {
 					limit = {
 						NOT = { is_core = ROOT }
