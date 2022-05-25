@@ -19,9 +19,6 @@ A0W_ideas = {
 		land_morale = 0.15
 		land_forcelimit_modifier = 0.15
 	}
-	stop_you_imbisils = {
-		global_missionary_strength = 0.03
-	}
 	goofed = {
 		hostile_attrition = 2
 	}
@@ -29,12 +26,14 @@ A0W_ideas = {
 		technology_cost = -0.1
 		idea_cost = -0.1
 	}
+	bloody_doritos = {
+		artillery_power = 0.10
+	}
 	speeling = {
 		ae_impact = -0.1
 		diplomatic_reputation = 1.00
 	}
 	back_room = {
-		mercenary_manpower = 0.1
 		merc_maintenance_modifier = -0.1
 		mercenary_manpower = 0.25
 	}
