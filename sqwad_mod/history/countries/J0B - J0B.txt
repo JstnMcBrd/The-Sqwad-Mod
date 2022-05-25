@@ -1,6 +1,6 @@
 #government = constitutional_republic
 government = republic
-government_rank = 3
+government_rank = 2
 technology_group = western
 religion = orthodox
 primary_culture = J0B_culture

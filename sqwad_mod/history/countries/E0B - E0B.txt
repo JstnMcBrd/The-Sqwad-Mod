@@ -1,6 +1,6 @@
 #government = feudal_monarchy
 government = monarchy
-government_rank = 3
+government_rank = 2
 primary_culture = E0B_culture
 add_accepted_culture = breton
 add_accepted_culture = normand
