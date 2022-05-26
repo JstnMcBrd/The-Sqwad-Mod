@@ -9,6 +9,6 @@ tags={
 	"New Nations"
 }
 picture="icon.png"
-supported_version="1.31.*.*"
+supported_version="1.33.*.*"
 path="the-sqwad-mod\\sqwad_mod"
 remote_file_id="1294735825"
