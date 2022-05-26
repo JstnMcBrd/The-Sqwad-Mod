@@ -67,6 +67,7 @@
  #censored
  LOADING_TIP_57: "Dont mind the warning signs... Oh theres a dead mouse..."
  LOADING_TIP_58: "Aww crap! My doritos are all bloody now."
+ 
 #B0H
  #censored
  LOADING_TIP_59: "I want to kill myself.\nOne Big Mac please."
@@ -139,6 +140,7 @@
  #censored
  LOADING_TIP_86: "h"
  LOADING_TIP_87: "If you're going to question my dream about eggs..."
+ 
 #D0E
  LOADING_TIP_88: "I don't know, I don't feel... it's not in my programming."
  LOADING_TIP_89: "Michael: Guess what I just found...?\nDavid: Dolphins?"
@@ -170,6 +172,7 @@
  LOADING_TIP_104: "Justin: What's your playing strategy?\nDavid: Winning"
  #skipped
  LOADING_TIP_105: "You shouldn't trust bunnies you find in underground caverns."
+ 
 #G0H
  LOADING_TIP_106: "I changed my last name today."
  LOADING_TIP_107: "Only drink one paint marker per day."
@@ -196,10 +199,12 @@
  LOADING_TIP_121: "Michael: How often do you kill people?\nGage: Daily basis"
  LOADING_TIP_122: "I told you it was a ratchet screwdriver!"
  #skipped
+ 
 #J0B
  #censored
  LOADING_TIP_123: "No No No No No *no*"
  LOADING_TIP_124: "All of math is basically just finding different ways to add things."
+ 
 #J0M
  LOADING_TIP_125: "There's always the black market."
  LOADING_TIP_126: "USB ports don't circle."
@@ -302,6 +307,7 @@
  #skipped
  LOADING_TIP_204: "Don't mocking me\nI can grammar"
  LOADING_TIP_205: "I can disaster you if you want"
+ 
 #E0B
  LOADING_TIP_206: "Oh its 9:01 I'm going to spontaneously cut out soon unless the interne..."
  LOADING_TIP_207: "Extream sprots, its like underwater kiteing"
@@ -370,6 +376,7 @@
  LOADING_TIP_229: "I got bamboozled"
  #censored
  #censored
+ 
 #M0N
  LOADING_TIP_230: "I hate buttons!"
  LOADING_TIP_231: "We don't care about the children anymore. They've been brainwashed by some mutant Nazi or something."
@@ -458,6 +465,7 @@
  LOADING_TIP_304: "If someone is wrong, it's okay to shoot them."
  LOADING_TIP_305: "Murder is okay past midnight."
  LOADING_TIP_306: "Shhh\nStop invalidating my points."
+ 
 #M0P
  LOADING_TIP_307: "Save. Kill everyone. Reload save. Nobody remembers but you, and you got away with murder!"
  LOADING_TIP_308: "Do you think virtue is worth it?"
@@ -520,103 +528,105 @@
  #skipped
  LOADING_TIP_347: "Let's blow this banana stand."
  #skipped
-#EXTRAS
- #J0M
+ 
+ #=== March 24th, 2018 Update ===#
+ 
+#J0M
  LOADING_TIP_348: "The long in the up direction"
- #A0W
+#A0W
  LOADING_TIP_349: "Linux is like apples and oranges and pears. They all look different, but they are all the same fruit."
- #M0N
+#M0N
  LOADING_TIP_350: "It's ok to take credit for things if people think you did them."
- #J0M
+#J0M
  LOADING_TIP_351: "Nothing like a nice 25 mph cruise to cool you off after a residential drag race."
- #M0N
+#M0N
  LOADING_TIP_352: "I am not opposed to theoretical violence."
- #D0E
+#D0E
  LOADING_TIP_353: "Broke Bryce with a dumb joke"
- #A0W
+#A0W
  LOADING_TIP_354: "Sees house, someone is dismantaling it, ask the hecking nature valley bar that is dismantiling it if i can buy it. Says if i bring him some wood and some phat stackz then its mine. Chop down apple tree out front for wood (bazinga!!! He did not see that comming) bring him wood and empty my pockets. Go in fresh house. House is empty, i then spend 200 bucks on a bed and some flowers. Boom, homefyed. The dudes i bought the house from are staying at a fire outside my door. One then is like peace ima go build a hecking town. Go help build town. Hecking crabby paddy wants me to get him heck loads of wood and indoctronate people from around the world to live in said town, but there name has to end in 'son'. (Cults am i right?)"
- #J0M
+#J0M
  LOADING_TIP_355: "I make great noises."
- #E0B
+#E0B
  LOADING_TIP_356: "If I was gonna commit a crime I would be pretty organized about it."
- #A0W
+#A0W
  LOADING_TIP_357: "I was like you, then i went to see a doctor and said print screen can lead to an increase in carple tunnle. Soon after, i quenced my additcion by removing the printscreen key and filling the void left with a pictures of justin. Lets just say my fingers never go near that half of the keyboard.\nAlso there was a bit of brainwashing but thats beside the point\nPrintscreen withdrawls can be tough, but after a few weeks, they will begin to subside\nI will suport you through your journy to rid your life of printscreen."
- #J0M
+#J0M
  LOADING_TIP_358: "People means death."
- #D0E
+#D0E
  LOADING_TIP_359: "*Laughs in Californian*"
- #B0H
+#B0H
  LOADING_TIP_360: "I heard 'Wubba lubba dub dub' and only one person laughed. I had to know who this master mind was. I turn only to see the man himself, Einstein."
- #A0W
+#A0W
  LOADING_TIP_361: "Hey Michael, you should go into that phone repair shop with your iPhone, see if they can fix your phone and make it a Samsung."
- #E0B
+#E0B
  LOADING_TIP_362: "If the kids don't want to kill themselves there aren't enough triangles."
  #censored
- #M0P
+#M0P
  LOADING_TIP_363: "Dead memes die hard."
- #J0B
+#J0B
  LOADING_TIP_364: "GAS ALL THE PEOPLE WHO DONT APOLOGISE AFTER BUMPING INTO SOMEONE\nTHEY ARE THE SCUM OF THE EARTH"
  LOADING_TIP_365: "We all know Canadians are the master race."
- #A0W
+#A0W
  #censored
- #M0P
+#M0P
  #censored
- #J0B
+#J0B
  LOADING_TIP_366: "Brawl HD"
- #A0W
+#A0W
  LOADING_TIP_367: "If I were a Pop Rock I'd be fired!"
- #E0B
+#E0B
  #skipped
  LOADING_TIP_368: "I just realized you can use BopIt to end the human race."
- #M0N
+#M0N
  LOADING_TIP_369: "It doesn't have to look good to mean something."
- #B0H
+#B0H
  LOADING_TIP_370: "I don't know\nAre we?"
- #^D0E^
+#^D0E^
  LOADING_TIP_371: "'Bop it!' *Neow* 'Twist it!' *Nyoop* 'END THE HUMAN RACE' ..."
- #A0W
+#A0W
  #censored
- #M0P
+#M0P
  #censored
- #J0M
+#J0M
  #skipped
- #M0P
+#M0P
  LOADING_TIP_372: "All mighty Lucy, I speak upon you to bestow upon me the wonders and glories of being admin... with your infinite wisdom this should be no problem convincing the other wise gods on your council in favor of me elevating to your stature. Over the years I have learned many lessons of how to properly and effectively guide a discord server to the ultimate glory, and with your guidance my lord I will be able to complete my training and become a admin on the most prestiges of servers."
  LOADING_TIP_373: "And to you the all Mighty McThuggin I have learned greatly from the many years which I have been honored to be in your presence. I am truly blessed to even be considered one of your acquaintances, let alone a friend. Please with your mighty powers I wish for you to cast your vote in favor of me being an admin on this fine server which you lead."
  LOADING_TIP_374: ""Finally to you Desmond Weaver of webs you have truly weaved an intricate web of alliances and enemies, but due to this political excellence you have surrounded yourself with the victors and have therefore become one yourself.  Please consider making me an admin of your glorious server we all call home, it would truly be an honor."
  LOADING_TIP_375: "For MrThuggin you are infallible Im sorry I could have questioned you in the last comment, for that I am truly sorry; I question if you will ever be able to forgive me for this grave mistake. This question keeps me up all day and all night, please if it is not too much to ask for put my mind at ease."
- #A0W
+#A0W
  LOADING_TIP_376: "did you just assume here relidioon"
- #J0M
+#J0M
  LOADING_TIP_377: "Ireland is biblical and on fire."
- #B0H
+#B0H
  #censored
- #M0P
+#M0P
  LOADING_TIP_378: "Establishing communism and building a shelf are very different things."
- #B0H
+#B0H
  LOADING_TIP_379: "My parents are dead."
- #J0M
+#J0M
  #censored
- #B0H
+#B0H
  #censored
- #M0P
+#M0P
  #censored
  LOADING_TIP_380: "Can we go back to hating on Jews?"
  #censored
- #B0H
+#B0H
  LOADING_TIP_381: "I don't know why but whenever something sad happens like a speech and I hear 'god speed' I get goosebumps and wanna cry."
- #M0N
+#M0N
  LOADING_TIP_382: "Apparently my use of Google button makes me a Nazi."
- #A0W
+#A0W
  LOADING_TIP_383: "HEY! Im the iliteret one here"
- #B0H
+#B0H
  LOADING_TIP_384: "K ed I HD l add fl ed mglelrkglzvnl a be ebb"
- #M0N
+#M0N
  LOADING_TIP_385: "I'm gonna eat my milk."
  
  #=== August 1st, 2020 Update ===#
  
- #A0W
+#A0W
  LOADING_TIP_386: "IF YOU POST ONE MORE PIC OF EU4 THEN I WILL GO TO YOUR HOUSE, FIND YOUR WRISTS, SLIT THEM USING PAPER COATED IN LEMON JUICE, THEN PUNCH YOU OFF THE NEAREST BRIGE WHERE YOU WILL GET DISENTARY FROM THE WATER, BEFORE I THEN STAB YOU IN THE CHEST WITH A SAFTY PIN... THEN I WILL SLIT MY OWN WRISTS BECAUSE YOU WILL BE DEAD SO YOU CANT REMOVE THESE HANUS IMAGES FROM THE CHAT"
  LOADING_TIP_387: "*puts balloon on nose* I AM A WAFFLE"
  LOADING_TIP_388: "I dont shoot deputes...\nI shoot sheriffs"
@@ -675,7 +685,7 @@
  LOADING_TIP_415: "Visit globalwarminginc.net for all your climate-changing needs!"
  LOADING_TIP_416: "Quarantine is spelt with a c right?" Cuarantine."
  
- #B0H
+#B0H
  LOADING_TIP_417: "When you live in africa and have to drink that chocolate water for dinner again."
  #censored
  #skipped
@@ -734,7 +744,7 @@
  LOADING_TIP_433: "I hope Scott gets run over by carts and he goes 'eeuuggh EEEUUUGHH'"
  #censored
  
- #D0E
+#D0E
  LOADING_TIP_434: "Seize the means of religion!"
  #censored
  #skipped
@@ -761,7 +771,7 @@
  LOADING_TIP_447: "A hot pocket is a dumpling."
  #skipped
  
- #E0B
+#E0B
  LOADING_TIP_448: "If I was gonna commit a crime I would be pretty organized about it." #backdated a little
  #skipped
  #censored
@@ -788,7 +798,7 @@
  LOADING_TIP_456: "Cereal, then milk...\nThen the bowl"
  LOADING_TIP_457: "I wanna collect the full set of child skeletons."
  
- #G0H
+#G0H
  #censored
  #censored
  #skipped
@@ -805,8 +815,8 @@
  #censored
  LOADING_TIP_463: "I can't stop being smart."
  
- #J0B
- LOADING_TIP_464: "To be fair...\ntThat dentist is most definitely giving a loving caress to those teeth."
+#J0B
+ LOADING_TIP_464: "To be fair...\nThat dentist is most definitely giving a loving caress to those teeth."
  #censored
  LOADING_TIP_465: "My greatest creation was Canadian space Hitler, but I don't think that has any bearing on the situation."
  LOADING_TIP_466: "Santa Claus is all about arms-dealing."
@@ -816,7 +826,7 @@
  LOADING_TIP_468: "I'm a postitute"
  #skipped
  
- #J0M
+#J0M
  #skipped
  LOADING_TIP_469: "'Wow, wouldn't it be fun to see what would happen if Hitler took over the world? Golly, look at all that mass genocide!'"
  LOADING_TIP_470: "My time is running up!"
@@ -877,7 +887,7 @@
  LOADING_TIP_520: "A microwave that uses gamma waves would be called a gamma-rave."
  LOADING_TIP_521: "Kale is not human catnip. In fact... oh, I just realized what human catnip actually is."
  
- #M0N 
+#M0N 
  LOADING_TIP_522: "You can have the nth Rome."
  LOADING_TIP_523: "Canadians are just Walmart brand British people. Except for people from Quebec. They are just dollar store brand French."
  LOADING_TIP_524: "I have the real homegrown made in america memes."
@@ -944,7 +954,7 @@
  LOADING_TIP_574: "'mom can I get morphine to relive pain?' 'To relive pain?' 'Yessss'\n*actually gets opioid addiction like a boss*"
  LOADING_TIP_575: "They made a segregated sheep farm."
  
- #M0P
+#M0P
  LOADING_TIP_576: "Can we go back to hating on jews?"
  #censored
  #censored
@@ -1024,19 +1034,19 @@
  
  #=== September 7th, 2020 Update ===#
  
- #J0M
+#J0M
  LOADING_TIP_621: "I have too much elbows."
- #G0H
+#G0H
  LOADING_TIP_622: "Why sun hot"
- #J0M
+#J0M
  LOADING_TIP_623: "Keep your needles away from my needles!"
  LOADING_TIP_624: "I can feel the sparkle fluid moving."
  LOADING_TIP_625: "One skin fits all"
- #G0H
+#G0H
  LOADING_TIP_626: "That's my nickname in college, Limiting Factor."
- #M0P
+#M0P
  LOADING_TIP_627: "Michael: I'm an absolute fool\nJackson: We know\nMichael: Thank          you"
- #A0W
+#A0W
  LOADING_TIP_628: "My cheese is starting to sweat."
  
  #=== May 23rd, 2022 Update ===#
@@ -1098,7 +1108,7 @@
  #censored
  
 #B0H
-#nothing new
+ #nothing new
 
 #D0E
  LOADING_TIP_654: "I did nazi that coming"
