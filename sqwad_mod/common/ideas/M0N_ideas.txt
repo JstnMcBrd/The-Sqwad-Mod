@@ -16,7 +16,7 @@ M0N_ideas = {
 	free = yes		#will be added at load.
 	
 	aluminum_fist = {
-		reduced_liberty_desire = -50
+		diplomatic_reputation = 2.00
 		diplomatic_annexation_cost = -0.50
 	}
 	no_roast_filter = {
