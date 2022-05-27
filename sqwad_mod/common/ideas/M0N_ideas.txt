@@ -1,0 +1,41 @@
+M0N_ideas = {
+	#traditions
+	start = {
+		ae_impact = -0.10
+		diplomatic_annexation_cost = -0.25
+	}
+	
+	#ambitions
+	bonus = {
+		years_of_nationalism = -5.0
+	}
+
+	trigger = {
+		tag = M0N
+	}
+	free = yes		#will be added at load.
+	
+	no_roast_filter = {
+		siege_ability = 0.1
+	}
+	lol = {
+		vassal_income = 0.10
+		vassal_forcelimit_bonus = 0.10
+	}
+	theyre_dead = {
+		province_warscore_cost = -0.25
+	}
+	no_overall_filter = {
+		reinforce_speed = 0.1
+	}
+	kilo_murders_per_hour = {
+		fire_damage = 0.15
+	}
+	bleach_for_legal_documents = {
+		state_maintenance_modifier = -0.35
+	}
+	aluminum_fist = {
+		global_unrest = -1.00
+	}
+
+}

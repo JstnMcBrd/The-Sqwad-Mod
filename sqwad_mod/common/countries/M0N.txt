@@ -1,0 +1,82 @@
+graphical_culture = westerngfx
+
+color = { 224  255  255 }
+
+revolutionary_colors = { 2  5  8 }
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	maritime_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quality_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Brian #0" = 1
+	"Chuck #0" = 1
+	"Michael #0" = 1
+	"Mikey #0" = 1
+	"Stanley #0" = 1
+
+	"Christy #0" = -1
+	"Michelle #0" = -1
+}
+
+leader_names = { 
+	Norris Norris Norris Norris Norris Norris Norris Norris Norris Norris #repeated to get rid of warning about less than 10 leader names
+}
+
+ship_names = {
+	"2th Root"
+	"7 out of 10"
+	"Aluminum Fist" "American Dream"
+	"Bag of Doritos" "Bag of Swag" "Beating Time" "Black Ink" Bleach "Bleach o'Clock" Buttons "Button Hater"
+	"CIA Watchlist" "Chik Fil A" "Conflicting Yourself" Crazyville "Crippling Depression" "Crusades 2"
+	"Dating Advice" "Dead Cat" "Den of Atlases" Defication Diarrhea Disagreement "Dutch 9/11" "Dutch Slander"
+	"Equal Opportunity Gulag" "Equal Opportunity Milk Drinker" "Equal-Opportunity Slavemaster" Evisceration
+	"Fidget Spinner" "freeexplosions.com"
+	"Gandhi's Nuclear Paradise" "GERMAN SUPER CANON" "Google Button Nazi"
+	"He's Dead" "History of Science" "Holy Sacrament"
+	"I Killed Him" Invalidation
+	"KAL ORT POR" "KAL VAS XEN" "Federal Prison" Kidneys "Kilo-Murder"
+	Lamp "Little Turd Nugget" Lol
+	"Medium Well" Memeconomy "Meme Juice" "Midnight Glass of Milk" "Milk Racist" "Mouch Werse" "Mutant Nazi"
+	"NAMIST CANNIBAL" "Nazi Germant" "Nico's Smile" Nincompoop NOmenclature "Not Breathing" "Nth Rome" "Nut Shot Crit"
+	"One and a Half Thirds"
+	Painkiller "Political Racism" "Pumpkin Spice Bleach" Puppy
+	"Racist Wall" "Ripped Out Sternum" Robosocialist "Root Canal"
+	"Segregated Sheep Farm" "Sheer Annoyance" Shifty Skeleton "Snorted Box" "Spawn of Satan" "SPEEDMOON™" "Spleen Turbopunch" "Stoked Flame of Wrath" "Suicide Mood" "Suicide Company" "Swastika Emoji" "Swooshy Swoosh"
+	"Terrorism Simulator" "Theoretical Violence" "Tooth Root" "Turbo Knifer" "Twizzler Hater"
+	Unwidifier
+	"Virtual LSD Trip" Vulture
+	"Walmart Brand"
+}
+
+army_names = {
+	"Armee von $PROVINCE$"
+}
+
+fleet_names = {
+	"Flotte von $PROVINCE$"
+}

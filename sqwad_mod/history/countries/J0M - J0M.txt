@@ -1,0 +1,32 @@
+#government = feudal_monarchy
+government = monarchy
+government_rank = 3
+technology_group = western
+religion = catholic
+primary_culture = J0M_culture
+add_accepted_culture = lombard
+add_accepted_culture = umbrian
+add_accepted_culture = tuscan
+add_accepted_culture = ligurian
+add_accepted_culture = piedmontese
+add_accepted_culture = romagnan
+add_accepted_culture = venetian
+add_accepted_culture = neapolitan
+add_accepted_culture = sicilian
+add_accepted_culture = sardinian
+historical_friend = M0N
+historical_friend = M0P
+national_focus = MIL
+capital = 104		# Milan
+
+1444.11.10 = {
+	set_country_flag = sqwad_nation_flag
+
+	monarch = {
+		name = "Justin"
+		dynasty = "Mac'Bridhe"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

@@ -1,0 +1,7 @@
+1444.11.10 = {
+	capital = 366 #The Canarias
+}
+
+1444.11.11 = {
+	capital = 219 #Toledo
+}

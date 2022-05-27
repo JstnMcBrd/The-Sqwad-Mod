@@ -1,0 +1,40 @@
+B0H_ideas = {
+	#traditions
+	start = {
+		global_tax_modifier = 0.10
+		infantry_power = 0.10
+	}
+	
+	#ambitions
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+
+	trigger = {
+		tag = B0H
+	}
+	free = yes		#will be added at load.
+	
+	biology_class = {
+		production_efficiency = 0.10
+	}
+	random_noises = {
+		discipline = 0.05
+	}
+	all_the_latest_memes = {
+		technology_cost = -0.1
+		idea_cost = -0.10
+	}
+	h = {
+		colonists = 1
+	}
+	inexperienced_rule = {
+		advisor_cost = -0.10
+	}
+	battle_music = {
+		land_morale = 0.10
+	}
+	fervent_recruitment = {
+		global_manpower_modifier = 0.15
+	}
+}

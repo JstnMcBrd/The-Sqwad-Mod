@@ -1,0 +1,27 @@
+namespace = sqwad_protestant_fix
+
+country_event = {
+	id = sqwad_protestant_fix.1
+	title = "sqwad_protestant_fix.1_TITLE"
+	desc = "sqwad_protestant_fix.1_DESC"
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		religion = protestant
+		any_owned_province = {
+			NOT = { religion = protestant }
+		}
+		NOT = { is_year = 1445 }
+	}
+
+	
+	option = {
+		name = "sqwad_protestant_fix.1_OPTION1"
+		every_owned_province = {
+			limit = {
+				NOT = { religion = protestant }
+			}
+			change_religion = protestant
+		}
+	}
+}

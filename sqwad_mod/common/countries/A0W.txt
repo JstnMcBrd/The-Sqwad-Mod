@@ -1,0 +1,89 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 215  200  35 }
+
+revolutionary_colors = { 5  11  14 } 
+
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	offensive_ideas
+	administrative_ideas
+	quantity_ideas
+	influence_ideas
+	quality_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+	ottoman_yaya
+	ottoman_musellem
+	ottoman_azab
+	ottoman_timariot
+	ottoman_janissary
+	ottoman_spahi
+	ottoman_sekban
+	ottoman_reformed_spahi
+	ottoman_reformed_janissary
+	ottoman_toprakli_hit_and_run
+	ottoman_nizami_cedid
+	ottoman_toprakli_dragoon
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	ottoman_new_model
+	ottoman_lancer
+}
+
+monarch_names = {
+#rulers and generals (no separation)
+	"Aidan #0" = 1
+	"ReRamp #0" = 1
+	
+	"Aideena #0" = -1
+}
+
+leader_names = {
+	"^Expert"
+	Flip Frick Frig
+	Goof
+	Hanus
+	Imbisil
+	Qwerty
+	Wilson
+	Yeat
+}
+
+ship_names = {
+	"Back Room" "Bean Stank" "Beep Beep" "Big Rig" "Bloody Doritos" "Bloody Towel"
+	"Cheese Curd Attitude" Cuarantine Crack "Creamy Criminal" "The Crime"
+	"Dead Mouse" "DespaGREEDO SHOT FIRST" "DIRECT PLAY" DISENTARY "Done Goofed" "Duh Kinky"
+	EEEUUUGHH "^expert"
+	"Flip and Dip" Frick "Fried Chicken Purple" "Frick Storm" Frig
+	"Garlic Bread Hater" "globalwarminginc.net"
+	HACDKEDED HANUS Hairacy "Heeee...lllck" Headcrab "HERATIC SCUM" "Holocaust Denier" "Hoimr Tetrhetr"
+	"I AM A WAFFLE" Illiterate IMBISIL
+	Knolage Krill
+	"Live, Laugh, Run"
+	"Meth Adict"
+	no2
+	"Old News"
+	Peanut Printscreen Prostisuit
+	Qwerty
+	"Racist Senses" Runinging
+	"SAFTY PIN" sahdb4hsbdday Saurerday sauterday "Slave-Actor Boat" Slaveiator Snickers Sphelling "Squeek" "Sweaty Cheese"
+	"Tank Top Pants"
+	VFX
+	"Weird Girl Seizure"
+	Yeat
+}
+
+army_names = {
+	"Frickin' Army" "Friggin' Army" "$PROVINCE$ Frigarmy"
+}
+
+fleet_names = {
+	"Frickin' Navy" "Friggin' Navy" "$PROVINCE$ Frigfleet"
+}

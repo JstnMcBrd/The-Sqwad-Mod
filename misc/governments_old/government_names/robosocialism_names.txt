@@ -1,0 +1,23 @@
+gov_robosocialism = {
+	rank = {
+		1 = ROBOSOCIALISM_GOV_RANK_1
+		2 = ROBOSOCIALISM_GOV_RANK_2
+		3 = ROBOSOCIALISM_GOV_RANK_3
+	}
+
+	ruler_male = {
+		1 = ROBOSOCIALISM_LEADER_RANK_1
+		2 = ROBOSOCIALISM_LEADER_RANK_2
+		3 = ROBOSOCIALISM_LEADER_RANK_3
+	}
+
+	ruler_female = {
+		1 = ROBOSOCIALISM_LEADER_RANK_1
+		2 = ROBOSOCIALISM_LEADER_RANK_2
+		3 = ROBOSOCIALISM_LEADER_RANK_3
+	}
+
+	trigger = {
+		government = pos_republic
+	}
+}

@@ -1,0 +1,41 @@
+ D0E_ideas = {
+	#traditions
+	start = {
+		mercenary_manpower = 0.5
+		num_accepted_cultures = 2
+	}
+	
+	#ambitions
+	bonus = {
+		inflation_reduction = 0.1
+	}
+
+	trigger = {
+		tag = D0E
+	}
+	free = yes		#will be added at load.
+	
+	dealing_with_dolphins = {
+		trade_efficiency = 0.15
+	}
+	sage_advice = {
+		diplomatic_reputation = 1.00
+		diplomatic_upkeep = 1
+	}
+	wizardry = {
+		idea_cost = -0.1
+	}
+	adaptable = {
+		land_attrition = -0.10
+	}
+	away_to_dinner = {
+		global_unrest = -1.00
+	}
+	seize_the_means = {
+		religious_unity = 0.25
+	}
+	reasonably_fatal = {
+		artillery_power = 0.20
+	}
+
+} 

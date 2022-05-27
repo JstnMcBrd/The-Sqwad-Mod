@@ -1,0 +1,27 @@
+#government = peasants_republic
+government = republic
+add_government_reform = peasants_republic
+government_rank = 3
+technology_group = western
+unit_type = western
+primary_culture = D0E_culture
+add_accepted_culture = prussian
+add_accepted_culture = polish
+add_accepted_culture = lithuanian
+add_accepted_culture = latvian
+religion = catholic
+capital = 257	# Warszawa
+
+historical_friend = B0H
+
+1444.11.10 = {
+	set_country_flag = sqwad_nation_flag
+
+	monarch = {
+		name = "David"
+		dynasty = "Evans"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}

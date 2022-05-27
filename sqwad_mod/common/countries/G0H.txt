@@ -1,0 +1,75 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 46  127  189 }
+
+revolutionary_colors = { 10  14  4 }
+
+historical_idea_groups = {
+	exploration_ideas
+	religious_ideas
+	offensive_ideas
+	expansion_ideas
+	influence_ideas
+	maritime_ideas
+	quality_ideas
+	defensive_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	spanish_tercio
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Bob #0" = 1
+	"Gage #0" = 1
+	
+	"Bobby #0" = -1
+}
+
+leader_names = {
+	Hawkins
+	Ross Ross Ross Ross Ross Ross Ross Ross Ross Ross #repeated to get rid of warning about less than 10 leader names
+}
+
+ship_names = {
+	Bombs "Bread Cube"
+	"Corrosive Wince"
+	"Daily Basis" "Doing Mormons" Drugs
+	"Freaking Nazi"
+	"Google Fiber"
+	"I Doesn't Work" Insides
+	"Kitty Cat"
+	"Limiting Factor"
+	Magic
+	"No Goodbyes"
+	"Paint Marker" "Part-Time God" Plunger
+	"Quantum Donut Buyer"
+	"Ratchet Screwdriver" "River Nazi" "Run Away Together"
+	"Shake-age" "Sharpened Paper" "STOP IT"
+	"STUPID CONVERSATION" "trashbin_and_nomansky_and_switch"
+	"The Bad Michael" Trip
+	"Why Sun Hot"
+}
+
+
+army_names = {
+	"Ross Army" "$PROVINCE$ Army"
+}
+
+fleet_names = {
+	"Ross Fleet" "$PROVINCE$ Fleet"
+}

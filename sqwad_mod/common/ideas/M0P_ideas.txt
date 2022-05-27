@@ -1,0 +1,47 @@
+M0P_ideas = {
+	#traditions
+	start = {
+		trade_efficiency = 0.1
+		global_colonial_growth = 10
+		sea_repair = yes
+	}
+	
+	#ambitions
+	bonus = {
+		global_sailors_modifier = 0.2
+		naval_forcelimit_modifier = 0.25
+	}
+
+	trigger = {
+		tag = M0P
+	}
+	free = yes		#will be added at load.
+	
+	not_a_bad_dictator = {
+		yearly_absolutism = 0.2
+		global_autonomy = -0.05
+	}
+	land_in_cite = {
+		range = 0.5
+	}
+	bad_spelling_indead = {
+		fabricate_claims_cost = -0.2
+		ae_impact = -0.1
+	}
+	modern_art = {
+		diplomatic_reputation = 1.00
+		diplomatic_upkeep = 1
+	}
+	censorship_of_the_press = {
+		siege_ability = 0.10
+		army_tradition = 0.2
+	}
+	melee_hd = {
+		manpower_recovery_speed = 0.1
+		reinforce_speed = 0.1
+	}
+	pos_jokes = {
+		global_unrest = -1.00
+	}
+
+}

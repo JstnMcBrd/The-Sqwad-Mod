@@ -1,0 +1,31 @@
+robosocialism = {
+	color = { 255 0 0 }
+	
+	dictatorship = yes
+	
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	allow_convert = no
+    nation_designer_trigger = {
+            technology_group = western_group
+    }
+	
+	royal_marriage = no
+	heir = no
+	queen = no
+	
+	rulers_can_be_generals = yes
+	
+	ai_will_do = {
+		factor = 0
+	}
+
+	rank = {
+		1 = {
+		}
+		2 = {
+		}
+		3 = {
+		}
+	}
+}

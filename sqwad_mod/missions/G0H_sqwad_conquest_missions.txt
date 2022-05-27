@@ -1,0 +1,424 @@
+G0H_conquest = {
+	slot = 1 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = G0H
+	}
+	
+	G0H_mighty_army = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		position = 1
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		trigger = {
+			army_size_percentage = 0.8
+			#manpower_percentage = 0.5
+			num_of_generals = 1
+		}
+		
+		effect = {
+			add_prestige = 10		
+			#Territorial Claims
+			if = {
+				limit = { NOT = { map_setup = map_setup_random } }
+				leon_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				pyrenees_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				corsica_sardinia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			if = { #if map is set on random, add claims on bordering areas
+				limit = { map_setup = map_setup_random }
+				
+				every_owned_province = {
+					every_neighbor_province = {
+						area = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+			}		
+		}
+	}
+}
+
+G0H_conquest_iberia = {
+	slot = 1 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = G0H
+		NOT = { map_setup = map_setup_random }
+	}
+
+	G0H_conquest_leon = {
+		icon = mission_unite_home_region
+		required_missions = { G0H_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = leon_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			leon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All Iberia
+			iberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			#Start Maghreb mission tree
+			northern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	G0H_unite_iberia = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { G0H_conquest_leon }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = iberia_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			iberia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+		}
+	}
+}
+
+G0H_conquest_maghreb = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = G0H
+		NOT = { map_setup = map_setup_random }
+	}
+
+	G0H_conquest_northern_morocco = {
+		icon = mission_unite_home_region
+		required_missions = { G0H_conquest_upper_andalucia }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = northern_morocco_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			northern_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All the Magrebs
+			maghreb_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	G0H_unite_maghreb = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { G0H_conquest_northern_morocco }
+		position = 8
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = maghreb_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			maghreb_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+					
+			#Claims on Egypt
+			egypt_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+G0H_conquest_france = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = G0H
+		NOT = { map_setup = map_setup_random }
+	}
+
+	G0H_conquest_pyrenees = {
+		icon = mission_unite_home_region
+		required_missions = { G0H_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = pyrenees_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			pyrenees_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All France
+			france_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	G0H_unite_france = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { G0H_conquest_pyrenees }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = france_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			france_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+					
+			#Claims on British Isles
+			british_isles_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#Claims on Low Countries
+			low_countries_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#Claims on South Germany
+			south_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+G0H_conquest_italy = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = G0H
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	G0H_conquest_corsica_sardinia = {
+		icon = mission_unite_home_region
+		required_missions = { G0H_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = corsica_sardinia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All Italy
+			italy_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	G0H_unite_italy = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { G0H_conquest_corsica_sardinia }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = italy_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			italy_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+					
+			#Claims on the Balkans
+			balkan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

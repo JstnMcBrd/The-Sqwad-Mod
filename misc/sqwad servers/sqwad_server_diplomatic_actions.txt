@@ -1,0 +1,188 @@
+#ROOT = country using the action (THIS and PREV too)
+#FROM = country being acted on
+
+join_server = {
+	#category = influence
+	category = sqwad
+
+	alert_index = 40
+	alert_tooltip = join_server_alert_tooltip
+	
+	require_acceptance = yes
+	
+	is_visible = {
+		ROOT = { has_country_flag = sqwad_nation_flag }
+		FROM = { has_country_flag = sqwad_nation_flag }
+		
+		FROM = { is_subject = no }
+	}
+	
+	is_allowed = {	
+		ROOT = { is_at_war = no }
+		FROM = { is_at_war = no }
+	
+		ROOT = { NOT = { is_subject_of = FROM } }
+	
+		ROOT = {
+			custom_trigger_tooltip = {
+				tooltip = SQWAD_NOT_RECENTLY_FORCED_TO_BE_SERVER_MEMBER
+				was_recently_forced_to_become_server_member_trigger = no
+			}
+		}
+	
+		ROOT = {
+			custom_trigger_tooltip = {
+				tooltip = SQWAD_IS_NOT_SUBJECT_OF_NON_SERVER_MEMBER_TYPE
+				OR = {
+					is_subject = no
+					is_subject_of_type = server_member
+				}
+			}
+		}
+	}
+	
+	on_accept = {
+		FROM = { save_event_target_as = server_admin }
+		ROOT = { save_event_target_as = potential_server_member }
+		
+		event_target:potential_server_member = {
+			if = {
+				limit = {
+					is_subject_of_type = server_member
+				}
+				overlord = {
+					add_opinion = {
+						who = event_target:potential_server_member
+						modifier = tributary_state_broke_free  
+					}
+						
+					add_casus_belli = {
+						target = event_target:potential_server_member
+						type = cb_left_server
+						months = 120
+					}
+				}
+				
+				grant_independence = yes
+			}
+			
+			if = {
+				limit = {
+					is_a_server_admin_trigger = yes
+				}
+				
+				every_subject_country = {
+					limit = {
+						is_subject_of_type = server_member
+					}
+					event_target:server_admin = {
+						create_subject = {
+							subject = PREV
+							subject_type = server_member
+						}
+					}	
+				}
+			}
+			
+			country_event = { id = sqwad_server_events.1 }
+		}
+		
+		event_target:server_admin = { 
+			create_subject = {
+				subject = event_target:potential_server_member
+				subject_type = server_member
+			}
+		}
+	}
+
+	on_decline = {
+		FROM = { save_event_target_as = server_admin }
+		ROOT = { save_event_target_as = potential_server_member }
+	
+		event_target:potential_server_member = {
+			country_event = { id = sqwad_server_events.2 }
+		}
+	}
+	
+	ai_acceptance = {
+        add_entry = {
+            name = "OPINION_ABOUT"
+			
+            export_to_variable = {
+                variable_name = ai_value
+                value = opinion				# Which exportable value to export
+                who = FROM					# Who to export the value from
+                with = ROOT					# Who the ai_value is for
+            }
+            
+            # You can then change ai_value with effects such as multiply_variable, etc
+			divide_variable = {
+				which = ai_value
+				value = 4
+			}
+       }
+    }
+	
+	ai_will_do = {
+		has_opinion = {					#will do if opinion of FROM is higher than 50
+			who = FROM
+			value = 50
+		}
+		if = {							#AND opinion of overlord is lower than 0
+			limit = {
+				is_subject = yes
+			}
+			opinion_of_overlord_higher_than_0_trigger = no
+		}
+		is_a_server_admin_trigger = no	#AND not a server admin
+	}
+}
+
+kick_from_server = {
+	#category = influence
+	category = sqwad
+	
+	require_acceptance = no
+	
+	is_visible = {
+		ROOT = { has_country_flag = sqwad_nation_flag }
+		FROM = { has_country_flag = sqwad_nation_flag }
+		
+		FROM = {
+			overlord = { tag = ROOT }
+			is_subject_of_type = server_member
+		}
+	}
+	
+	is_allowed = {
+		ROOT = { is_at_war = no }
+		FROM = { is_at_war = no }
+	}
+		
+	on_accept = {
+		FROM = {
+			grant_independence = yes
+			add_opinion = {
+				who = ROOT
+				modifier = tributary_state_abandoned
+			}
+			country_event = { id = sqwad_server_events.4 }
+		}
+	}
+		
+	ai_will_do = {
+		NOT = { has_opinion = {				#won't do if opinion of subject > -100
+			who = FROM
+			value = -100
+		} }
+		#NOT = { any_subject_country = {	#won't do if any other subject countries have positive opinion of fellow subject and negative opinion of overlord
+		#	is_subject_of_type = server_member
+		#	NOT = { tag = FROM }
+		#	has_opinion = {
+		#		who = FROM
+		#		value = 0
+		#	}
+		#	opinion_of_overlord_higher_than_0_trigger = no
+		#} }
+	}
+}

@@ -1,0 +1,25 @@
+#government = feudal_monarchy
+government = monarchy
+government_rank = 3
+primary_culture = E0B_culture
+add_accepted_culture = breton
+add_accepted_culture = normand
+add_accepted_culture = cosmopolitan_french
+add_accepted_culture = gascon
+add_accepted_culture = irish
+religion = catholic
+technology_group = western
+historical_friend = B0H
+capital = 169	# Armor
+
+1444.11.10 = {
+	set_country_flag = sqwad_nation_flag
+
+	monarch = {
+		name = "Emily"
+		dynasty = "de Breizh"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

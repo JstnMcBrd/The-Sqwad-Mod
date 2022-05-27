@@ -1,0 +1,42 @@
+D0E_ideas = {
+	#traditions
+	start = {
+		global_manpower_modifier = 0.10
+		num_accepted_cultures = 1
+	}
+	
+	#ambitions
+	bonus = {
+		administrative_efficiency = 0.1
+	}
+
+	trigger = {
+		tag = D0E
+	}
+	free = yes		#will be added at load.
+	
+	xymidish_tolerance = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+	}
+	money_management = {
+		inflation_reduction = 0.1
+	}
+	local_governance = {
+		global_unrest = -1.00
+	}
+	efficient_manufacturing = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	gott_mit_uns = {
+		discipline = 0.05
+	}
+	a_new_age_of_diplomacy = {
+		diplomatic_reputation = 1.00
+		diplomatic_upkeep = 1
+	}
+	defensive_maneuvers = {
+		fire_damage_received = -0.15
+	}
+
+} 

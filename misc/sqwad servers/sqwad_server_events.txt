@@ -1,0 +1,166 @@
+namespace = sqwad_server_events
+
+#Join Server - they said yes
+country_event = {
+	id = sqwad_server_events.1
+	title = "sqwad_server_events_server_membership_approved_title"
+	desc = "sqwad_server_events_server_membership_approved_desc"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		has_country_flag = sqwad_nation_flag
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = "sqwad_server_events_server_membership_approved_option"
+	}
+}
+
+#Join Server - they said no
+country_event = {
+	id = sqwad_server_events.2
+	title = "sqwad_server_events_server_membership_rejected_title"
+	desc = "sqwad_server_events_server_membership_rejected_desc"
+	#picture = DEBATE_REPUBLICAN_eventPicture
+	picture = ACCUSATION_eventPicture
+	
+	trigger = {
+		has_country_flag = sqwad_nation_flag
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = "sqwad_server_events_server_membership_rejected_option"
+	}
+}
+
+country_event = { #New Server - option to join
+	id = sqwad_server_events.3
+	title = "sqwad_server_events_join_new_server_title"
+	desc = "sqwad_server_events_join_new_server_desc"
+	#picture = CIVIL_WAR_eventPicture
+	picture = WAR_OF_THE_ROSES_eventPicture
+	
+	trigger = {
+		has_country_flag = sqwad_nation_flag
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = "sqwad_server_events_join_new_server_yes"
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 0				#will not join new server
+				NOT = { has_opinion = {	#if opinion toward new server less than 0
+					who = FROM
+					value = 0
+				} }
+			}
+			modifier = {
+				factor = 0										#will not join new server
+				is_a_server_admin_trigger = yes					#if already a server admin
+			}
+			modifier = {
+				factor = 0										#will not join new server
+				is_subject_of_type = server_member
+				opinion_of_overlord_higher_than_0_trigger = yes	#if opinion toward current server is higher than 0
+			}
+		}
+		
+		if = {				#if already a server member, break away
+			limit = {
+				is_subject_of_type = server_member
+			}
+			overlord = {
+				add_opinion = {
+					who = ROOT
+					modifier = tributary_state_broke_free  
+				}
+					
+				add_casus_belli = {
+					target = ROOT
+					type = cb_left_server
+					months = 120
+				}
+			}
+			
+			grant_independence = yes
+		}
+		
+		if = {				#if already a server admin, transfer server members to new server admin
+			limit = {
+				is_a_server_admin_trigger = yes
+			}
+			every_subject_country = {
+				limit = {
+					is_subject_of_type = server_member
+				}
+				FROM = {
+					create_subject = {
+						subject = PREV
+						subject_type = server_member
+					}
+				}	
+			}
+		}
+		
+		FROM = {
+			create_subject = {
+				subject = ROOT
+				subject_type = server_member
+			}	
+		}
+	}
+	
+	option = {
+		name = "sqwad_server_events_join_new_server_no"
+		ai_chance = {
+			factor = 1
+			modifier = { 
+				factor = 0											#will not stay in old server
+				has_opinion = {										#if opinion toward new server higher than 0
+					who = FROM
+					value = 0
+				}
+				if = {
+					limit = {
+						is_subject_of_type = server_member
+					}
+					opinion_of_overlord_higher_than_0_trigger = no	#AND opinion toward overlord lower than 0							
+				}
+				is_a_server_admin_trigger = no						#AND has no server members
+			}
+		}
+		
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_support_independence	#maybe replace this with something more customized later
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sqwad_server_events.4
+	title = "sqwad_server_events_kicked_from_server_title"
+	desc = "sqwad_server_events_kicked_from_server_desc"
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	trigger = {
+		has_country_flag = sqwad_nation_flag
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = "sqwad_server_events_kicked_from_server_option"
+		
+		add_stability = -1
+		add_country_modifier = {
+			name = kicked_from_server
+			duration = 3650 #10 years
+		}
+	}
+}

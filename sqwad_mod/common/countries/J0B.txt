@@ -1,0 +1,68 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 46 114 55 }
+
+revolutionary_colors = { 5  0  5 }
+
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	trade_ideas
+	economic_ideas
+	plutocracy_ideas
+	diplomatic_ideas
+	offensive_ideas
+	spy_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_longbow
+	gaelic_mercenary
+	gaelic_free_shooter
+	irish_charge
+	anglofrench_line
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Jackson #0" = 1
+	
+	"Jackette #0" = -1
+}
+
+leader_names = { 
+	Beard Beard Beard Beard Beard Beard Beard Beard Beard Beard #repeated to get rid of warning about less than 10 leader names
+	Beard Brawl
+	Trudeau
+}
+
+ship_names = {
+	"All of Math" "Add Things"
+	"Brawl HD"
+	"Canadian Master Race" "Canadian Space Hitler"
+	"Eye of Newt"
+	First
+	No
+	Postitute
+	"Salami Guy" "SCUM OF THE EARTH"
+	"Wing of Flea"
+}
+
+army_names = {
+	"Cananandarmy"
+	"$PROVINCE$ Army"
+}
+
+fleet_names = {
+	"$PROVINCE$ Fleet"
+}

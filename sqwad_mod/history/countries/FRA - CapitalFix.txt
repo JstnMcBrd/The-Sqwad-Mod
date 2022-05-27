@@ -1,0 +1,7 @@
+1444.11.10 = {
+	capital = 200 #Montpellier
+}
+
+1444.11.11 = {
+	capital = 183 #Paris
+}

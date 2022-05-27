@@ -1,0 +1,35 @@
+country_decisions = {
+	J0M_make_rome_capital = {
+		potential = {
+			tag = J0M
+			owns = 118
+			NOT = { capital = 118 }
+			NOT = { has_country_flag = J0M_relocated_capital_rome }
+		}
+		allow = {
+			is_at_war = no
+			controls = 118			
+		}
+		effect = {
+			set_country_flag = J0M_relocated_capital_rome
+			add_stability = 1
+			add_core = 118
+			118 = {
+				move_capital_effect = yes
+				change_culture = J0M_culture
+				change_religion = ROOT
+				change_province_name = "Thuggo"
+				rename_capital = "Thuggo"
+			}
+			118 = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		do_not_core = 118 # Rome
+	}
+}

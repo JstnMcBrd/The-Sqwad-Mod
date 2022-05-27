@@ -1,0 +1,22 @@
+#government = despotic_monarchy
+government = monarchy
+government_rank = 3
+technology_group = western
+primary_culture = A0W_culture
+add_accepted_culture = turkish
+add_accepted_culture = greek
+add_accepted_culture = bulgarian
+religion = sunni
+capital = 151 # Constantinople
+
+1444.11.10 = {
+	set_country_flag = sqwad_nation_flag
+
+	monarch = {
+		name = "Aidan"
+		dynasty = "Wilson"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}

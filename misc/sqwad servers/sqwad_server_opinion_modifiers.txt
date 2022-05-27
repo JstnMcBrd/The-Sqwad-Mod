@@ -1,0 +1,6 @@
+is_server_member = {
+	opinion = 15
+}
+is_server_admin = {
+	opinion = 15
+}
