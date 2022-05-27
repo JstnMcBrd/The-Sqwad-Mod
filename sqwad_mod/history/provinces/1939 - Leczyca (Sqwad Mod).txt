@@ -6,7 +6,7 @@
 }
 1444.11.11 = {
 	remove_core = D0E
-	owner = RIG
-	controller = RIG
+	owner = POL
+	controller = POL
 }
 #SQWAD MOD SECTION END
