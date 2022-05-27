@@ -1,14 +1,22 @@
 M0P_ideas = {
 	#traditions
 	start = {
+<<<<<<< HEAD
 		trade_efficiency = 0.10
+=======
+		trade_efficiency = 0.1
+>>>>>>> moved_xymiden
 		global_colonial_growth = 10
 		sea_repair = yes
 	}
 	
 	#ambitions
 	bonus = {
+<<<<<<< HEAD
 		global_sailors_modifier = 0.25
+=======
+		global_sailors_modifier = 0.2
+>>>>>>> moved_xymiden
 		naval_forcelimit_modifier = 0.25
 	}
 
@@ -22,7 +30,10 @@ M0P_ideas = {
 		global_autonomy = -0.05
 	}
 	land_in_cite = {
+<<<<<<< HEAD
 		colonists = 1
+=======
+>>>>>>> moved_xymiden
 		range = 0.5
 	}
 	bad_spelling_indead = {
@@ -38,8 +49,13 @@ M0P_ideas = {
 		army_tradition = 0.2
 	}
 	melee_hd = {
+<<<<<<< HEAD
 		manpower_recovery_speed = 0.10
 		reinforce_speed = 0.10
+=======
+		manpower_recovery_speed = 0.1
+		reinforce_speed = 0.1
+>>>>>>> moved_xymiden
 	}
 	pos_jokes = {
 		global_unrest = -1.00

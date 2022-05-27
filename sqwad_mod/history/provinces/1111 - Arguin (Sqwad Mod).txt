@@ -1,0 +1,5 @@
+#SQWAD MOD SECTION BEGIN
+1444.11.10 = {
+	discovered_by = J0M
+}
+#SQWAD MOD SECTION END
