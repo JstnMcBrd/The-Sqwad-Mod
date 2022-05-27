@@ -1,13 +1,15 @@
 E0B_ideas = {
 	#traditions
 	start = {
-		may_recruit_female_generals = yes
-		female_advisor_chance = 1.00
+		may_recruit_female_generals = yes	# These are just aesthetic
+		female_advisor_chance = 1.00		#
+		
+		naval_morale = 0.15
 	}
 	
 	#ambitions
 	bonus = {
-		development_cost = -0.05
+		development_cost = -0.10
 	}
 
 	trigger = {
@@ -34,10 +36,10 @@ E0B_ideas = {
 		global_unrest = -1.00
 	}
 	aggressive_merchants = {
-		global_trade_power = 0.05
+		global_trade_power = 0.10
 	}
 	return_of_the_armorican_war_machine = {
-		artillery_power = 0.1
+		artillery_power = 0.10
 	}
 
 }
