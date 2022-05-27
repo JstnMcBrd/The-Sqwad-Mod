@@ -1,8 +1,7 @@
 J0M_ideas = {
 	#traditions
 	start = {
-		range = 0.5
-		development_cost = -0.1
+		land_morale = 0.10
 	}
 	
 	#ambitions
@@ -15,13 +14,12 @@ J0M_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	accidental_discovery = {
-		colonists = 1
-		auto_explore_adjacent_to_colony = yes
+	infra_import = {
+		development_cost = -0.10
 	}
 	people_means_death = {
-		manpower_recovery_speed = 0.1
-		reinforce_speed = 0.1
+		manpower_recovery_speed = 0.10
+		reinforce_speed = 0.10
 	}
 	flowery_language = {
 		diplomatic_reputation = 0.50
@@ -32,11 +30,9 @@ J0M_ideas = {
 		core_creation = -0.10
 	}
 	simple_memeconomics = {
-		global_trade_power = 0.10
 		trade_efficiency = 0.10
 	}
 	conquest = {
-		land_morale = 0.10
 		discipline = 0.05
 	}
 	general_public = {
