@@ -7,7 +7,7 @@ A0W_ideas = {
 	
 	#ambitions
 	bonus = {
-		army_tradition = 0.10
+		discipline = 0.05
 	}
 
 	trigger = {
@@ -16,8 +16,8 @@ A0W_ideas = {
 	free = yes		#will be added at load.
 	
 	crack = {
-		land_morale = 0.15
-		land_forcelimit_modifier = 0.15
+		land_morale = 0.10
+		land_forcelimit_modifier = 0.10
 	}
 	goofed = {
 		hostile_attrition = 2
@@ -38,7 +38,6 @@ A0W_ideas = {
 		mercenary_manpower = 0.25
 	}
 	actor_slavery = {
-		num_accepted_cultures = 1
-		production_efficiency = 0.05
+		production_efficiency = 0.1
 	}
 }
