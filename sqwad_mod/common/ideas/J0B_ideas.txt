@@ -7,7 +7,7 @@ J0B_ideas = {
 	
 	#ambitions
 	bonus = {
-		global_manpower_modifier = 0.40
+		global_manpower_modifier = 0.50
 	}
 
 	trigger = {
@@ -20,10 +20,12 @@ J0B_ideas = {
 		auto_explore_adjacent_to_colony = yes
 	}
 	sorry_eh = {
-		ae_impact = -0.20
+		ae_impact = -0.10
+		province_warscore_cost = -0.10
 	}
 	frostbite = {
 		hostile_attrition = 1.0
+		defensiveness = 0.10
 	}
 	friendly = {
 		diplomatic_reputation = 1.00
@@ -32,6 +34,7 @@ J0B_ideas = {
 		artillery_power = 0.10
 	}
 	maple_syrup = {
+		land_morale = 0.10
 		global_unrest = -1.00
 	}
 	still_friendly = {
