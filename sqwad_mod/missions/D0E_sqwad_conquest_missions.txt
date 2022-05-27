@@ -26,21 +26,35 @@ D0E_conquest = {
 			#Territorial Claims
 			if = {
 				limit = { NOT = { map_setup = map_setup_random } }
-				vastra_gotaland_area = {
+				gotaland_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				pomor_area = {
+				curonia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				east_prussia_area = {
+				malopolska_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				podlasie_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				hinter_pommern_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -78,7 +92,7 @@ D0E_conquest_scandinavia = {
 		NOT = { map_setup = map_setup_random }
 	}
 
-	D0E_conquest_vastra_gotaland = {
+	D0E_conquest_gotaland = {
 		icon = mission_unite_home_region
 		required_missions = { D0E_mighty_army }
 		position = 6
@@ -86,12 +100,12 @@ D0E_conquest_scandinavia = {
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			area = vastra_gotaland_area
+			area = gotaland_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			vastra_gotaland_area = {
+			gotaland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -116,7 +130,7 @@ D0E_conquest_scandinavia = {
 	
 	D0E_unite_scandinavia = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { D0E_conquest_vastra_gotaland }
+		required_missions = { D0E_conquest_gotaland }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
@@ -151,93 +165,8 @@ D0E_conquest_scandinavia = {
 	}
 }
 
-D0E_conquest_russia = {
-	slot = 2
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	
-	potential = {
-		tag = D0E
-		NOT = { map_setup = map_setup_random }
-	}
-
-	D0E_conquest_pomor = {
-		icon = mission_unite_home_region
-		required_missions = { D0E_mighty_army }
-		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			area = pomor_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			pomor_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 10
-			add_country_modifier = {
-				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
-			}
-			#Claims on All Russia
-			russia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	D0E_unite_russia = {
-		icon = mission_build_up_to_force_limit
-		required_missions = { D0E_conquest_pomor }
-		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			region = russia_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			russia_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 50
-			add_country_modifier = {
-				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
-			}
-					
-			#Claims on Ural
-			ural_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-}
-
 D0E_conquest_baltic = {
-	slot = 3
+	slot = 2 #?
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -247,7 +176,7 @@ D0E_conquest_baltic = {
 		NOT = { map_setup = map_setup_random }
 	}
 
-	D0E_conquest_east_prussia = {
+	D0E_conquest_curonia = {
 		icon = mission_unite_home_region
 		required_missions = { D0E_mighty_army }
 		position = 6
@@ -255,12 +184,12 @@ D0E_conquest_baltic = {
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			area = east_prussia_area
+			area = curonia_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			east_prussia_area = {
+			curonia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -272,7 +201,7 @@ D0E_conquest_baltic = {
 				name = "sqwad_territorial_gains_modifier"
 				duration = 3650 #10 years
 			}
-			#Claims on All Baltic
+			#Claims on All Baltics
 			baltic_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -285,13 +214,13 @@ D0E_conquest_baltic = {
 	
 	D0E_unite_baltic = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { D0E_conquest_east_prussia }
+		required_missions = { D0E_conquest_curonia }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			region = baltic_region
+			region = scandinavia_region 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -308,8 +237,55 @@ D0E_conquest_baltic = {
 				name = "sqwad_united_region_modifier"
 				duration = 9125 #25 years
 			}
-					
-			#Claims on Poland
+			#Claims on Russia
+			russia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+D0E_conquest_poland = {
+	slot = 3 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = D0E
+		NOT = { map_setup = map_setup_random }
+	}
+
+	D0E_conquest_malopolska = {
+		icon = mission_unite_home_region
+		required_missions = { D0E_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = malopolska_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			malopolska_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All Poland
 			poland_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -317,8 +293,288 @@ D0E_conquest_baltic = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#Claims on Ruthenia
+		}
+	}
+	
+	D0E_unite_poland = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { D0E_conquest_malopolska }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = poland_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			poland_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+			#Claims on Slovakia
+			slovakia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+D0E_conquest_carpathia = {
+	slot = 3 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = D0E
+		NOT = { map_setup = map_setup_random }
+	}
+
+	D0E_conquest_slovakia = {
+		icon = mission_unite_home_region
+		required_missions = { D0E_unite_poland }
+		position = 8
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = slovakia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			slovakia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All Carpathia
+			carpathia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	D0E_unite_carpathia = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { D0E_conquest_slovakia }
+		position = 9
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = carpathia_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			carpathia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+			#Claims on Balkans
+			balkan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+D0E_conquest_ruthenia = {
+	slot = 4 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = D0E
+		NOT = { map_setup = map_setup_random }
+	}
+
+	D0E_conquest_podlasie = {
+		icon = mission_unite_home_region
+		required_missions = { D0E_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = podlasie_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			podlasie_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All Ruthenia
 			ruthenia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	D0E_unite_ruthenia = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { D0E_conquest_podlasie }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = ruthenia_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			ruthenia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+			#Claims on Pontic Region
+			crimea_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+D0E_conquest_north_germany = {
+	slot = 5 #?
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = D0E
+		NOT = { map_setup = map_setup_random }
+	}
+
+	D0E_conquest_hinter_pommern = {
+		icon = mission_unite_home_region
+		required_missions = { D0E_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = hinter_pommern_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			hinter_pommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All Ruthenia
+			north_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	D0E_unite_north_germany = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { D0E_conquest_hinter_pommern }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = north_german_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			north_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+			#Claims on South Germany
+			south_german_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
