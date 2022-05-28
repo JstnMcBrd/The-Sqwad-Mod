@@ -21,7 +21,7 @@
 		technology_cost = -0.10
 	}
 	winning = {
-		discipline = 0.10
+		discipline = 0.05
 	}
 	dealing_with_dolphins = {
 		trade_efficiency = 0.15

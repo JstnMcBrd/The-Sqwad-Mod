@@ -2,6 +2,7 @@ J0M_ideas = {
 	#traditions
 	start = {
 		land_morale = 0.10
+		galley_power = 0.10
 	}
 	
 	#ambitions
@@ -15,7 +16,7 @@ J0M_ideas = {
 	free = yes		#will be added at load.
 	
 	infra_import = {
-		development_cost = -0.10
+		development_cost = -0.20
 	}
 	people_means_death = {
 		manpower_recovery_speed = 0.10

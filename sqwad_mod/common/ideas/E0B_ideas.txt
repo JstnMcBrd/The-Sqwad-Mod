@@ -9,7 +9,7 @@ E0B_ideas = {
 	
 	#ambitions
 	bonus = {
-		development_cost = -0.10
+		development_cost = -0.20
 	}
 
 	trigger = {
