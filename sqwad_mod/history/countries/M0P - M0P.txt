@@ -12,6 +12,7 @@ religion = catholic
 capital = 97 # Holland
 
 historical_friend = J0M
+historical_friend = D0E
 
 1444.11.10 = {
 	set_country_flag = sqwad_nation_flag

@@ -14,10 +14,11 @@ add_accepted_culture = venetian
 add_accepted_culture = neapolitan
 add_accepted_culture = sicilian
 add_accepted_culture = sardinian
-historical_friend = M0N
-historical_friend = M0P
 national_focus = MIL
 capital = 104		# Milan
+
+historical_friend = M0N
+historical_friend = M0P
 
 1444.11.10 = {
 	set_country_flag = sqwad_nation_flag

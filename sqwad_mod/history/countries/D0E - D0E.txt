@@ -13,6 +13,7 @@ religion = catholic
 capital = 257	# Warszawa
 
 historical_friend = B0H
+historical_friend = M0P
 
 1444.11.10 = {
 	set_country_flag = sqwad_nation_flag
