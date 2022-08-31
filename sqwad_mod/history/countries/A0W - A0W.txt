@@ -1,12 +1,16 @@
 #government = despotic_monarchy
 government = monarchy
 government_rank = 2
+
 technology_group = western
+
 primary_culture = A0W_culture
 add_accepted_culture = turkish
 add_accepted_culture = greek
 add_accepted_culture = bulgarian
+
 religion = sunni
+
 capital = 151 # Constantinople
 
 1444.11.10 = {

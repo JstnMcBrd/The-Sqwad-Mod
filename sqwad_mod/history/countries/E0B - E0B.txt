@@ -1,16 +1,21 @@
 #government = feudal_monarchy
 government = monarchy
 government_rank = 2
+
+technology_group = western
+
 primary_culture = E0B_culture
 add_accepted_culture = breton
 add_accepted_culture = normand
 add_accepted_culture = cosmopolitan_french
 add_accepted_culture = gascon
 add_accepted_culture = irish
+
 religion = catholic
-technology_group = western
-historical_friend = B0H
+
 capital = 169	# Armor
+
+historical_friend = B0H
 
 1444.11.10 = {
 	set_country_flag = sqwad_nation_flag

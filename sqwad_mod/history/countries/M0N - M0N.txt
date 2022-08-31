@@ -1,17 +1,22 @@
 #government = feudal_monarchy
 government = monarchy
 government_rank = 2
+
 technology_group = western
+
 primary_culture = M0N_culture
 add_accepted_culture = austrian
 add_accepted_culture = swiss
 add_accepted_culture = bavarian
 add_accepted_culture = swabian
 add_accepted_culture = franconian
+
 religion = catholic
+
+capital = 134	# Wein
+
 historical_friend = J0M
 historical_rival = B0H
-capital = 134	# Wein
 
 1444.11.10 = {
 	set_country_flag = sqwad_nation_flag

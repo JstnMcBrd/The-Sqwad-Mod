@@ -1,16 +1,21 @@
 #government = feudal_monarchy
 government = monarchy
 government_rank = 2
+
+technology_group = western
+
 primary_culture = B0H_culture
 add_accepted_culture = norwegian
 add_accepted_culture = danish
 add_accepted_culture = swedish
+
 religion = catholic
-technology_group = western
+
+capital = 12 #Sjaelland
+
 historical_friend = E0B
 historical_friend = D0E
 historical_rival = M0N
-capital = 12 #Sjaelland
 
 1444.11.10 = {
 	set_country_flag = sqwad_nation_flag

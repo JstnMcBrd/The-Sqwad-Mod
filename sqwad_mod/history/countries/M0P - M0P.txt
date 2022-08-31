@@ -2,13 +2,17 @@
 government = republic
 add_government_reform = pos_republic
 government_rank = 2
+
 technology_group = western
+
 primary_culture = M0P_culture
 add_accepted_culture = dutch
 add_accepted_culture = flemish
 add_accepted_culture = wallonian
 add_accepted_culture = hannoverian
+
 religion = catholic
+
 capital = 97 # Holland
 
 historical_friend = J0M
@@ -25,4 +29,3 @@ historical_friend = D0E
 		mil = 5
 	}
 }
-

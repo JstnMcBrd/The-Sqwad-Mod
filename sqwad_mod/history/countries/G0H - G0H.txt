@@ -1,6 +1,9 @@
 #government = despotic_monarchy
 government = monarchy
 government_rank = 2
+
+technology_group = western
+
 primary_culture = G0H_culture
 add_accepted_culture = castillian
 add_accepted_culture = leonese
@@ -10,8 +13,9 @@ add_accepted_culture = galician
 add_accepted_culture = catalan
 add_accepted_culture = aragonese
 add_accepted_culture = andalucian
+
 religion = catholic
-technology_group = western
+
 capital = 219 # Toledo
 
 1444.11.10 = {
