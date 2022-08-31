@@ -244,7 +244,7 @@ J0B_conquest_scandinavia = {
 	
 	J0B_unite_scandinavia = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { J0B_conquest_[nearby_area] }
+		required_missions = { J0B_conquest_finland }
 		position = 8
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
