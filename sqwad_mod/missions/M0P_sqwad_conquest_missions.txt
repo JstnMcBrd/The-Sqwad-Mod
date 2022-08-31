@@ -16,9 +16,9 @@ M0P_conquest = {
 		ai_priority = { factor = 5 }
 		
 		trigger = {
-			army_size_percentage = 0.8
+			army_size_percentage = 0.75
 			#manpower_percentage = 0.5
-			num_of_generals = 1
+			#num_of_generals = 1
 		}
 		
 		effect = {
