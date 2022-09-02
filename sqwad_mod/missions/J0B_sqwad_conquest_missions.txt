@@ -147,8 +147,473 @@ J0B_conquest_russia = {
 				duration = 9125 #25 years
 			}
 			
-			#Claims on Ural
+			#Claims on Lower Don area
+			lower_don_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#Claims on Galich area
+			galich_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+J0B_conquest_pontic_steppe = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = J0B
+		NOT = { map_setup = map_setup_random }
+	}
+
+	J0B_conquest_lower_don = {
+		icon = mission_unite_home_region
+		required_missions = { J0B_unite_russia }
+		position = 8
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = lower_don_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			lower_don_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All Pontic Steppe
+			crimea_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	J0B_unite_pontic_steppe = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0B_conquest_lower_don }
+		position = 9
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = crimea_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			crimea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+			
+			#Claims on Caucasia
+			caucasia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+J0B_conquest_ural = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = J0B
+		NOT = { map_setup = map_setup_random }
+	}
+
+	J0B_conquest_galich = {
+		icon = mission_unite_home_region
+		required_missions = { J0B_unite_russia }
+		position = 8
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = galich_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			galich_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on all Ural
 			ural_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	J0B_unite_ural = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0B_conquest_galich }
+		position = 9
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = ural_region 
+			NOT = {
+				OR = { 
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes #account for uncolonized land
+				}
+			}
+		}
+		
+		trigger = {
+			ural_region = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes #account for uncolonized land
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+			
+			#Claims on Ishim
+			ishim_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#Claims on Central Asia
+			central_asia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+J0B_conquest_west_siberia = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = J0B
+		NOT = { map_setup = map_setup_random }
+	}
+
+	J0B_conquest_ishim = {
+		icon = mission_unite_home_region
+		required_missions = { J0B_unite_ural }
+		position = 10
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = ishim_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			ishim_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on all West Siberia
+			west_siberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	J0B_unite_west_siberia = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0B_conquest_ishim }
+		position = 11
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = west_siberia_region 
+			NOT = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes #account for uncolonized land
+				}
+			}
+		}
+		
+		trigger = {
+			west_siberia_region = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes #account for uncolonized land
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+			
+			#Claims on East Siberia
+			east_siberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+J0B_conquest_baltics = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = J0B
+		NOT = { map_setup = map_setup_random }
+	}
+
+	J0B_conquest_estonia_ingria = {
+		icon = mission_unite_home_region
+		required_missions = { J0B_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = estonia_ingria_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			estonia_ingria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All the Baltics
+			baltic_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	J0B_unite_baltics = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0B_conquest_estonia_ingria }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = baltic_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			baltic_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+					
+			#Claims on North Germany
+			north_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+J0B_conquest_ruthenia = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = J0B
+		NOT = { map_setup = map_setup_random }
+	}
+
+	J0B_conquest_chernigov = {
+		icon = mission_unite_home_region
+		required_missions = { J0B_mighty_army }
+		position = 6
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			area = chernigov_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			chernigov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "sqwad_territorial_gains_modifier"
+				duration = 3650 #10 years
+			}
+			#Claims on All Ruthenia
+			ruthenia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	J0B_unite_ruthenia = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { J0B_conquest_chernigov }
+		position = 7
+		ai_weight = { factor = 5 }
+		ai_priority = { factor = 5 }
+		
+		provinces_to_highlight = {
+			region = ruthenia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			ruthenia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_country_modifier = {
+				name = "sqwad_united_region_modifier"
+				duration = 9125 #25 years
+			}
+					
+			#Claims on Poland
+			poland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#Claims on Carpathia
+			carpathia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -160,7 +625,7 @@ J0B_conquest_russia = {
 }
 
 J0B_conquest_scandinavia = {
-	slot = 2
+	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -270,192 +735,6 @@ J0B_conquest_scandinavia = {
 					
 			#Claims on North Germany
 			north_german_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-}
-
-J0B_conquest_baltics = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	
-	potential = {
-		tag = J0B
-		NOT = { map_setup = map_setup_random }
-	}
-
-	J0B_conquest_estonia_ingria = {
-		icon = mission_unite_home_region
-		required_missions = { J0B_mighty_army }
-		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			area = estonia_ingria_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			estonia_ingria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 10
-			add_country_modifier = {
-				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
-			}
-			#Claims on All the Baltics
-			baltic_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	J0B_unite_baltics = {
-		icon = mission_build_up_to_force_limit
-		required_missions = { J0B_conquest_estonia_ingria }
-		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			region = baltic_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			baltic_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 50
-			add_country_modifier = {
-				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
-			}
-					
-			#Claims on North Germany
-			north_german_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-}
-
-J0B_conquest_ruthenia = {
-	slot = 4
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	
-	potential = {
-		tag = J0B
-		NOT = { map_setup = map_setup_random }
-	}
-
-	J0B_conquest_chernigov = {
-		icon = mission_unite_home_region
-		required_missions = { J0B_mighty_army }
-		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			area = chernigov_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			chernigov_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 10
-			add_country_modifier = {
-				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
-			}
-			#Claims on All Ruthenia
-			ruthenia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	J0B_unite_ruthenia = {
-		icon = mission_build_up_to_force_limit
-		required_missions = { J0B_conquest_chernigov }
-		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
-		
-		provinces_to_highlight = {
-			region = ruthenia_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			ruthenia_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_prestige = 50
-			add_country_modifier = {
-				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
-			}
-					
-			#Claims on Poland
-			poland_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			#Claims on Carpathia
-			carpathia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			#Claims on Pontic Steppe
-			crimea_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
