@@ -47,7 +47,7 @@ D0E_conquest = {
 					}
 					add_permanent_claim = ROOT
 				}
-				podlasie_area = {
+				pripyat_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -428,7 +428,7 @@ D0E_conquest_ruthenia = {
 		NOT = { map_setup = map_setup_random }
 	}
 
-	D0E_conquest_podlasie = {
+	D0E_conquest_pripyat = {
 		icon = mission_unite_home_region
 		required_missions = { D0E_mighty_army }
 		position = 6
@@ -436,12 +436,12 @@ D0E_conquest_ruthenia = {
 		ai_priority = { factor = 5 }
 		
 		provinces_to_highlight = {
-			area = podlasie_area
+			area = pripyat_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			podlasie_area = {
+			pripyat_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -466,7 +466,7 @@ D0E_conquest_ruthenia = {
 	
 	D0E_unite_ruthenia = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { D0E_conquest_podlasie }
+		required_missions = { D0E_conquest_pripyat }
 		position = 7
 		ai_weight = { factor = 5 }
 		ai_priority = { factor = 5 }
