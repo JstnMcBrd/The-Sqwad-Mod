@@ -5,9 +5,9 @@ Learn more about modding: https://eu4.paradoxwikis.com/Modding
 ## Setup
 Clone this repository within the EU4 mods folder.
 
-On Windows: `~\Documents\Paradox Interactive\Europa Universalis IV\mods\`
-On Mac: `~/Documents/Paradox Interactive/Europa Universalis IV/mod/`
-On Linux: `~/.local/share/Paradox Interactive/Europa Universalis IV/mod/`
+- On Windows: `~\Documents\Paradox Interactive\Europa Universalis IV\mods\`
+- On Mac: `~/Documents/Paradox Interactive/Europa Universalis IV/mod/`
+- On Linux: `~/.local/share/Paradox Interactive/Europa Universalis IV/mod/`
 
 Copy [sqwad_mod.mod](/sqwad_mod.mod) up a folder (into `mods`).
 Otherwise EU4 will not be able to detect the mod.
