@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Bug in J0B mission tree
 
-## [1.6.0] - 2022-05-25
+## [1.6.0](../../releases/tag/1.6.0) - 2022-05-25
 
 ### Added
 
@@ -60,7 +60,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bug in D0E mission tree
 - Bug where M0P would immediately lose Dutch Republic reform
 
-## [1.5.0] - 2020-09-06
+## [1.5.0](../../releases/tag/1.5.0) - 2020-09-06
 
 ### Added
 
@@ -89,7 +89,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Sqwad ideas saying "\[adjective\] Tradition" instead of "\[adjective\] Traditions"
 
-## [1.4.0] - 2020-08-02
+## [1.4.0](../../releases/tag/1.4.0) - 2020-08-02
 
 ### Added
 
