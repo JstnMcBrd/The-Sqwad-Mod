@@ -15,6 +15,12 @@ Otherwise EU4 will not be able to detect the mod.
 
 For a list of all updates, see the [changelog](/CHANGELOG.md) document, or the "[Change Notes](https://steamcommunity.com/sharedfiles/filedetails/changelog/1294735825)" page on the Steam Workshop.
 
+## Guidelines
+
+To see what the plans are for future updates, please see the [plans](./misc/PLANS.md) document.
+
+If you'd like to contribute to this mod, please see the [requirements](./misc/REQUIREMENTS.md) document.
+
 ## How to Mod
 
 [Modding guide](https://eu4.paradoxwikis.com/Modding)
