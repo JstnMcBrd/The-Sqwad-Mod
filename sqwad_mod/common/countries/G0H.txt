@@ -1,5 +1,3 @@
-#Country Name: Please see filename.
-
 graphical_culture = westerngfx
 
 color = { 46  127  189 }
@@ -33,6 +31,8 @@ historical_units = {
 	napoleonic_lancers
 }
 
+# Monarch first names
+# Leader first names
 monarch_names = {
 	"Bob #0" = 1
 	"Gage #0" = 1
@@ -40,9 +40,11 @@ monarch_names = {
 	"Bobby #0" = -1
 }
 
+# Leader last names
 leader_names = {
 	Hawkins
-	Ross Ross Ross Ross Ross Ross Ross Ross Ross Ross #repeated to get rid of warning about less than 10 leader names
+	Ross Ross Ross Ross Ross Ross Ross Ross Ross Ross
+	# Repeated to get rid of warning about less than 10 leader names
 }
 
 ship_names = {

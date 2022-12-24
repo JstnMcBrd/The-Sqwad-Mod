@@ -1,5 +1,3 @@
-#Country Name: Please see filename.
-
 graphical_culture = westerngfx
 
 color = { 97  12  12 }
@@ -35,6 +33,8 @@ historical_units = {
 	napoleonic_lancers
 }
 
+# Monarch first names
+# Leader first names
 monarch_names = {
 	"Colin #0" = 1
 	
@@ -44,8 +44,10 @@ monarch_names = {
 	"Viomelia #0" = -1
 }
 
+# Leader last names
 leader_names = {
-	Bell Bell Bell Bell Bell Bell Bell Bell Bell Bell #repeated to get rid of warning about less than 10 leader names
+	Bell Bell Bell Bell Bell Bell Bell Bell Bell Bell
+	# Repeated to get rid of warning about less than 10 leader names
 }
 
 ship_names = {

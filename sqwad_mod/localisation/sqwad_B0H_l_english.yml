@@ -2,34 +2,46 @@
  B0H: "Wumpland"
  B0H_ADJ: "Wumpian"
  
+# Ideas
  B0H_ideas: "Wumpian Ideas"
  B0H_ideas_start: "Wumpian Traditions"
  B0H_ideas_bonus: "Wumpian Ambition"
+
  h: "h"
  h_desc: "h"
+
  battle_music: "Battle Music"
  battle_music_desc: "Our music inspires our troops to go above and beyond our enemies."
+
  all_the_latest_memes: "All the Latest Memes"
  all_the_latest_memes_desc: "We have them all."
+
  random_noises: "Random Noises"
  random_noises_desc: "Randomly making noises while walking to battle keeps soldiers on their toes."
+
  inexperienced_rule: "Inexperienced Rule"
  inexperienced_rule_desc: "New to the game, relative to other rulers, we must depend on advisors to get ahead."
+
  biology_class: "Biology Class"
  biology_class_desc: "Stories of old lead to increased production when related to the problems of today."
+
  fervent_recruitment: "Fervent Recruitment"
  fervent_recruitment_desc: "Personally asking everyone to join us gives a pretty high turnout."
  
+# Missions
  B0H_mighty_army_title: "Build a Mighty Army"
  B0H_mighty_army_desc: "The [Root.GetAdjective] people are destined to expand, but we cannot do so without an army."
+
  B0H_conquest_vastra_gotaland_title: "Conquer Västra Götaland"
  B0H_conquest_vastra_gotaland_desc: ""
  B0H_unite_scandinavia_title: "Unite Scandinavia"
  B0H_unite_scandinavia_desc: ""
+
  B0H_conquest_highlands_title: "Conquer the Highlands"
  B0H_conquest_highlands_desc: "" 
  B0H_unite_british_isles_title: "Unite the British Isles"
  B0H_unite_british_isles_desc: ""
+
  B0H_conquest_holstein_title: "Conquer Schleswig-Holstein"
  B0H_conquest_holstein_desc: ""
  B0H_unite_north_germany_title: "Unite North Germany"

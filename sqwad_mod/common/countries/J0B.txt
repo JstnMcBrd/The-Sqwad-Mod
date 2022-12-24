@@ -1,5 +1,3 @@
-#Country Name: Please see filename.
-
 graphical_culture = westerngfx
 
 color = { 46 114 55 }
@@ -34,14 +32,18 @@ historical_units = {
 	napoleonic_lancers
 }
 
+# Monarch first names
+# Leader first names
 monarch_names = {
 	"Jackson #0" = 1
 	
 	"Jackette #0" = -1
 }
 
+# Leader last names
 leader_names = { 
-	Beard Beard Beard Beard Beard Beard Beard Beard Beard Beard #repeated to get rid of warning about less than 10 leader names
+	Beard Beard Beard Beard Beard Beard Beard Beard Beard Beard
+	# Repeated to get rid of warning about less than 10 leader names
 	Beard Brawl
 	Trudeau
 }

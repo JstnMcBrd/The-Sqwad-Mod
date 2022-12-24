@@ -1,5 +1,5 @@
 M0N_conquest = {
-	slot = 1 #?
+	slot = 1 
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -16,13 +16,11 @@ M0N_conquest = {
 		
 		trigger = {
 			army_size_percentage = 0.75
-			#manpower_percentage = 0.5
-			#num_of_generals = 1
 		}
 		
 		effect = {
 			add_prestige = 10		
-			#Territorial Claims
+			# Territorial Claims
 			if = {
 				limit = { NOT = { map_setup = map_setup_random } }
 				lower_swabia_area = {
@@ -54,7 +52,8 @@ M0N_conquest = {
 					add_permanent_claim = ROOT
 				}
 			}
-			if = { #if map is set on random, add claims on bordering areas
+			# If map is set on random, add claims on bordering areas
+			if = {
 				limit = { map_setup = map_setup_random }
 				
 				every_owned_province = {
@@ -74,7 +73,7 @@ M0N_conquest = {
 }
 
 M0N_conquest_south_germany = {
-	slot = 1 #?
+	slot = 1 
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -106,9 +105,9 @@ M0N_conquest_south_germany = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All South Germany
+			# Claims on all South Germany
 			south_german_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -116,7 +115,7 @@ M0N_conquest_south_germany = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#Start of France tree
+			# Start of France tree
 			alsace_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -149,7 +148,7 @@ M0N_conquest_south_germany = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 		}
 	}
@@ -188,7 +187,7 @@ M0N_conquest_france = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
 			lorraine_area = {
 				limit = {
@@ -222,9 +221,9 @@ M0N_conquest_france = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All France
+			# Claims on all France
 			france_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -257,10 +256,10 @@ M0N_conquest_france = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on Britain and Iberia but no missions
+			# Claims on Britain and Iberia but no missions
 			british_isles_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -312,9 +311,9 @@ M0N_conquest_italy = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Italy
+			# Claims on all Italy
 			italy_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -347,10 +346,10 @@ M0N_conquest_italy = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 					
-			#Claims on Tunisia
+			# Claims on Tunisia
 			tunisia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -395,9 +394,9 @@ M0N_conquest_carpathia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Carpathia
+			# Claims on all Carpathia
 			carpathia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -430,10 +429,10 @@ M0N_conquest_carpathia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 
-			#Claims on Balkans and Poland but no missions
+			# Claims on Balkans and Poland but no missions
 			balkan_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -485,9 +484,9 @@ M0N_conquest_north_germany = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All North Germany
+			# Claims on all North Germany
 			north_german_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -520,10 +519,10 @@ M0N_conquest_north_germany = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on Scandinavia and Low Countries but no missions
+			# Claims on Scandinavia and Low Countries but no missions
 			scandinavia_region = {
 				limit = {
 					NOT = { is_core = ROOT }

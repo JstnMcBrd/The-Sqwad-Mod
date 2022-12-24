@@ -1,4 +1,3 @@
-#government = feudal_monarchy
 government = monarchy
 government_rank = 2
 
@@ -11,7 +10,7 @@ add_accepted_culture = swedish
 
 religion = catholic
 
-capital = 12 #Sjaelland
+capital = 12 # Sjaelland
 
 historical_friend = E0B
 historical_friend = D0E

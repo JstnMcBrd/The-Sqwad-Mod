@@ -1,11 +1,11 @@
 A0W_ideas = {
-	#traditions
+	# Traditions
 	start = {
 		core_creation = -0.20
 		global_unrest = -1.00
 	}
 	
-	#ambitions
+	# Ambitions
 	bonus = {
 		discipline = 0.05
 	}
@@ -13,7 +13,7 @@ A0W_ideas = {
 	trigger = {
 		tag = A0W
 	}
-	free = yes		#will be added at load.
+	free = yes
 	
 	crack = {
 		land_morale = 0.10

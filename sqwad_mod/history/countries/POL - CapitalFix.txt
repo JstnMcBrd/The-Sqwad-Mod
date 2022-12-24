@@ -1,7 +1,7 @@
 1444.11.10 = {
-	capital = 4541 #Drohobycz
+	capital = 4541 # Drohobycz
 }
 
 1444.11.11 = {
-	capital = 257 #Warszawa
+	capital = 257 # Warszawa
 }

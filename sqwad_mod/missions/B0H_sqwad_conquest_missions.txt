@@ -1,5 +1,5 @@
 B0H_conquest = {
-	slot = 1 #?
+	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -16,13 +16,11 @@ B0H_conquest = {
 		
 		trigger = {
 			army_size_percentage = 0.75
-			#manpower_percentage = 0.5
-			#num_of_generals = 1
 		}
 		
 		effect = {
 			add_prestige = 10		
-			#Territorial Claims
+			# Territorial Claims
 			if = {
 				limit = { NOT = { map_setup = map_setup_random } }
 				vastra_gotaland_area = {
@@ -47,7 +45,8 @@ B0H_conquest = {
 					add_permanent_claim = ROOT
 				}
 			}
-			if = { #if map is set on random, add claims on bordering areas
+			# If map is set on random, add claims on bordering areas
+			if = {
 				limit = { map_setup = map_setup_random }
 				
 				every_owned_province = {
@@ -99,9 +98,9 @@ B0H_conquest_scandinavia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Scandinavia
+			# Claims on all Scandinavia
 			scandinavia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -134,10 +133,10 @@ B0H_conquest_scandinavia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on Baltic
+			# Claims on Baltic
 			baltic_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -146,7 +145,7 @@ B0H_conquest_scandinavia = {
 				add_permanent_claim = ROOT
 			}
 			
-			#Claims on Russia
+			# Claims on Russia
 			russia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -191,9 +190,9 @@ B0H_conquest_british_isles = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All British Isles
+			# Claims on all British Isles
 			british_isles_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -226,10 +225,10 @@ B0H_conquest_british_isles = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 					
-			#Claims on France
+			# Claims on France
 			france_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -274,9 +273,9 @@ B0H_conquest_north_germany = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All North Germany
+			# Claims on all North Germany
 			north_german_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -309,10 +308,10 @@ B0H_conquest_north_germany = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 					
-			#Claims on Low Countries
+			# Claims on Low Countries
 			low_countries_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -320,7 +319,7 @@ B0H_conquest_north_germany = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#Claims on South Germany
+			# Claims on South Germany
 			south_german_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -328,7 +327,7 @@ B0H_conquest_north_germany = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#Claims on Poland
+			# Claims on Poland
 			poland_region = {
 				limit = {
 					NOT = { is_core = ROOT }

@@ -2,50 +2,66 @@
  J0B: "Canananada"
  J0B_ADJ: "Canananadian"
  
+# Ideas
  J0B_ideas: "Canananadian Ideas"
  J0B_ideas_start: "Canananadian Traditions"
  J0B_ideas_bonus: "Canananadian Ambition"
+
  canananadian_wilderness: "Canananadian Wilderness"
  canananadian_wilderness_desc: "Look at all this open space, eh?"
+
  sorry_eh: "Sorry, eh?"
  sorry_eh_desc: "We're so charming you won't notice when we stab you in the back, eh?"
+
  frostbite: "Frostbite"
  frostbite_desc: "It's a rough life up here, eh?"
+
  friendly: "Friendly"
  friendly_desc: "Some good old Canananadian kindness ought to do the trick."
+
  hockey_traditions: "Hockey Traditions"
  hockey_traditions_desc: "This is where we stop being kind..."
+
  maple_syrup: "Maple Syrup"
  maple_syrup_desc: "Keeps us all happy, eh?"
+
  still_friendly: "Still Friendly"
  still_friendly_desc: "Yup, still friendly."
  
+# Missions
  J0B_mighty_army_title: "Build a Mighty Army"
  J0B_mighty_army_desc: "The [Root.GetAdjective] people are destined to expand, but we cannot do so without an army."
+
  J0B_conquest_oka_title: "Conquer Oka"
  J0B_conquest_oka_desc: ""
  J0B_unite_russia_title: "Unite Russia"
  J0B_unite_russia_desc: ""
+
  J0B_conquest_lower_don_title: "Conquer Lower Don"
  J0B_conquest_lower_don_desc: ""
  J0B_unite_pontic_steppe_title: "Unite Pontic Steppe"
  J0B_unite_pontic_steppe_desc: ""
+
  J0B_conquest_estonia_ingria_title: "Conquer Estonia"
  J0B_conquest_estonia_ingria_desc: ""
  J0B_unite_baltics_title: "Unite the Baltics"
  J0B_unite_baltics_desc: ""
+
  J0B_conquest_galich_title: "Conquer Galich"
  J0B_conquest_galich_desc: ""
  J0B_unite_ural_title: "Unite Ural"
  J0B_unite_ural_desc: ""
+
  J0B_conquest_chernigov_title: "Conquer Chernigov"
  J0B_conquest_chernigov_desc: ""
  J0B_unite_ruthenia_title: "Unite Ruthenia"
  J0B_unite_ruthenia_desc: ""
+
  J0B_conquest_ishim_title: "Conquer Ishim"
  J0B_conquest_ishim_desc: ""
  J0B_unite_west_siberia_title: "Unite West Siberia"
  J0B_unite_west_siberia_desc: ""
+
  J0B_conquest_karelia_title: "Conquer South Karelia"
  J0B_conquest_karelia_desc: ""
  J0B_conquest_finland_title: "Conquer Finland"

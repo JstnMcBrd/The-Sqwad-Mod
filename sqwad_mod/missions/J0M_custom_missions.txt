@@ -1,5 +1,5 @@
 J0M_federal_mint_tree = {
-	slot = 1 #?
+	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -10,7 +10,7 @@ J0M_federal_mint_tree = {
 	
 	J0M_federal_mint = {
 		icon = mission_high_income
-		required_missions = {  } #None
+		required_missions = {  } # None
 		position = 1
 		ai_weight = { factor = 100 }
 
@@ -25,7 +25,7 @@ J0M_federal_mint_tree = {
 }
 
 J0M_breaking_promises_tree = {
-	slot = 1 #?
+	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -34,16 +34,17 @@ J0M_breaking_promises_tree = {
 		tag = J0M
 	}
 	
-	J0M_breaking_promises = { #requires J0M to break an alliance
+	# Requires J0M to break an alliance
+	J0M_breaking_promises = {
 		icon = mission_alliances
-		required_missions = { building_alliances } #from the generic tree, requires 2+ allies
+		required_missions = { building_alliances } # From the generic tree, requires 2+ allies
 		position = 2
 		ai_weight = { factor = 100 }
 		
 		trigger = {
 			AND = {
-				num_of_allies = 1			#at least 1 ally
-				NOT = { num_of_allies = 2 }	#no more than 1 ally
+				num_of_allies = 1			# At least 1 ally
+				NOT = { num_of_allies = 2 }	# No more than 1 ally
 			}
 		}
 		

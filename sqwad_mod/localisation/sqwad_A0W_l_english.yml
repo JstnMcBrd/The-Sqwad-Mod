@@ -2,24 +2,33 @@
  A0W: "Frick"
  A0W_ADJ: "Frickin'"
  
+# Ideas
  A0W_ideas: "Frickin' Ideas"
  A0W_ideas_start: "Frickin' Traditions"
  A0W_ideas_bonus: "Frickin' Ambition"
+
  crack: "Crack"
  crack_desc: "Got me off crack."
+
  goofed: "Goofed"
  goofed_desc: "You done goofed"
+
  knolage: "Knolage"
  knolage_desc: "The more you kno"
+
  bloody_doritos: "Aww crap!"
  bloody_doritos_desc: "My doritos are all bloody now."
+
  speeling: "Speeling"
  speeling_desc: "I no an i dot care fix you'r owne sphelling"
+
  back_room: "Back Room"
  back_room_desc: "You never know what you'll find in there"
+
  actor_slavery: "Actors Slavery"
  actor_slavery_desc: "You know when they bought slaves? That's like actors - you pick them out one by one."
  
+# Missions
  A0W_mighty_army_title: "Build a Mighty Army"
  A0W_mighty_army_desc: "The [Root.GetAdjective] people are destined to expand, but we cannot do so without an army."
  

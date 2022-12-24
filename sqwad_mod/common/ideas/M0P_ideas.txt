@@ -1,12 +1,12 @@
 M0P_ideas = {
-	#traditions
+	# Traditions
 	start = {
 		trade_efficiency = 0.10
 		global_colonial_growth = 10
 		sea_repair = yes
 	}
 	
-	#ambitions
+	# Ambitions
 	bonus = {
 		global_sailors_modifier = 0.25
 		naval_forcelimit_modifier = 0.25
@@ -15,7 +15,7 @@ M0P_ideas = {
 	trigger = {
 		tag = M0P
 	}
-	free = yes		#will be added at load.
+	free = yes
 	
 	not_a_bad_dictator = {
 		yearly_absolutism = 0.2
@@ -44,5 +44,4 @@ M0P_ideas = {
 	pos_jokes = {
 		global_unrest = -1.00
 	}
-
 }

@@ -1,8 +1,3 @@
-# PLANS FOR NEXT UPDATE
-- make MacThuggo a republic of sorts?
-
-***
-
 # FUTURE PLANS
 - Custom Music
 - Sqwad Governments

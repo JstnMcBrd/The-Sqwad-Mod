@@ -1,8 +1,8 @@
 1444.11.10 = {
-	capital = 136 #Dalmatia
+	capital = 136 # Dalmatia
 }
 
 1444.11.11 = {
-	capital = 112 #Venezia
-	fixed_capital = 112
+	capital = 112 # Venezia
+	fixed_capital = 112 # Cannot move capital away from this province & no power cost to move to it
 }

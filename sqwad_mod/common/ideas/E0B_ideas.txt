@@ -1,5 +1,5 @@
 E0B_ideas = {
-	#traditions
+	# Traditions
 	start = {
 		may_recruit_female_generals = yes	# These are just aesthetic
 		female_advisor_chance = 1.00		#
@@ -7,7 +7,7 @@ E0B_ideas = {
 		naval_morale = 0.15
 	}
 	
-	#ambitions
+	# Ambitions
 	bonus = {
 		development_cost = -0.20
 	}
@@ -15,7 +15,7 @@ E0B_ideas = {
 	trigger = {
 		tag = E0B
 	}
-	free = yes		#will be added at load.
+	free = yes
 	
 	the_journey_west = {
 		may_explore = yes
@@ -41,5 +41,4 @@ E0B_ideas = {
 	return_of_the_armorican_war_machine = {
 		artillery_power = 0.10
 	}
-
 }

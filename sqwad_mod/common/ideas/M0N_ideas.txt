@@ -1,23 +1,20 @@
 M0N_ideas = {
-	#traditions
+	# Traditions
 	start = {
 		development_cost = -0.20
 		land_maintenance_modifier = -0.20
-		#imperial_authority_value = 0.20
 	}
 	
-	#ambitions
+	# Ambitions
 	bonus = {
 		global_prosperity_growth = 0.15
 		production_efficiency = 0.15
-		#land_forcelimit_modifier = 0.25
-		#diplomatic_reputation = 1.00
 	}
 
 	trigger = {
 		tag = M0N
 	}
-	free = yes		#will be added at load.
+	free = yes
 	
 	lol = {
 		ae_impact = -0.20
@@ -41,5 +38,4 @@ M0N_ideas = {
 	bleach_for_legal_documents = {
 		administrative_efficiency = 0.20
 	}
-	
 }

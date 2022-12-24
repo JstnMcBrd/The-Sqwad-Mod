@@ -1,9 +1,7 @@
 1444.11.10 = {
-	capital = 187
-	#Barrois
+	capital = 187 # Barrois
 }
 
 1444.11.11 = {
-	capital = 201
-	#Anjou
+	capital = 201 # Anjou
 }

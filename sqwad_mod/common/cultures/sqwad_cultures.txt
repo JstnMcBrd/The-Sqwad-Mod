@@ -3,12 +3,16 @@ sqwadite_culture_group = {
 
 	A0W_culture = {
 		primary = A0W
+
+		# Copied from ../countries/A0W.txt
 		male_names = {
 			Aidan ReRamp
 		}
 		female_names = {
 			Aideena
 		}
+
+		# Monarch last names
 		dynasty_names = {
 			Crack
 			"done Goofed" "the Divisor"
@@ -17,8 +21,11 @@ sqwadite_culture_group = {
 			Wilson 
 		}
 	}
+
 	B0H_culture = {
 		primary = B0H
+
+		# Copied from ../countries/B0H.txt
 		male_names = {
 			Bryce Byrce 
 			Chubby 
@@ -32,12 +39,19 @@ sqwadite_culture_group = {
 			Flurpette
 			Tubba
 		}
+
+		# Monarch last names
 		dynasty_names = {
-			Hobbs Wubb Wump Kinz
+			Hobbs
+			Kinz
+			Wubb Wump
 		}
 	}
+
 	D0E_culture = {
 		primary = D0E
+
+		# Copied from ../countries/D0E.txt
 		male_names = {
 			Adam Alexander Alfred Andrew
 			David Davis
@@ -71,6 +85,8 @@ sqwadite_culture_group = {
 			Olivia
 			Sage Sara Sofia Svea
 		}
+
+		# Monarch last names
 		dynasty_names = {
 			Davidson Davies Drake
 			Ek Erikson Evans  
@@ -87,44 +103,62 @@ sqwadite_culture_group = {
 			Williams Wolff
 		}
 	}
+
 	E0B_culture = {
 		primary = E0B
+
+		# Copied from ../countries/E0B.txt
 		male_names = {
 			Colin
 		}
 		female_names = {
 			Emily Lucidarya Lucy Viomelia
 		}
+
+		# Monarch last names
 		dynasty_names = {
 			Bell
 		}
 	}
+
 	G0H_culture = {
 		primary = G0H
+
+		# Copied from ../countries/G0H.txt
 		male_names = {
 			Bob
 		}
 		female_names = {
 			Bobbie
 		}
+
+		# Monarch last names
 		dynasty_names = {
 			Ross
 		}
 	}
+
 	J0B_culture = {
 		primary = J0B
+
+		# Copied from ../countries/J0B.txt
 		male_names = {
 			Jackson
 		}
 		female_names = {
 			Jackette
 		}
+
+		# Monarch last names
 		dynasty_names = {
 			Beard
 		}
 	}
+
 	J0M_culture = {
 		primary = J0M
+
+		# Copied from ../countries/J0M.txt
 		male_names = {
 			Alexander Arturus
 			Hannibal
@@ -137,12 +171,17 @@ sqwadite_culture_group = {
 			Boudica
 			Joan Justine Justinia
 		}
+
+		# Monarch last names
 		dynasty_names = {
 			McBrid McBride McBrididite McBrittle McThuggin Mac'Bridhe MacBride
 		}
 	}
+
 	M0N_culture = {
 		primary = M0N
+
+		# Copied from ../countries/M0N.txt
 		male_names = {
 			Brian
 			Chuck
@@ -153,18 +192,25 @@ sqwadite_culture_group = {
 			Christy
 			Michelle
 		}
+
+		# Monarch last names
 		dynasty_names = {
 			Norris
 		}
 	}
+
 	M0P_culture = {
 		primary = M0P
+
+		# Copied from ../countries/M0P.txt
 		male_names = {
 			Michael Miguel
 		}
 		female_names = {
 			Michelle
 		}
+
+		# Monarch last names
 		dynasty_names = {
 			Pos Pose
 		}

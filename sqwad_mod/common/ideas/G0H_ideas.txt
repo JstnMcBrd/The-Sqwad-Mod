@@ -1,11 +1,11 @@
 G0H_ideas = {
-	#traditions
+	# Traditions
 	start = {
 		ship_durability = 0.10
 		naval_forcelimit_modifier = 0.25
 	}
 	
-	#ambitions
+	# Ambitions
 	bonus = {
 		global_trade_power = 0.10
 	}
@@ -13,7 +13,7 @@ G0H_ideas = {
 	trigger = {
 		tag = G0H
 	}
-	free = yes		#will be added at load.
+	free = yes
 	
 	no_goodbyes = {
 		colonists = 1
@@ -37,5 +37,4 @@ G0H_ideas = {
 	mistakes_accidents = {
 		global_unrest = -1.00
 	}
-
 }

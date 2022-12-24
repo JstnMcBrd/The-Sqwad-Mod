@@ -2,3 +2,5 @@ kicked_from_server = {
 	prestige = -1
 	diplomatic_reputation = -3
 }
+
+kicked_from_server: "Kicked from Server"

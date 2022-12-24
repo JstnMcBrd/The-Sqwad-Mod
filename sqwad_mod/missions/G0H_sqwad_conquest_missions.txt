@@ -1,5 +1,5 @@
 G0H_conquest = {
-	slot = 1 #?
+	slot = 1 
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -16,13 +16,11 @@ G0H_conquest = {
 		
 		trigger = {
 			army_size_percentage = 0.75
-			#manpower_percentage = 0.5
-			#num_of_generals = 1
 		}
 		
 		effect = {
 			add_prestige = 10		
-			#Territorial Claims
+			# Territorial Claims
 			if = {
 				limit = { NOT = { map_setup = map_setup_random } }
 				leon_area = {
@@ -47,7 +45,8 @@ G0H_conquest = {
 					add_permanent_claim = ROOT
 				}
 			}
-			if = { #if map is set on random, add claims on bordering areas
+			# If map is set on random, add claims on bordering areas
+			if = {
 				limit = { map_setup = map_setup_random }
 				
 				every_owned_province = {
@@ -67,7 +66,7 @@ G0H_conquest = {
 }
 
 G0H_conquest_iberia = {
-	slot = 1 #?
+	slot = 1 
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -99,9 +98,9 @@ G0H_conquest_iberia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Iberia
+			# Claims on all Iberia
 			iberia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -110,7 +109,7 @@ G0H_conquest_iberia = {
 				add_permanent_claim = ROOT
 			}
 			
-			#Start Maghreb mission tree
+			# Start Maghreb mission tree
 			northern_morocco_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -143,7 +142,7 @@ G0H_conquest_iberia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 		}
 	}
@@ -162,7 +161,7 @@ G0H_conquest_maghreb = {
 
 	G0H_conquest_northern_morocco = {
 		icon = mission_unite_home_region
-		required_missions = { G0H_conquest_upper_andalucia }
+		required_missions = { G0H_conquest_leon }
 		position = 7
 		ai_weight = { factor = 500 }
 		
@@ -182,9 +181,9 @@ G0H_conquest_maghreb = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All the Magrebs
+			# Claims on all the Magrebs
 			maghreb_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -217,10 +216,10 @@ G0H_conquest_maghreb = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 					
-			#Claims on Egypt
+			# Claims on Egypt
 			egypt_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -265,9 +264,9 @@ G0H_conquest_france = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All France
+			# Claims on all France
 			france_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -300,10 +299,10 @@ G0H_conquest_france = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 					
-			#Claims on British Isles
+			# Claims on British Isles
 			british_isles_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -311,7 +310,7 @@ G0H_conquest_france = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#Claims on Low Countries
+			# Claims on Low Countries
 			low_countries_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -319,7 +318,7 @@ G0H_conquest_france = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#Claims on South Germany
+			# Claims on South Germany
 			south_german_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -364,9 +363,9 @@ G0H_conquest_italy = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Italy
+			# Claims on all Italy
 			italy_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -399,10 +398,10 @@ G0H_conquest_italy = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 					
-			#Claims on the Balkans
+			# Claims on the Balkans
 			balkan_region = {
 				limit = {
 					NOT = { is_core = ROOT }

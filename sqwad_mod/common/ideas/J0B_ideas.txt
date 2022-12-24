@@ -1,11 +1,11 @@
 J0B_ideas = {
-	#traditions
+	# Traditions
 	start = {
 		land_attrition = -0.10
 		manpower_recovery_speed = 0.15
 	}
 	
-	#ambitions
+	# Ambitions
 	bonus = {
 		global_manpower_modifier = 0.50
 	}
@@ -13,7 +13,7 @@ J0B_ideas = {
 	trigger = {
 		tag = J0B
 	}
-	free = yes		#will be added at load.
+	free = yes
 	
 	canananadian_wilderness = {
 		may_establish_frontier = yes
@@ -41,5 +41,4 @@ J0B_ideas = {
 		legitimacy = 1.00
 		prestige = 1.00
 	}
-
 }

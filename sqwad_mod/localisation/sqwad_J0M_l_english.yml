@@ -2,52 +2,74 @@
  J0M: "MacThuggo"
  J0M_ADJ: "Thuggish"
  
+# Ideas
  J0M_ideas: "Thuggish Ideas"
  J0M_ideas_start: "Thuggish Traditions"
  J0M_ideas_bonus: "Thuggish Ambition"
+
  infra_import: "Infra"
  infra_import_desc: "Infra is very import"
+
  people_means_death: "More People"
  people_means_death_desc: "People means death. More people means more death."
+
  flowery_language: "Flowery Language"
  flowery_language_desc: "Illustrious speech is a facility that any determined fellow may master with a little professional assistance from thesaurus.com."
+
  arteries: "Arteries"
  arteries_desc: "So we can expand and create arteries all over Europe!"
+
  simple_memeconomics: "Simple Memeconomics"
  simple_memeconomics_desc: "Anyone who has taken simple memeconomics knows that international meme trade increases the overall production of memes by specialization on relative production advantage."
+
  conquest: "Conquest"
  conquest_desc: "Conquest is the only motive we should have."
+
  general_public: "General Public"
  general_public_desc: "The general public is a myth."
  
- J0M_mighty_army_title: "Build a Mighty Army"
- J0M_mighty_army_desc: "The [Root.GetAdjective] people are destined to expand, but we cannot do so without an army."
- 
+# Custom Missions
  J0M_federal_mint_title: "Federal Mint"
  J0M_federal_mint_desc: "We're pretty much the federal mint."
  J0M_federal_mint_modifier: "Federal Mint Achieved"
+ desc_J0M_federal_mint_modifier: ""
+
  J0M_breaking_promises_title: "Breaking Promises"
  J0M_breaking_promises_desc: "Have you ever made a promise Gage? You don't keep them."
+
  J0M_broke_promise_G0H: "Said you don't keep promises"
  J0M_broke_promises_modifier: "Promises Aren't For Keeping"
- 
+ desc_J0M_broke_promises_modifier: ""
+
+# Missions
+ J0M_mighty_army_title: "Build a Mighty Army"
+ J0M_mighty_army_desc: "The [Root.GetAdjective] people are destined to expand, but we cannot do so without an army."
+
  J0M_conquest_tuscany_title: "Conquer Tuscany"
  J0M_conquest_tuscany_desc: ""
  J0M_unite_italy_title: "Unite Italy"
  J0M_unite_italy_desc: ""
+
  J0M_conquest_dalmatia_title: "Conquer Dalmatia"
  J0M_conquest_dalmatia_desc: ""
  J0M_unite_balkan_title: "Unite the Balkans"
  J0M_unite_balkan_desc: ""
+
  J0M_conquest_provence_title: "Conquer Provence"
  J0M_conquest_provence_desc: ""
  J0M_unite_france_title: "Unite France"
  J0M_unite_france_desc: ""
+
  J0M_conquer_catalonia_title: "Conquer Catalonia"
  J0M_conquer_catalonia_desc: ""
  J0M_unite_iberia_title: "Unite Iberia"
  J0M_unite_iberia_desc: ""
+
  J0M_conquest_carinthia_title: "Conquer Carniola"
  J0M_conquest_carinthia_desc: ""
  J0M_unite_south_germany_title: "Unite South Germany"
  J0M_unite_south_germany_desc: ""
+
+# Governments
+thuggin_republic_reform: "Thuggin Republic"
+thuggin_republic_reform_desc: ""

@@ -1,5 +1,5 @@
 J0M_conquest = {
-	slot = 1 #?
+	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -16,14 +16,12 @@ J0M_conquest = {
 		
 		trigger = {
 			army_size_percentage = 0.75
-			#manpower_percentage = 0.5
-			#num_of_generals = 1
 		}
 		
 		effect = {
 			add_prestige = 10
 			
-			#Territorial Claims
+			# Territorial Claims
 			if = {
 				limit = { NOT = { map_setup = map_setup_random } }
 				tuscany_area = {
@@ -62,7 +60,8 @@ J0M_conquest = {
 					add_permanent_claim = ROOT
 				}
 			}
-			if = { #if map is set on random, add claims on bordering areas
+			# If map is set on random, add claims on bordering areas
+			if = {
 				limit = { map_setup = map_setup_random }
 				
 				every_owned_province = {
@@ -82,7 +81,7 @@ J0M_conquest = {
 }
 
 J0M_conquest_italy = {
-	slot = 1 #?
+	slot = 1 
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -114,9 +113,9 @@ J0M_conquest_italy = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Italy
+			# Claims on all Italy
 			italy_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -149,10 +148,10 @@ J0M_conquest_italy = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on Tunisian coast, but no mission
+			# Claims on Tunisian coast, but no mission
 			tunisia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -186,7 +185,7 @@ J0M_conquest_italy = {
 }
 
 J0M_conquest_france = {
-	slot = 2 #?
+	slot = 2 
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -218,9 +217,9 @@ J0M_conquest_france = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All France
+			# Claims on all France
 			france_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -228,7 +227,7 @@ J0M_conquest_france = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#Beginning of Iberia Mission Tree
+			# Beginning of Iberia Mission Tree
 			catalonia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -261,10 +260,10 @@ J0M_conquest_france = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on Britain and Lowlands, but no mission
+			# Claims on Britain and Lowlands, but no mission
 			british_isles_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -284,7 +283,7 @@ J0M_conquest_france = {
 }
 
 J0M_conquest_iberia = {
-	slot = 3 #?
+	slot = 3 
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -316,9 +315,9 @@ J0M_conquest_iberia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Iberia
+			# Claims on all Iberia
 			iberia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -351,10 +350,10 @@ J0M_conquest_iberia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 
-			#Claims on Moroccan coast, but no mission
+			# Claims on Moroccan coast, but no mission
 			barbary_coast_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -395,7 +394,7 @@ J0M_conquest_iberia = {
 }
 
 J0M_conquest_balkan = {
-	slot = 4 #?
+	slot = 4 
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -427,9 +426,9 @@ J0M_conquest_balkan = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Balkans
+			# Claims on all Balkans
 			balkan_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -462,10 +461,10 @@ J0M_conquest_balkan = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on Carpathia and Anatolia, but no mission
+			# Claims on Carpathia and Anatolia, but no mission
 			carpathia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -485,7 +484,7 @@ J0M_conquest_balkan = {
 }
 
 J0M_conquest_south_germany = {
-	slot = 5 #?
+	slot = 5 
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -517,9 +516,9 @@ J0M_conquest_south_germany = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All South Germany
+			# Claims on all South Germany
 			south_german_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -552,10 +551,10 @@ J0M_conquest_south_germany = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}	
 			
-			#Claims on North Germany, but no mission
+			# Claims on North Germany, but no mission
 			north_german_region = {
 				limit = {
 					NOT = { is_core = ROOT }

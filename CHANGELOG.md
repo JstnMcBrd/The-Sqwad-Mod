@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - EU4 1.34 Sweden compatibility
 - Loading tip quotes (current as of 2022-12-24)
+- More boat names from loading tip quotes
 - Historical friendships
 - Thuggin Republic government reform for J0M
 - Standardized changelog
@@ -25,9 +26,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Slightly nerfed D0E mission tree
 - Lowered requirements for first mission for each Sqwad nation
 - M0N ideas to benefit playing tall
+- Cleaned up mod files
 
 ### Fixed
 
+- Bug in G0H mission tree
 - Bug in J0B mission tree
 
 ## [1.6.0](../../releases/tag/1.6.0) - 2022-05-25

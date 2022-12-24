@@ -1,8 +1,8 @@
 1444.11.10 = {
-	capital = 4387 #Angoumois
+	capital = 4387 # Angoumois
 }
 
 1444.11.11 = {
-	capital = 184 #Orléans
-	fixed_capital = 184 #Cannot move capital away from this province & no power cost to move to it
+	capital = 184 # Orléans
+	fixed_capital = 184 # Cannot move capital away from this province & no power cost to move to it
 }

@@ -2,44 +2,58 @@
  M0N: "Tersia"
  M0N_ADJ: "Tersian"
  
+# Ideas
  M0N_ideas: "Tersian Ideas"
  M0N_ideas_start: "Tersian Traditions"
  M0N_ideas_bonus: "Tersian Ambition"
+
  lol: "Lol"
  lol_desc: "Lol"
+
  no_roast_filter: "No Roast Filter"
  no_roast_filter_desc: "Not saying your roast is like not breathing."
+
  aluminum_fist: "Aluminum Fist"
  aluminum_fist_desc: "More lenient than an iron fist."
+
  theyre_dead: "They're Dead"
  theyre_dead_desc: "I killed them."
+
  no_overall_filter: "No Overall Filter"
  no_overall_filter_desc: "The words just flow out like a bad case of diarrhea."
+
  kilo_murders_per_hour: "Kilo-Murders Per Hour"
  kilo_murders_per_hour_desc: "Our armies are so good we have to measure this way."
+
  bleach_for_legal_documents: "Bleach for Legal Documents"
  bleach_for_legal_documents_desc: "Bleach is cheaper than black ink."
  
+# Missions
  M0N_mighty_army_title: "Build a Mighty Army"
  M0N_mighty_army_desc: "The [Root.GetAdjective] people are destined to expand, but we cannot do so without an army."
+
  M0N_conquest_lower_swabia_title: "Conquer West Swabia"
  M0N_conquest_lower_swabia_desc: ""
  M0N_unite_south_germany_title: "Unite South Germany"
  M0N_unite_south_germany_desc: ""
+
  M0N_conquest_alsace_title: "Conquer Alsace"
  M0N_conquest_alsace_desc: ""
  M0N_conquest_lorraine_title: "Conquer Lorraine"
  M0N_conquest_lorraine_desc: ""
  M0N_unite_france_title: "Unite France"
  M0N_unite_france_desc: ""
+
  M0N_conquest_venetia_title: "Conquer Venetia"
  M0N_conquest_venetia_desc: ""
  M0N_unite_italy_title: "Unite Italy"
  M0N_unite_italy_desc: ""
+
  M0N_conquest_transdanubia_title: "Conquer Transdanubia"
  M0N_conquest_transdanubia_desc: ""
  M0N_unite_carpathia_title: "Unite Carpathia"
  M0N_unite_carpathia_desc: ""
+
  M0N_conquer_moravia_title: "Conquer Moravia"
  M0N_conquer_moravia_desc: ""
  M0N_unite_north_germany_title: "Unite North Germany"

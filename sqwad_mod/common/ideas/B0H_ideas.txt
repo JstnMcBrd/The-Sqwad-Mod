@@ -1,11 +1,11 @@
 B0H_ideas = {
-	#traditions
+	# Traditions
 	start = {
 		global_tax_modifier = 0.10
 		infantry_power = 0.10
 	}
 	
-	#ambitions
+	# Ambitions
 	bonus = {
 		land_forcelimit_modifier = 0.25
 	}
@@ -13,7 +13,7 @@ B0H_ideas = {
 	trigger = {
 		tag = B0H
 	}
-	free = yes		#will be added at load.
+	free = yes
 	
 	h = {
 		colonists = 1

@@ -1,5 +1,5 @@
 A0W_conquest = {
-	slot = 1 #?
+	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -16,13 +16,11 @@ A0W_conquest = {
 		
 		trigger = {
 			army_size_percentage = 0.75
-			#manpower_percentage = 0.5
-			#num_of_generals = 1
 		}
 		
 		effect = {
 			add_prestige = 10		
-			#Territorial Claims
+			# Territorial Claims
 			if = {
 				limit = { NOT = { map_setup = map_setup_random } }
 				karaman_area = {
@@ -54,7 +52,8 @@ A0W_conquest = {
 					add_permanent_claim = ROOT
 				}
 			}
-			if = { #if map is set on random, add claims on bordering areas
+			# If map is set on random, add claims on bordering areas
+			if = {
 				limit = { map_setup = map_setup_random }
 				
 				every_owned_province = {
@@ -74,7 +73,7 @@ A0W_conquest = {
 }
 
 A0W_conquest_anatolia = {
-	slot = 1 #?
+	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -106,9 +105,9 @@ A0W_conquest_anatolia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Anatolia
+			# Claims on all Anatolia
 			anatolia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -141,14 +140,14 @@ A0W_conquest_anatolia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}	
 		}
 	}
 }
 
 A0W_conquest_balkan = {
-	slot = 2 #?
+	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -180,9 +179,9 @@ A0W_conquest_balkan = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Balkans
+			# Claims on all Balkans
 			balkan_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -215,10 +214,10 @@ A0W_conquest_balkan = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on Carpathia and Italy, but no missions
+			# Claims on Carpathia and Italy, but no missions
 			carpathia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -270,9 +269,9 @@ A0W_conquest_caucasia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on Samtskhe
+			# Claims on Samtskhe
 			samtskhe_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -305,9 +304,9 @@ A0W_conquest_caucasia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Caucasia
+			# Claims on all Caucasia
 			caucasia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -340,10 +339,10 @@ A0W_conquest_caucasia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 					
-			#Claims on Pontic Steppe but no mission
+			# Claims on Pontic Steppe, but no mission
 			crimea_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -356,7 +355,7 @@ A0W_conquest_caucasia = {
 }
 
 A0W_conquest_mashriq = {
-	slot = 4 #?
+	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -388,9 +387,9 @@ A0W_conquest_mashriq = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on Aleppo
+			# Claims on Aleppo
 			aleppo_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -423,9 +422,9 @@ A0W_conquest_mashriq = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Mashriq
+			# Claims on all Mashriq
 			mashriq_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -458,10 +457,10 @@ A0W_conquest_mashriq = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on Egypt, Persia, and Arabia, but no missions
+			# Claims on Egypt, Persia, and Arabia, but no missions
 			egypt_region = {
 				limit = {
 					NOT = { is_core = ROOT }

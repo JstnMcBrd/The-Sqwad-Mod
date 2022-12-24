@@ -1,11 +1,11 @@
  D0E_ideas = {
-	#traditions
+	# Traditions
 	start = {
 		land_morale = 0.10
 		num_accepted_cultures = 2
 	}
 	
-	#ambitions
+	# Ambitions
 	bonus = {
 		merchants = 1
 		inflation_reduction = 0.10
@@ -14,7 +14,7 @@
 	trigger = {
 		tag = D0E
 	}
-	free = yes		#will be added at load.
+	free = yes
 	
 	wizardry = {
 		idea_cost = -0.10
@@ -39,5 +39,4 @@
 	away_to_dinner = {
 		global_unrest = -1.00
 	}
-
 } 

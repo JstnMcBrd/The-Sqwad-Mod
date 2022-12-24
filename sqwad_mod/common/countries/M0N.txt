@@ -32,6 +32,8 @@ historical_units = {
 	napoleonic_lancers
 }
 
+# Monarch first names
+# Leader first names
 monarch_names = {
 	"Brian #0" = 1
 	"Chuck #0" = 1
@@ -43,8 +45,10 @@ monarch_names = {
 	"Michelle #0" = -1
 }
 
+# Leader last names
 leader_names = { 
-	Norris Norris Norris Norris Norris Norris Norris Norris Norris Norris #repeated to get rid of warning about less than 10 leader names
+	Norris Norris Norris Norris Norris Norris Norris Norris Norris Norris
+	# Repeated to get rid of warning about less than 10 leader names
 }
 
 ship_names = {
@@ -65,8 +69,8 @@ ship_names = {
 	"NAMIST CANNIBAL" "Nazi Germant" "Nico's Smile" Nincompoop NOmenclature "Not Breathing" "Nth Rome" "Nut Shot Crit"
 	"One and a Half Thirds"
 	Painkiller "Political Racism" "Pumpkin Spice Bleach" Puppy
-	"Racist Wall" "Ripped Out Sternum" Robosocialist "Root Canal"
-	"Segregated Sheep Farm" "Sheer Annoyance" Shifty Skeleton "Snorted Box" "Spawn of Satan" "SPEEDMOON™" "Spleen Turbopunch" "Stoked Flame of Wrath" "Suicide Mood" "Suicide Company" "Swastika Emoji" "Swooshy Swoosh"
+	"Racism, Drugs, Gay" "Racist Wall" "Ripped Out Sternum" Robosocialist "Root Canal"
+	"Segregated Sheep Farm" "SENATOR BOB THE BUILDER" "Sheer Annoyance" Shifty Skeleton "Snorted Box" "Spawn of Satan" "SPEEDMOON™" "Spleen Turbopunch" "Stoked Flame of Wrath" "Suicide Mood" "Suicide Company" "Swastika Emoji" "Swooshy Swoosh"
 	"Terrorism Simulator" "Theoretical Violence" "Tooth Root" "Turbo Knifer" "Twizzler Hater"
 	Unwidifier
 	"Virtual LSD Trip" Vulture

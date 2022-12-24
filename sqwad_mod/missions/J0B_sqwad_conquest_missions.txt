@@ -16,13 +16,11 @@ J0B_conquest = {
 		
 		trigger = {
 			army_size_percentage = 0.75
-			#manpower_percentage = 0.5
-			#num_of_generals = 1
 		}
 		
 		effect = {
 			add_prestige = 10		
-			#Territorial Claims
+			# Territorial Claims
 			if = {
 				limit = { NOT = { map_setup = map_setup_random } }
 				oka_area = {
@@ -54,7 +52,8 @@ J0B_conquest = {
 					add_permanent_claim = ROOT
 				}
 			}
-			if = { #if map is set on random, add claims on bordering areas
+			# If map is set on random, add claims on bordering areas
+			if = {
 				limit = { map_setup = map_setup_random }
 				
 				every_owned_province = {
@@ -106,9 +105,9 @@ J0B_conquest_russia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Russia
+			# Claims on all Russia
 			russia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -141,10 +140,10 @@ J0B_conquest_russia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on Lower Don area
+			# Claims on Lower Don area
 			lower_don_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -152,7 +151,7 @@ J0B_conquest_russia = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#Claims on Galich area
+			# Claims on Galich area
 			galich_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -197,9 +196,9 @@ J0B_conquest_pontic_steppe = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Pontic Steppe
+			# Claims on all Pontic Steppe
 			crimea_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -232,10 +231,10 @@ J0B_conquest_pontic_steppe = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on Caucasia
+			# Claims on Caucasia
 			caucasia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -280,9 +279,9 @@ J0B_conquest_ural = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on all Ural
+			# Claims on all Ural
 			ural_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -304,7 +303,7 @@ J0B_conquest_ural = {
 			NOT = {
 				OR = { 
 					country_or_non_sovereign_subject_holds = ROOT
-					is_empty = yes #account for uncolonized land
+					is_empty = yes # Account for uncolonized land
 				}
 			}
 		}
@@ -314,7 +313,7 @@ J0B_conquest_ural = {
 				type = all
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
-					is_empty = yes #account for uncolonized land
+					is_empty = yes # Account for uncolonized land
 				}
 			}
 		}
@@ -323,10 +322,10 @@ J0B_conquest_ural = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on Ishim
+			# Claims on Ishim
 			ishim_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -334,7 +333,7 @@ J0B_conquest_ural = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#Claims on Central Asia
+			# Claims on Central Asia
 			central_asia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -379,9 +378,9 @@ J0B_conquest_west_siberia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on all West Siberia
+			# Claims on all West Siberia
 			west_siberia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -403,7 +402,7 @@ J0B_conquest_west_siberia = {
 			NOT = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
-					is_empty = yes #account for uncolonized land
+					is_empty = yes # Account for uncolonized land
 				}
 			}
 		}
@@ -413,7 +412,7 @@ J0B_conquest_west_siberia = {
 				type = all
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
-					is_empty = yes #account for uncolonized land
+					is_empty = yes # Account for uncolonized land
 				}
 			}
 		}
@@ -422,10 +421,10 @@ J0B_conquest_west_siberia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 			
-			#Claims on East Siberia
+			# Claims on East Siberia
 			east_siberia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -470,9 +469,9 @@ J0B_conquest_baltics = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All the Baltics
+			# Claims on all the Baltics
 			baltic_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -505,10 +504,10 @@ J0B_conquest_baltics = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 					
-			#Claims on North Germany
+			# Claims on North Germany
 			north_german_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -553,9 +552,9 @@ J0B_conquest_ruthenia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Ruthenia
+			# Claims on all Ruthenia
 			ruthenia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -588,10 +587,10 @@ J0B_conquest_ruthenia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 					
-			#Claims on Poland
+			# Claims on Poland
 			poland_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -599,7 +598,7 @@ J0B_conquest_ruthenia = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#Claims on Carpathia
+			# Claims on Carpathia
 			carpathia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -644,9 +643,9 @@ J0B_conquest_scandinavia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on Finland
+			# Claims on Finland
 			finland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -679,9 +678,9 @@ J0B_conquest_scandinavia = {
 			add_prestige = 10
 			add_country_modifier = {
 				name = "sqwad_territorial_gains_modifier"
-				duration = 3650 #10 years
+				duration = 3650 # 10 years
 			}
-			#Claims on All Scandinavia
+			# Claims on all Scandinavia
 			scandinavia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -714,10 +713,10 @@ J0B_conquest_scandinavia = {
 			add_prestige = 50
 			add_country_modifier = {
 				name = "sqwad_united_region_modifier"
-				duration = 9125 #25 years
+				duration = 9125 # 25 years
 			}
 					
-			#Claims on North Germany
+			# Claims on North Germany
 			north_german_region = {
 				limit = {
 					NOT = { is_core = ROOT }

@@ -1,11 +1,11 @@
 J0M_ideas = {
-	#traditions
+	# Traditions
 	start = {
 		land_morale = 0.10
 		galley_power = 0.10
 	}
 	
-	#ambitions
+	# Ambitions
 	bonus = {
 		artillery_power = 0.10
 	}
@@ -13,7 +13,7 @@ J0M_ideas = {
 	trigger = {
 		tag = J0M
 	}
-	free = yes		#will be added at load.
+	free = yes
 	
 	infra_import = {
 		development_cost = -0.15
@@ -39,5 +39,4 @@ J0M_ideas = {
 	general_public = {
 		global_unrest = -1.00
 	}
-
 }

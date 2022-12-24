@@ -2,47 +2,61 @@
  D0E: "Xymiden"
  D0E_ADJ: "Xymidish"
  
+# Ideas
  D0E_ideas: "Xymidish Ideas"
  D0E_ideas_start: "Xymidish Traditions"
  D0E_ideas_bonus: "Xymidish Ambition"
  
  wizardry: "Wizardry"
  wizardry_desc: "Let me consult my scrying dish."
+
  winning: "What's your playing strategy?"
  winning_desc: "Winning."
+
  dealing_with_dolphins: "Dealing with Dolphins"
  dealing_with_dolphins_desc: "Are you buying it from a dolphin?"
+
  sage_advice: "Sage Advice"
  sage_advice_desc: "There is a lesson to be learned everywhere."
+
  adaptable: "Adaptable"
  adaptable_desc: "Living in a variety of climates allows us to be comfortable anywhere."
+
  reasonably_fatal: "Reasonably Fatal"
  reasonably_fatal_desc: "I like killing everybody."
+
  away_to_dinner: "Away to Dinner"
  away_to_dinner_desc: "A long dinner is an important part of a relaxed lifestyle."
  
+# Missions
  D0E_mighty_army_title: "Build a Mighty Army"
  D0E_mighty_army_desc: "The [Root.GetAdjective] people are destined to expand, but we cannot do so without an army."
+
  D0E_conquest_gotaland_title: "Conquer Östra Götaland"
  D0E_conquest_gotaland_desc: ""
  D0E_unite_scandinavia_title: "Unite Scandinavia"
  D0E_unite_scandinavia_desc: ""
+
  D0E_conquest_curonia_title: "Conquer Curonia"
  D0E_conquest_curonia_desc: ""
  D0E_unite_baltic_title: "Unite the Baltic"
  D0E_unite_baltic_desc: ""
+
  D0E_conquest_malopolska_title: "Conquer Malopolska"
  D0E_conquest_malopolska_desc: ""
  D0E_unite_poland_title: "Unite Poland"
  D0E_unite_poland_desc: ""
+
  D0E_conquest_slovakia_title: "Conquer Slovakia"
  D0E_conquest_slovakia_desc: ""
  D0E_unite_carpathia_title: "Unite Carpathia"
  D0E_unite_carpathia_desc: ""
+
  D0E_conquest_pripyat_title: "Conquer Pripyat"
  D0E_conquest_pripyat_desc: ""
  D0E_unite_ruthenia_title: "Unite Ruthenia"
  D0E_unite_ruthenia_desc: ""
+
  D0E_conquest_hinter_pommern_title: "Conquer Hinterpommern"
  D0E_conquest_hinter_pommern_desc: ""
  D0E_unite_north_germany_title: "Unite North Germany"

@@ -1,5 +1,3 @@
-#Country Name: please see filename
-
 graphical_culture = westerngfx
 
 color = { 255  0  0 }
@@ -34,8 +32,9 @@ historical_units = {
 	napoleonic_lancers
 }
 
+# Monarch first names
+# Leader first names
 monarch_names = {
-#rulers and generals (no separation)
 	"Bryce #0" = 1
 	"Byrce #0" = 1
 	"Chubby #0" = 1
@@ -49,6 +48,7 @@ monarch_names = {
 	"Tubba #0" = -1
 }
 
+# Leader last names
 leader_names = {
 	Bub
 	Chub
