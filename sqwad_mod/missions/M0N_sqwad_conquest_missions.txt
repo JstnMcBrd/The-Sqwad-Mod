@@ -12,8 +12,7 @@ M0N_conquest = {
 		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 1
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		trigger = {
 			army_size_percentage = 0.75
@@ -89,8 +88,7 @@ M0N_conquest_south_germany = {
 		icon = mission_unite_home_region
 		required_missions = { M0N_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = lower_swabia_area
@@ -133,8 +131,7 @@ M0N_conquest_south_germany = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { M0N_conquest_lower_swabia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = south_german_region 
@@ -173,8 +170,7 @@ M0N_conquest_france = {
 		icon = mission_unite_home_region
 		required_missions = { M0N_conquest_lower_swabia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = alsace_area
@@ -208,8 +204,7 @@ M0N_conquest_france = {
 		icon = mission_unite_home_region
 		required_missions = { M0N_conquest_alsace }
 		position = 8
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = lorraine_area
@@ -244,8 +239,7 @@ M0N_conquest_france = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { M0N_conquest_lorraine }
 		position = 9
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = france_region
@@ -300,8 +294,7 @@ M0N_conquest_italy = {
 		icon = mission_unite_home_region
 		required_missions = { M0N_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = venetia_area
@@ -336,8 +329,7 @@ M0N_conquest_italy = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { M0N_conquest_venetia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = italy_region
@@ -385,8 +377,7 @@ M0N_conquest_carpathia = {
 		icon = mission_unite_home_region
 		required_missions = { M0N_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = transdanubia_area
@@ -421,8 +412,7 @@ M0N_conquest_carpathia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { M0N_conquest_transdanubia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = carpathia_region
@@ -477,8 +467,7 @@ M0N_conquest_north_germany = {
 		icon = mission_unite_home_region
 		required_missions = { M0N_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = moravia_area
@@ -513,8 +502,7 @@ M0N_conquest_north_germany = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { M0N_conquer_moravia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = north_german_region

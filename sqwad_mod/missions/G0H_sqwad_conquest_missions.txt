@@ -12,8 +12,7 @@ G0H_conquest = {
 		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 1
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		trigger = {
 			army_size_percentage = 0.75
@@ -82,8 +81,7 @@ G0H_conquest_iberia = {
 		icon = mission_unite_home_region
 		required_missions = { G0H_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = leon_area
@@ -127,8 +125,7 @@ G0H_conquest_iberia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { G0H_conquest_leon }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = iberia_region 
@@ -167,8 +164,7 @@ G0H_conquest_maghreb = {
 		icon = mission_unite_home_region
 		required_missions = { G0H_conquest_upper_andalucia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = northern_morocco_area
@@ -203,8 +199,7 @@ G0H_conquest_maghreb = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { G0H_conquest_northern_morocco }
 		position = 8
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = maghreb_region
@@ -252,8 +247,7 @@ G0H_conquest_france = {
 		icon = mission_unite_home_region
 		required_missions = { G0H_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = pyrenees_area
@@ -288,8 +282,7 @@ G0H_conquest_france = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { G0H_conquest_pyrenees }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = france_region
@@ -353,8 +346,7 @@ G0H_conquest_italy = {
 		icon = mission_unite_home_region
 		required_missions = { G0H_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = corsica_sardinia_area
@@ -389,8 +381,7 @@ G0H_conquest_italy = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { G0H_conquest_corsica_sardinia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = italy_region

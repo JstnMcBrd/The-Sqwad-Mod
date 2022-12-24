@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- EU4 1.34 Sweden compatibility
 - Historical friendships
 - Thuggin Republic government reform for J0M
 - Standardized changelog

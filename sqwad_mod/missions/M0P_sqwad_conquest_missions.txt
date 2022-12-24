@@ -12,8 +12,7 @@ M0P_conquest = {
 		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 1
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		trigger = {
 			army_size_percentage = 0.75
@@ -82,8 +81,7 @@ M0P_conquest_low_countries = {
 		icon = mission_unite_home_region
 		required_missions = { M0P_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = wallonia_area
@@ -118,8 +116,7 @@ M0P_conquest_low_countries = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { M0P_conquest_wallonia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = low_countries_region
@@ -158,8 +155,7 @@ M0P_conquest_france = {
 		icon = mission_unite_home_region
 		required_missions = { M0P_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = picardy_area
@@ -203,8 +199,7 @@ M0P_conquest_france = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { M0P_conquest_picardy }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = france_region
@@ -252,8 +247,7 @@ M0P_conquest_british_isles = {
 		icon = mission_unite_home_region
 		required_missions = { M0P_conquest_picardy }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = home_counties_area
@@ -288,8 +282,7 @@ M0P_conquest_british_isles = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { M0P_conquest_home_counties }
 		position = 8
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = british_isles_region
@@ -328,8 +321,7 @@ M0P_conquest_north_germany = {
 		icon = mission_unite_home_region
 		required_missions = { M0P_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = north_rhine_area
@@ -364,8 +356,7 @@ M0P_conquest_north_germany = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { M0P_conquest_north_rhine }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = north_german_region

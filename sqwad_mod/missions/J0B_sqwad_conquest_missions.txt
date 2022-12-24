@@ -12,8 +12,7 @@ J0B_conquest = {
 		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 1
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		trigger = {
 			army_size_percentage = 0.75
@@ -89,8 +88,7 @@ J0B_conquest_russia = {
 		icon = mission_unite_home_region
 		required_missions = { J0B_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = oka_area
@@ -125,8 +123,7 @@ J0B_conquest_russia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0B_conquest_oka }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = russia_region 
@@ -182,8 +179,7 @@ J0B_conquest_pontic_steppe = {
 		icon = mission_unite_home_region
 		required_missions = { J0B_unite_russia }
 		position = 8
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = lower_don_area
@@ -218,8 +214,7 @@ J0B_conquest_pontic_steppe = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0B_conquest_lower_don }
 		position = 9
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = crimea_region 
@@ -267,8 +262,7 @@ J0B_conquest_ural = {
 		icon = mission_unite_home_region
 		required_missions = { J0B_unite_russia }
 		position = 8
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = galich_area
@@ -303,8 +297,7 @@ J0B_conquest_ural = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0B_conquest_galich }
 		position = 9
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = ural_region 
@@ -368,8 +361,7 @@ J0B_conquest_west_siberia = {
 		icon = mission_unite_home_region
 		required_missions = { J0B_unite_ural }
 		position = 10
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = ishim_area
@@ -404,8 +396,7 @@ J0B_conquest_west_siberia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0B_conquest_ishim }
 		position = 11
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = west_siberia_region 
@@ -461,8 +452,7 @@ J0B_conquest_baltics = {
 		icon = mission_unite_home_region
 		required_missions = { J0B_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = estonia_ingria_area
@@ -497,8 +487,7 @@ J0B_conquest_baltics = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0B_conquest_estonia_ingria }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = baltic_region
@@ -546,8 +535,7 @@ J0B_conquest_ruthenia = {
 		icon = mission_unite_home_region
 		required_missions = { J0B_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = chernigov_area
@@ -582,8 +570,7 @@ J0B_conquest_ruthenia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0B_conquest_chernigov }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = ruthenia_region
@@ -639,8 +626,7 @@ J0B_conquest_scandinavia = {
 		icon = mission_unite_home_region
 		required_missions = { J0B_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = karelia_area
@@ -675,8 +661,7 @@ J0B_conquest_scandinavia = {
 		icon = mission_unite_home_region
 		required_missions = { J0B_conquest_karelia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = finland_area
@@ -711,8 +696,7 @@ J0B_conquest_scandinavia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0B_conquest_finland }
 		position = 8
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = scandinavia_region

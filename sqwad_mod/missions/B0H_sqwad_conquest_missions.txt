@@ -12,8 +12,7 @@ B0H_conquest = {
 		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 1
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		trigger = {
 			army_size_percentage = 0.75
@@ -82,8 +81,7 @@ B0H_conquest_scandinavia = {
 		icon = mission_unite_home_region
 		required_missions = { B0H_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = vastra_gotaland_area
@@ -118,8 +116,7 @@ B0H_conquest_scandinavia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { B0H_conquest_vastra_gotaland }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = scandinavia_region 
@@ -176,8 +173,7 @@ B0H_conquest_british_isles = {
 		icon = mission_unite_home_region
 		required_missions = { B0H_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = highlands_area
@@ -212,8 +208,7 @@ B0H_conquest_british_isles = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { B0H_conquest_highlands }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = british_isles_region
@@ -261,8 +256,7 @@ B0H_conquest_north_germany = {
 		icon = mission_unite_home_region
 		required_missions = { B0H_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = holstein_area
@@ -297,8 +291,7 @@ B0H_conquest_north_germany = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { B0H_conquest_holstein }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = north_german_region

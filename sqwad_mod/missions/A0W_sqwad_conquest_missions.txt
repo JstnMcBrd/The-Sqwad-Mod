@@ -12,8 +12,7 @@ A0W_conquest = {
 		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 1
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		trigger = {
 			army_size_percentage = 0.75
@@ -89,8 +88,7 @@ A0W_conquest_anatolia = {
 		icon = mission_unite_home_region
 		required_missions = { A0W_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = karaman_area
@@ -125,8 +123,7 @@ A0W_conquest_anatolia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { A0W_conquest_karaman }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = anatolia_region
@@ -165,8 +162,7 @@ A0W_conquest_balkan = {
 		icon = mission_unite_home_region
 		required_missions = { A0W_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = morea_area
@@ -201,8 +197,7 @@ A0W_conquest_balkan = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { A0W_conquest_morea }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = balkan_region 
@@ -257,8 +252,7 @@ A0W_conquest_caucasia = {
 		icon = mission_unite_home_region
 		required_missions = { A0W_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = erzurum_area
@@ -293,8 +287,7 @@ A0W_conquest_caucasia = {
 		icon = mission_unite_home_region
 		required_missions = { A0W_conquest_erzurum }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = samtskhe_area
@@ -329,8 +322,7 @@ A0W_conquest_caucasia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { A0W_conquest_samtskhe }
 		position = 8
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = caucasia_region
@@ -378,8 +370,7 @@ A0W_conquest_mashriq = {
 		icon = mission_unite_home_region
 		required_missions = { A0W_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = cukurova_area
@@ -414,8 +405,7 @@ A0W_conquest_mashriq = {
 		icon = mission_unite_home_region
 		required_missions = { A0W_conquer_cukurova }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = aleppo_area
@@ -450,8 +440,7 @@ A0W_conquest_mashriq = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { A0W_conquer_aleppo }
 		position = 8
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = mashriq_region

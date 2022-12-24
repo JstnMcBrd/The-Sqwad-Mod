@@ -12,8 +12,7 @@ J0M_conquest = {
 		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 3
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		trigger = {
 			army_size_percentage = 0.75
@@ -97,8 +96,7 @@ J0M_conquest_italy = {
 		icon = mission_unite_home_region
 		required_missions = { J0M_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = tuscany_area
@@ -133,8 +131,7 @@ J0M_conquest_italy = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0M_conquest_tuscany }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = italy_region
@@ -203,8 +200,7 @@ J0M_conquest_france = {
 		icon = mission_unite_home_region
 		required_missions = { J0M_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = provence_area
@@ -247,8 +243,7 @@ J0M_conquest_france = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0M_conquest_provence }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = france_region
@@ -303,8 +298,7 @@ J0M_conquest_iberia = {
 		icon = mission_unite_home_region
 		required_missions = { J0M_conquest_provence }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = catalonia_area
@@ -339,8 +333,7 @@ J0M_conquest_iberia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0M_conquer_catalonia }
 		position = 8
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = iberia_region
@@ -416,8 +409,7 @@ J0M_conquest_balkan = {
 		icon = mission_unite_home_region
 		required_missions = { J0M_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = east_adriatic_coast_area
@@ -452,8 +444,7 @@ J0M_conquest_balkan = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0M_conquest_dalmatia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = balkan_region 
@@ -508,8 +499,7 @@ J0M_conquest_south_germany = {
 		icon = mission_unite_home_region
 		required_missions = { J0M_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = carinthia_area
@@ -544,8 +534,7 @@ J0M_conquest_south_germany = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { J0M_conquest_carinthia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = south_german_region

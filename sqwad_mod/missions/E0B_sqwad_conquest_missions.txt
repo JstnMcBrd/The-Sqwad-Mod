@@ -12,8 +12,7 @@ E0B_conquest = {
 		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 1
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		trigger = {
 			army_size_percentage = 0.75
@@ -75,8 +74,7 @@ E0B_conquest_france = {
 		icon = mission_unite_home_region
 		required_missions = { E0B_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = poitou_area
@@ -119,8 +117,7 @@ E0B_conquest_france = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { E0B_conquest_poitou }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = france_region 
@@ -176,8 +173,7 @@ E0B_conquest_british_isles = {
 		icon = mission_unite_home_region
 		required_missions = { E0B_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = home_counties_area
@@ -212,8 +208,7 @@ E0B_conquest_british_isles = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { E0B_conquest_home_counties }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = british_isles_region
@@ -261,8 +256,7 @@ E0B_conquest_low_countries = {
 		icon = mission_unite_home_region
 		required_missions = { E0B_conquest_poitou }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = flanders_area
@@ -297,8 +291,7 @@ E0B_conquest_low_countries = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { E0B_conquest_flanders }
 		position = 8
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = low_countries_region

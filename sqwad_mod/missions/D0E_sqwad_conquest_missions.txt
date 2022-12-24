@@ -12,8 +12,7 @@ D0E_conquest = {
 		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 1
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		trigger = {
 			army_size_percentage = 0.75
@@ -96,8 +95,7 @@ D0E_conquest_scandinavia = {
 		icon = mission_unite_home_region
 		required_missions = { D0E_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = gotaland_area
@@ -132,8 +130,7 @@ D0E_conquest_scandinavia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { D0E_conquest_gotaland }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = scandinavia_region 
@@ -180,8 +177,7 @@ D0E_conquest_baltic = {
 		icon = mission_unite_home_region
 		required_missions = { D0E_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = curonia_area
@@ -216,8 +212,7 @@ D0E_conquest_baltic = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { D0E_conquest_curonia }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = scandinavia_region 
@@ -264,8 +259,7 @@ D0E_conquest_poland = {
 		icon = mission_unite_home_region
 		required_missions = { D0E_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = malopolska_area
@@ -300,8 +294,7 @@ D0E_conquest_poland = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { D0E_conquest_malopolska }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = poland_region 
@@ -348,8 +341,7 @@ D0E_conquest_carpathia = {
 		icon = mission_unite_home_region
 		required_missions = { D0E_unite_poland }
 		position = 8
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = slovakia_area
@@ -384,8 +376,7 @@ D0E_conquest_carpathia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { D0E_conquest_slovakia }
 		position = 9
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = carpathia_region 
@@ -432,8 +423,7 @@ D0E_conquest_ruthenia = {
 		icon = mission_unite_home_region
 		required_missions = { D0E_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = pripyat_area
@@ -468,8 +458,7 @@ D0E_conquest_ruthenia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { D0E_conquest_pripyat }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = ruthenia_region 
@@ -516,8 +505,7 @@ D0E_conquest_north_germany = {
 		icon = mission_unite_home_region
 		required_missions = { D0E_mighty_army }
 		position = 6
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			area = hinter_pommern_area
@@ -552,8 +540,7 @@ D0E_conquest_north_germany = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { D0E_conquest_hinter_pommern }
 		position = 7
-		ai_weight = { factor = 5 }
-		ai_priority = { factor = 5 }
+		ai_weight = { factor = 500 }
 		
 		provinces_to_highlight = {
 			region = north_german_region 
