@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Buffed J0B mission tree
 - Slightly nerfed D0E mission tree
 - Lowered requirements for first mission for each Sqwad nation
+- M0N ideas to benefit playing tall
 
 ### Fixed
 
