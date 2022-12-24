@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - EU4 1.34 Sweden compatibility
+- Loading tip quotes (current as of 2022-12-24)
 - Historical friendships
 - Thuggin Republic government reform for J0M
 - Standardized changelog
@@ -34,7 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - EU4 1.33 compatibility
-- Loading tip quotes (current as of 05/23/2022)
+- Loading tip quotes (current as of 2022-05-23)
 - Dynamic province name for Lolland (1983) if M0N owns it: "LOL-land"
 - Pos Republic government reform for M0P (just a copy of Dutch Republic for now)
 - JustCorp logo to the new Paradox Tinto logo

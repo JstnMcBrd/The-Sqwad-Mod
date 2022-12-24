@@ -228,7 +228,7 @@
  LOADING_TIP_144: "You're supposed to give up, break down, and cry."
  LOADING_TIP_145: "He landed on his stomach on the horse and threw up his liver."
  LOADING_TIP_146: "The feet must be like strings!"
- LOADING_TIP_147: "Gage: kys\nJustin: [ERROR: No life to take]"
+ LOADING_TIP_147: "Gage: kys\nJustin: (ERROR: No life to take)"
  LOADING_TIP_148: "1 does not think in binary."
  LOADING_TIP_149: "I wonder who first used the term meme..."
  #skipped
@@ -666,7 +666,7 @@
  #censored
  #censored
  #censored
- LOADING_TIP_405: "Hey Chris, you wann come sit on this pickle? I have one right here! Look at it, it's huge! *chucks pickle at Chris's face*
+ LOADING_TIP_405: "Hey Chris, you wann come sit on this pickle? I have one right here! Look at it, it's huge! *chucks pickle at Chris's face*"
  #censored
  LOADING_TIP_406: "It has a really great opening rift to beat your sabers to."
  #censored
@@ -899,7 +899,7 @@
  LOADING_TIP_529: "Are we starting Crusades 2? Im down where do I sign up."
  LOADING_TIP_530: "SIGNIFICANT FIGURES IS OF THE DEVIL"
  LOADING_TIP_531: "Next person who sig figs will learn how many rounds of .20 gauge birdshot it takes to kill a human being."
- LOADING_TIP_532: "Nathan: pulling my pants down every time I fart is a hassle\nMichael: not if you can SPEEDMOON™"
+ LOADING_TIP_532: "Nathan: pulling my pants down every time I fart is a hassle\nMichael: not if you can SPEEDMOON(TM)"
  LOADING_TIP_533: "Prepare the space garlic vampire weapons!"
  #censored
  LOADING_TIP_534: "Chiuhahas are probably illegal immigrants."
@@ -970,8 +970,8 @@
  #skipped
  LOADING_TIP_582: "As Grand Pos your all demoted to being an Idoit."
  LOADING_TIP_583: "I changed the rules of grammaer."
- LOADING_TIP_584: "I’d rather be cancer than nothing!”
- LOADING_TIP_585: "I’m fine with deforestation.”
+ LOADING_TIP_584: "I’d rather be cancer than nothing!"
+ LOADING_TIP_585: "I’m fine with deforestation."
  LOADING_TIP_586: "POS BOSS"
  #censored
  #censored
@@ -1003,7 +1003,7 @@
  LOADING_TIP_604: "You're a commentary!\nSick burn Michael"
  LOADING_TIP_605: "Now I can't watch my Nazi propoganda."
  LOADING_TIP_606: "Melee HD"
- LOADING_TIP_607: "Siri is the G.O.A.T.”
+ LOADING_TIP_607: "Siri is the G.O.A.T."
  #censored
  LOADING_TIP_608: "I believe in censorship of the press."
  LOADING_TIP_609: "I want it to be known that I hate you guys."
@@ -1118,6 +1118,7 @@
  #skipped
  LOADING_TIP_658: "That is *aggressively* not-Irish"
  LOADING_TIP_659: "Poor Pikachu hasn't been the same since the war"
+ #skipped
 
 #E0B
  LOADING_TIP_660: "Logs are inherently misogynistic"
@@ -1173,7 +1174,7 @@
 
 #M0P
  LOADING_TIP_699: "You know what would be really cool?? *SLAAAVES*"
- LOADING_TIP_700: "It was the apestos of us\n[proceeds to laugh for 25 straight minutes]"
+ LOADING_TIP_700: "It was the apestos of us\n(proceeds to laugh for 25 straight minutes)"
  LOADING_TIP_701: "I mean we might destroy our own hands with it\nThere's no way to be certain we wont."
  LOADING_TIP_702: "I can take on a yeti no problem"
  LOADING_TIP_703: "I have no ankle preference"
@@ -1196,3 +1197,42 @@
  #skipped
  LOADING_TIP_716: "I've been waiting to wait ALL DAY, let me tell you... the thrill you get when you're doing nothing, it's indescribable."
  #skipped
+
+#=== 2022/12/24 Update ===#
+
+#A0W
+ LOADING_TIP_717: "I THINK I AM BUG BUNY"
+ #censored
+ LOADING_TIP_718: "Riley: this is a normal spoon\nAidan: no its not its black"
+ LOADING_TIP_719: "ive just. never seen a black spoon before."
+
+#B0H
+ #nothing new
+
+#D0E
+ LOADING_TIP_720: "#philosophy\nTo be first or not to be first"
+
+#E0B
+ #nothing new
+
+#G0H
+ #nothing new
+
+#J0B
+ #nothing new
+
+#J0M
+ LOADING_TIP_721: "STRAIGHT! You hear that, Google? I'M STRAIGHT"
+ LOADING_TIP_722: "Okay. Hear me out. Prison is kinda like communism"
+ LOADING_TIP_723: "If docker is my child, it's the disappointing one I regret having"
+ LOADING_TIP_724: "Stack Overflow is like a swimming pool full of male beta fish"
+
+#M0N
+ LOADING_TIP_725: "SENATOR BOB THE BUILDER SAID HE WOULD BUILD THE WALL, BUT WHEN HE GOT TO WASHINGTON? HE CHOSE TO SMOKE CRACK INSTEAD"
+ LOADING_TIP_726: "being gay doesn't make me gay"
+ LOADING_TIP_727: "Shhhh\nWe only discriminate based on actual facts"
+ LOADING_TIP_728: "Major themes: racism, drugs, gay\nMichael: That sounds like an ideal society"
+
+#M0P
+ LOADING_TIP_729: "Justin: I won't shed any tears over it\nmpos: I'll be sure to cry double then"
+ LOADING_TIP_730: "I aim to disappoint"
